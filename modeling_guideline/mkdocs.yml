@@ -9,7 +9,7 @@ nav:
     - 📊 Data Understanding and Preparation: A_modeling_guideline/C_data_preparation.md
     - 🔍 Exploratory Data Analysis: A_modeling_guideline/D_eda.md
     - 🛠️ Feature Engineering: A_modeling_guideline/E_feature_engineering.md
-    - 🎲 Model Selection: A_modeling_guideline/F_model_selection.md
+    - Modeling and Evaluation: A_modeling_guideline/F_model_selection.md
     - 🧠 Model Development and Hyperparameter Tuning: A_modeling_guideline/G_model_development.md
     - ✅ Model Validation and Evaluation: A_modeling_guideline/H_validation.md
     - 💡 Model Interpretation and Explanability: A_modeling_guideline/I_model_interpretation.md
