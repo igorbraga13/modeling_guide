@@ -1,0 +1,15 @@
+WINDOWS
+python -m pip install mkdocs
+python -m mkdocs new proj - Create a new project.
+cd proj - change directory
+python -m mkdocs serve
+
+MAC
+mkdocs new [dir-name] - Create a new project.
+mkdocs serve - Start the live-reloading docs server.
+mkdocs build - Build the documentation site.
+mkdocs -h - Print help message and exit.
+
+PLUGINS
+
+pip install mkdocs-awesome-pages-plugin -> permite criar um grupo de subpáginas que é também uma página
