@@ -44,6 +44,7 @@ nav:
       - Bank Context:
           - BNPL: E_glossary/bank_context/bnpl.md
           - CSI: E_glossary/bank_context/csi.md
+          - IFRS9: E_glossary/bank_context/ifrs9.md
           - NPL: E_glossary/bank_context/npl.md
           - PDD: E_glossary/bank_context/pdd.md
           - ROI: E_glossary/bank_context/roi.md
