@@ -1,6 +1,6 @@
 This is the design phase
 
-## 🧠 Model Development and Hyperparameter Tuning
+## 🧠 Development and Hyperparameter Tuning
 
 
 

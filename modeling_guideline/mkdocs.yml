@@ -5,14 +5,11 @@ site_url: https://igorbraga13.github.io/modeling_guide/
 nav: 
   - Modeling Guideline: 
     - 📝 Overview: A_modeling_guideline/A_overview.md
-    - 🎯 Problem Understanding: A_modeling_guideline/B_problem_understanding.md
+    - ❓ Problem Understanding: A_modeling_guideline/B_problem_understanding.md
     - 📊 Data Understanding and Preparation: A_modeling_guideline/C_data_preparation.md
     - 🔍 Exploratory Data Analysis: A_modeling_guideline/D_eda.md
     - 🛠️ Feature Engineering: A_modeling_guideline/E_feature_engineering.md
-    - Modeling and Evaluation: A_modeling_guideline/F_model_selection.md
-    - 🧠 Model Development and Hyperparameter Tuning: A_modeling_guideline/G_model_development.md
-    - ✅ Model Validation and Evaluation: A_modeling_guideline/H_validation.md
-    - 💡 Model Interpretation and Explanability: A_modeling_guideline/I_model_interpretation.md
+    - 🧮 Modeling and Evaluation: A_modeling_guideline/F_model_selection.md
     - 🚀 Deployment and Operationalization: A_modeling_guideline/J_deployment.md
     - 📈 Model Monitoring and Maintenance: A_modeling_guideline/K_monitoring.md
     - ⚖️ Governance, Ethical, and Regulatory Considerations: A_modeling_guideline/L_governance.md
@@ -21,9 +18,9 @@ nav:
     - Legado: A_modeling_guideline/modeling_guideline.md
 
   - Artifacts: 
-    - Canvas: B_artifacts/canvas.md
-    - Go / No Go: B_artifacts/go_nogo.md
-    - Work Instructions: B_artifacts/work_instruction.md
+    - 🧾 Discovery: B_artifacts/canvas.md
+    - 🆗 Model Approval: B_artifacts/go_nogo.md
+    - 📝 Work Instructions: B_artifacts/work_instruction.md
   
   - Patterns:
     - Data Preparation: C_patterns/data_preparation.md
@@ -34,21 +31,32 @@ nav:
   
   - Statistical Concepts:
     - Correlation: D_statistical_concepts/correlation.md
+    - Chi-Squared: D_statistical_concepts/chisq_test.md
     - Homoscedasticity: D_statistical_concepts/homoscedasticity.md
+    - Kullback-Leibler Divergence: D_statistical_concepts/kl_divergence.md
+    - Kolmogorov-Smirnov Test: D_statistical_concepts/ks.md
+    - Optimization: D_statistical_concepts/optimization.md
     - Outliers: D_statistical_concepts/outliers.md
     - Seasonality: D_statistical_concepts/seasonality.md
     - Trend: D_statistical_concepts/trend.md
     - Volatility: D_statistical_concepts/volatility.md
+
   
   - Glossary:
-      - Bank Context:
+      - 💰 Bank Context:
+          - Approval Rating: E_glossary/bank_context/approval_rating.md
+          - Ativo Problemático: E_glossary/bank_context/ativo_problematico.md
           - BNPL: E_glossary/bank_context/bnpl.md
+          - Churn: E_glossary/bank_context/churn.md
           - CSI: E_glossary/bank_context/csi.md
           - IFRS9: E_glossary/bank_context/ifrs9.md
+          - LTV: E_glossary/bank_context/ltv.md
           - NPL: E_glossary/bank_context/npl.md
           - PDD: E_glossary/bank_context/pdd.md
+          - ROE: E_glossary/bank_context/roe.md
           - ROI: E_glossary/bank_context/roi.md
           - SLA: E_glossary/bank_context/sla.md
+          - Supply Chain: E_glossary/bank_context/supply.md
           - TPV: E_glossary/bank_context/tpv.md
 
   - Models:
@@ -58,8 +66,11 @@ nav:
     - Collection: 
       - Creli: F_models/collection/creli.md
   
-  - Study Notes: G_study_notes/study_notes.md
+  - Study Notes: 
+    - Teste: G_study_notes/study_notes.md
+    - Optimization: G_study_notes/optimization.md
   
+  - Glossary: H_glossary/glossary.md
   - Links: H_links/links.md
   
   - Articles: I_articles/articles.md

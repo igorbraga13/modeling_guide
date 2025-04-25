@@ -1,0 +1,2387 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/modeling_guideline/">
+      
+      
+        <link rel="prev" href="../N_appendix/">
+      
+      
+        <link rel="next" href="../../B_artifacts/canvas/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>Legado - TechDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TechDocs" class="md-header__button md-logo" aria-label="TechDocs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TechDocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Legado
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.55 19.09 1.41 1.41 1.8-1.79-1.42-1.42M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6c0-3.32-2.69-6-6-6m8 7h3v-2h-3m-2.76 7.71 1.8 1.79 1.41-1.41-1.79-1.8M20.45 5l-1.41-1.4-1.8 1.79 1.42 1.42M13 1h-2v3h2M6.76 5.39 4.96 3.6 3.55 5l1.79 1.81zM1 13h3v-2H1m12 9h-2v3h2"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/igorbraga13/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TechDocs" class="md-nav__button md-logo" aria-label="TechDocs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TechDocs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/igorbraga13/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modeling Guideline
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Modeling Guideline
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📝 Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../B_problem_understanding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎯 Problem Understanding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../C_data_preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📊 Data Understanding and Preparation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../D_eda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🔍 Exploratory Data Analysis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../E_feature_engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🛠️ Feature Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../F_model_selection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎲 Model Selection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../G_model_development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🧠 Model Development and Hyperparameter Tuning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H_validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ✅ Model Validation and Evaluation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../I_model_interpretation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    💡 Model Interpretation and Explanability
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../J_deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🚀 Deployment and Operationalization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../K_monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📈 Model Monitoring and Maintenance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../L_governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ⚖️ Governance, Ethical, and Regulatory Considerations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../M_tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🧰 Tools, Technologies, and Best Practices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../N_appendix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📚 Appendix
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Legado
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Artifacts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Artifacts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B_artifacts/canvas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Canvas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B_artifacts/go_nogo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Go / No Go
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B_artifacts/work_instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Work Instructions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Patterns
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C_patterns/data_preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Preparation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Statistical Concepts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Statistical Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/correlation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Correlation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/homoscedasticity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Homoscedasticity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/outliers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Outliers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/seasonality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Seasonality
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/trend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Trend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/volatility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Volatility
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Glossary
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Bank Context
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Bank Context
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/bnpl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    BNPL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/csi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/npl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NPL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/pdd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PDD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/roi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ROI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/sla/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SLA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/tpv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TPV
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Models
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Models
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Application
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Application
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_models/application/onboarding_pj/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Onboarding PJ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_models/behavior/behavior/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Behavior
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Collection
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Collection
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_models/collection/creli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creli
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../G_study_notes/study_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Study Notes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../H_links/links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Links
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../I_articles/articles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Articles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../J_references/references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="introduction">Introduction</h1>
+<p>Antes de iniciar esse direcionamento para Modelagem, lembre-se que todo modelo é fruto de um trabalho artesanal, e esse material é meramente um pilar para sua obra...</p>
+<p>Após cada passo valide seu trabalho, caso não consiga validar todos, ao menos 10 casos para ter alguma ideia se o que está fazendo está caminhando da forma esperada.</p>
+<p>O conteúdo desse material foi desenvolvido pensando principalmente em modelos supervisionados, tendo espaço para alguns insights sobre modelos não supervisionados.</p>
+<p>É importante lembrarmos que independente do algoritmo que utilizarmos posteriormente, o maior ganho que teremos será durante os primeiros passos da modelagem:</p>
+<ul>
+<li>na definição de um target aderente ao problema que queremos solucionar</li>
+<li>na definição de público elegível fiel ao nosso contexto real</li>
+<li>na criação de features que, em conjunto, possam explicar melhor nosso modelo</li>
+<li>na seleção das melhores features para nosso contexto</li>
+<li>em métodos eficazes e entendimento do negócio para definir o período a ser considerado na amostragem</li>
+</ul>
+<p>A utilização de algoritmos de ponta não será nosso 'game change', ele pode nos garantir aquele ponto de métrica a mais em nosso modelo, mas não será o protagonista da modelagem.</p>
+<h1 id="0-entendimento-do-problema">0 - Entendimento do Problema</h1>
+<p>Antes de mais nada entenda seu problema e a necessidade da criação de um modelo ou regra de negócio. Pode ser que seja necessário um modelo mais simples, que fique pronto em um menor tempo para gerar valor de forma mais rápida, ou pode ser necessário um modelo mais complexo, que irá demandar um tempo maior. Pode ser também que para o problema não seja necessário um modelo, e sim um conjunto de regras de negócio a ser aplicado.</p>
+<h1 id="1-definicao-do-target">1 - Definição do Target</h1>
+<p>Nesse momento, juntamente com a área de negócios temos que definir nosso objeto de estudo, juntamente com o que queremos modelar (target).</p>
+<p>Para a definição do target devemos ter um tempo de observabilidade à frente, a partir da nossa data de referência, para avaliar o comportamento desses clientes que serão utilizados para fomentar nosso modelo. No caso de trabalhar com modelos de target binário a definição de marcação a partir do EVER ou OVER vai depender da estratégia buscada. </p>
+<h2 id="ever-ou-over-qual-escolher">Ever ou Over? Qual escolher?</h2>
+<p>O EVER será mais conservador, enquanto o OVER será mais liberal. No caso do EVER, o cliente que atrasa ee paga o juros, voltando a ficar adimplente é considerado ruim, pois olhamos os atrasos até a janela final, enquanto para o OVER o cliente que atrasa e volta a pagar antes do final da janela é considerado como bom pois olhamos apenas o retrato do final da janela. Para definir se será usado um ou outro pode depender da forma que as bases da instituição são construídas, por exemplo: clientes que renegociam contratos aparecem com novo contrato sem atraso, se olharmos o EVER teremos o atraso intramês do cliente, enquanto se olharmos o OVER não teremos a informação que ele atrasou e vamos considerá-lo bom.</p>
+<h3 id="ever">Ever</h3>
+<pre><code>DT[, mob := min_dt_ref %--% dt_ref %/% months(1)] #define os mobs (a dt_ref minima pode ser a data de ativacao por exemplo no contexto de onboarding)
+
+DT &lt;-  DT[mob &gt;= 0 &amp; mob &lt;= 6 | is.na(mob)] #definido mob 6 caso se trate de um target ever60mob6, sendo essa a data máxima avaliada. O NA está incluso em casos que não temos ativacao por exemplo ou clientes que não estão na nossa tabela do CADOC
+
+DT_perf &lt;- DT[, .(fl_default = max(as.integer(atraso &gt;= 60)), ##flaga todos os meses em atraso ou não atraso e soma, caso o máximo seja 0 não temos default no intervalo
+             mob_default = min(mob[atraso&gt;=60]), #conta o número de mobs, com o mínimo temos o mês em que o default ocorreu
+             qtd_meses_materialidade = sum(saldo_devedor&gt;50)), # números de meses que temos materialidade 
+            .(cpf_cnpj, safra, qtd_mob)]
+</code></pre>
+<h3 id="over">Over</h3>
+<pre><code>DT[, mob := min_dt_ref %--% dt_ref %/% months(1)] #define os mobs (a dt_ref minima pode ser a data de ativacao por exemplo no contexto de onboarding)
+
+DT &lt;-  DT[mob &gt;= 0 &amp; mob &lt;= 6 | is.na(mob)] #definido mob 6 caso se trate de um target ever60mob6, sendo essa a data máxima avaliada. O NA está incluso em casos que não temos ativacao por exemplo ou clientes que não estão na nossa tabela do CADOC
+
+DT_perf &lt;- DT[, .(fl_default = max(as.integer(atraso &gt;= 60)), ##flaga todos os meses em atraso ou não atraso e soma, caso o máximo seja 0 não temos default no intervalo
+             mob_default = min(mob[atraso&gt;=60]), #conta o número de mobs, com o mínimo temos o mês em que o default ocorreu
+             qtd_meses_materialidade = sum(saldo_devedor&gt;50)), # números de meses que temos materialidade 
+            .(cpf_cnpj, safra, qtd_mob)]
+</code></pre>
+<h2 id="definicao-de-bases">Definição de bases</h2>
+<p>Após o target definido, deve ser feito um levantamento das bases que podem ser utilizadas para melhor explicar nosso target</p>
+<ul>
+<li>Dados internos</li>
+<li>Dados externos como SCR, Bureaus (Serasa, Quod, Boa vista, Belvo, Neurotech)</li>
+</ul>
+<h1 id="2-build-features">2 - Build Features</h1>
+<p><em>A depender de cada caso a criação de features pode ser antes ou depois da definição do público elegível</em></p>
+<p>A partir do target definido, todo o escopo do projeto entendido, partimos para a criação das features</p>
+<p>Para criarmos as features temos que nos atentar ao horizonte de feature que vamos utilizar. Podemos utilizar 3 meses de features, dessa forma pegamos a partir de uma data de referência, os três meses anteriores para montar nossas features.</p>
+<ul>
+<li>Uma opção é juntar todas as bases cruas que serão utilizadas e posteriormente criar nossas features para evitar retrabalho e como melhor prática</li>
+<li>Outra opção é criar as features para cada base separadamente pois dessa maneira é mais fácil identificar possíveis problemas nas bases ou features criadas, essa opção se torna viável quando não se tem domínio ou confiança suficiente sobre determinada base</li>
+</ul>
+<p>Podemos criar features utilizando diferentes horizontes de tempo para os clientes, porém, para isso devemos ter alguma forma de identificar os clientes em que nosso tempo de features varia. Por exemplo: Se quisermos pegar como features o histórico de atraso de um cliente, devemos ter também uma feature com o tempo de contrato desse cliente, pois é muito diferente um cliente que atrasou 2 parcelas em 2 meses com um cliente que atrasou 2 parcelas em 10 anos</p>
+<h2 id="21-publico-elegivel">2.1 Público Elegível</h2>
+<p>Avaliando, dentre toda nossa base, os clientes que possuem o horizonte definido de features, e as demais premissas necessárias (hard filters, tempo de observabilidade para o target, etc), estes tornam-se nosso público elegível</p>
+<p>Tendo a base de features para o público elegível devemos validá-la, para isso uma opção pode ser dividir sua base por meses e avaliar a volumetria por safra, aquelas que aparentarem inconsistentes, podemos dar um double check com uma query na determinada data, por exemplo.</p>
+<p>É importante que a medida que seu público elegível vai se afunilando, você reporte os valores retirados em cada passo.</p>
+<p>Para a definição do público elegível uma forma de tentar garantir a independência da sua base é amostrando seu público. Quando você está em uma situação em que não possui safra, ou seja, o mesmo cliente pode aparecer diversas vezes (collection, behavior, pre-creli) podemos criar janelas em que a mesma observação não possa aparecer até o fim dessa janela, essa opção permite ainda amostrar dentro de cada mês para evitar que grande parte do público apareça no primeiro mês e só possa aparecer novamente na próxima janela. Permitindo uma "melhor aleatorização" da nossa base.</p>
+<pre><code>DT_unique &lt;- unique(DT[atraso %in% (30:60)][order(dt_ref)])#aqui temos o público elegível que no caso são clientes com atraso entre 30 e 60
+# Fazer a amostragem ------------------------------------------------------
+
+data &lt;- unique(DT_unique$dt_ref)
+data &lt;- data[order(data)]
+
+set.seed(090815)
+all_obs &lt;- DT_unique[dt_ref == data[length(data)],
+                     slice_sample(.SD, n = min(.N, 150))
+] #pega ultimo mes disponível
+
+# Cria a amostragem para os outros meses
+for ( i in (length(data)-1):1){
+  contrato_excluidos &lt;- all_obs[dt_ref &gt; data[i] &amp; dt_ref &lt; data[i] %m+% months(X), cd_contrato] 
+  temp &lt;- base_3040_unique[dt_ref == data[i] &amp; !cd_contrato %in% contrato_excluidos,
+                           slice_sample(.SD, n = min(.N, 150))
+                           ]
+  all_obs &lt;- rbind(all_obs,temp)
+
+}#criamos uma janela do dia mais recente e pegando os meses anteriores respeitando nossa janela de X meses
+</code></pre>
+<p>Se em nossa situação tivermos a safra do cliente (application, onboarding, acesso direto) basta encontrar uma forma de amostrar esses clientes olhando a safra de cada um e o número de meses pra frente (para olhar o target) e para trás (para olhar as features) </p>
+<pre><code>
+</code></pre>
+<h1 id="3-analise-exploratoria-univariada-das-variaveis-de-interesse-features-inclusas">3 - Análise exploratória univariada das variáveis de interesse (features inclusas)</h1>
+<p>Nesse momento a análise tem como objetivo encontrar outliers, semelhanças na distribuição das features, etc</p>
+<ul>
+<li>Um ponto de atenção são as features com variabilidade próxima de 0, que talvez devam ser manipuladas ou até excluídas.</li>
+<li>Remoção de features altamente correlacionadas</li>
+<li>Se o objetivo for a estimação utilizamos a base full, caso seu objetivo seja de predição dividimos a base</li>
+<li>Esse passo pode também acontecer após a análise bivariada, afim de conhecer melhor a base com features não significativas.</li>
+<li>Para evitar outliers, uma opção seria fixar os valores máximos e mínimos das features a partir dos percentis (alpha)% e (100-alpha)% por exemplo (outras ações podem ser tomadas, não existe fórmula mágica)</li>
+</ul>
+<p>Para sermos mais conservadores em relação ao outliers podemos considerar <code>Outlier extremo</code>: Considerar valores menores que (Q1 - 3*dist AIQ) e maiores que (Q3 + 3*dist AIQ)</p>
+<h1 id="4-analises-bivariadas-para-validacao-das-features-pode-se-utilizar-decision-tree">4 - Análises bivariadas para validação das features (pode-se utilizar decision tree)</h1>
+<p>Nesse momento a análise tem como objetivo observar se alguma feature vai de desencontro com nosso target, deixando um ponto de atenção.</p>
+<p>É importante lembrar que na análise exploratória bivariada, comparando as features com o target, estamos cruzando as informações das features com horizonte de X meses para trás, com o target definido com informações X meses a frente.</p>
+<p>Nessa análise é interessante observar se a distribuição das nossas variáveis é uniforme ao longo do tempo, para isso pode ser feita uma análise de drift mês a mês tanto utilizando PSI quanto Wasserstein. Uma outra maneira é pegar algumas estatísticas(média, mediana...) das variáveis e observar se elas variam muito mês a mês ou fazer um teste <code>ks.test</code> para avaliar se ambas as amostras vem de uma mesma distribuição.</p>
+<p>Caso encontre uma aleatoriedade nas variáveis mês a mês, dessa forma é preciso tentar entender o porque de nossa população mudar tanto a cada safra. Vale uma reflexão de caso houver uma criação de janela para tentar garantir uma independência entre as observações que queremos coletar (exemplo: criamos janelas com espaçamento de 6 meses em que o cliente só pode aparecer novamente no início da próxima janela para tentar garantir a independência das observações que queremos coletar): Se criamos uma janela, o comportamento das nossas variáveis pode não ficar bem representado safra a safra, dessa forma pode ser interessante reamostrar a base</p>
+<p>Essa análise safra a safra pode também ser feita na base de Treino, logo após a separação da base entre <code>treino</code>, <code>teste (Out of Sample)</code> e <code>homologação (Out of Time)</code>, nesse caso olhamos primeiro a base de treino</p>
+<p>Na análise exploratória deve ter observado se mês a mês as variáveis mantem um padrão de comportamento</p>
+<pre><code>#observando a média
+dist_variaveis &lt;- DT %&gt;% melt(id.vars = &quot;dt_ref&quot;) %&gt;%
+  .[, mean(value), .(dt_ref, variable)] %&gt;%
+  dcast(dt_ref ~ variable)
+</code></pre>
+<p>O KS é sensível ao tamanho de sua amostra, então amostras muito grandes rejeitam a hipótese de igualdade entre a distribuição das variáveis mais facilmente</p>
+<pre><code>#KS
+feats &lt;- c(names(model$finalModel$coefficients)[-1])
+drift &lt;- dados_treino %&gt;% dplyr::select(all_of(feats))
+
+drift[,data_m0:=dados_treino$dt_mod]
+
+ks_stat_drift &lt;- function(m0, var, d){
+  cat(as.character(m0), &quot;:: &quot;, var,&quot;\n&quot;)
+  m0 &lt;- ymd(floor_date(m0, unit = &quot;month&quot;))
+  mm1 &lt;- m0 %m-% months(1)
+  dm1 &lt;- d[floor_date(data_m0, unit = &quot;month&quot;) == ymd(mm1), var,with=F] %&gt;% as.data.frame() # == para estático e &lt;= para acumulado
+  d0 &lt;- d[floor_date(data_m0, unit = &quot;month&quot;) == m0, var, with=F] %&gt;% as.data.frame()
+  #print(paste(m0,'|',var))
+  ks &lt;- ks.test(dm1[,1],d0[,1])
+  z &lt;- t.test(dm1[,1],d0[,1])
+  return(list(var=var,
+              m0=m0,
+              ks_stat=ks$statistic,
+              ks_p_val=ks$`p.value`,
+              t=z$statistic,
+              t_p=z$`p.value`))
+}
+</code></pre>
+<p>Para diferenciar a métrica estática da acumulada safra a safra, opta-se por utilizar <code>dm1</code> e <code>d0</code> com sinais, <code>==</code> para observar a relação entre o mês e o anterior ou <code>&lt;=</code> para observar a relação entre o mês com o acumulado dos demais meses.</p>
+<p>O Wasserstein mede o trabalho necessário para transformar uma distribuição em outra a partir dos valores reais das variáveis, que podem variar muito e, consequentemente, deixar sua escala muito grande, por essa razão para utilizar o Wasserstein é necessário escalar as features. O problema do Wasserstein se deve a falta de noção relacionado ao valor da escala, não é possível saber se em uma escala que varia de 1 a 5, o valor 1 é bom ou tudo de 1 a 5 é ruim, por exemplo.</p>
+<pre><code>#Wasserstein
+feats &lt;- c(names(model$finalModel$coefficients)[-1])
+drift &lt;- dados_treino %&gt;% dplyr::select(all_of(feats))
+
+drift[,data_m0:=dados_treino$dt_mod]
+
+wasser_stat_drift &lt;- function(m0,var,d){
+  m0 &lt;- ymd(floor_date(m0, unit = &quot;month&quot;))
+  mm1 &lt;- m0 %m-%months(1)
+  dm1 &lt;- d[floor_date(data_m0, unit = &quot;month&quot;) == ymd(mm1), var, with=F] %&gt;% as.data.frame() # == ou &lt;=
+  d0 &lt;- d[floor_date(data_m0, unit = &quot;month&quot;) == m0, var, with=F]%&gt;% as.data.frame() # == ou &lt;=
+  print(paste(m0,'|',var))
+  w &lt;- wasserstein1d(dm1[,1],d0[,1],p=1)
+  #z &lt;- t.test(dm1[,1],d0[,1])
+  return(data.frame(var=var,
+                    m0=m0,
+                    wasser=w
+                    #ks_p_val=ks$`p.value`,t=z$statistic,
+                    #t_p=z$`p.value`)
+  ))
+}
+
+feats &lt;- append(feats, &quot;data_m0&quot;)
+dados &lt;- base %&gt;% dplyr::select(all_of(feats)) %&gt;% mutate_if(is.numeric, scale) 
+
+</code></pre>
+<p>O PSI assim como o Wasserstein não é sensível ao tamanho da amostra, porém em seu processo são separadas as variáveis em grupos e comparados, dessa forma o PSI é sensível ao número de bins (grupos)</p>
+<pre><code>#PSI
+feats &lt;- mf2$feature_names
+
+drift &lt;- treino3 %&gt;% select(any_of(feats))
+
+drift[,data_m0:=treino3$data_m0]
+drift[,m0:=NULL]
+
+ks_stat_drift &lt;- function(m0,var,d){
+  m0 &lt;- ymd(floor_date(m0, unit = &quot;month&quot;))
+  mm1 &lt;- m0 %m-% months(1)
+  dm1 &lt;- d[floor_date(data_m0, unit = &quot;month&quot;) &lt;= mm1,var,with=F] %&gt;% as.data.frame()
+  d0 &lt;- d[floor_date(data_m0, unit = &quot;month&quot;) == m0,var,with=F]%&gt;% as.data.frame()
+  #print(paste(m0,'|',var))
+  ks &lt;- ks.test(dm1[,1],d0[,1])
+  z &lt;- t.test(dm1[,1],d0[,1])
+  dm1$m &lt;- mm1
+  d0$m &lt;- m0
+  psi &lt;- get_psi(dat=rbind(dm1,d0),occur_time='m')
+  return(data.frame(var=var,m0=m0,ks_stat=ks$statistic,ks_p_val=ks$`p.value`,t=z$statistic,
+         t_p=z$`p.value`,psi=psi[,unique(PSI)]))
+
+}
+</code></pre>
+<p>Após escolher qual função utilizar é necessário rodar o <code>map</code> e posteriormente o ggplot caso queira visualizar o gráfico do drift</p>
+<pre><code>x &lt;- map2_dfr(.x = rep(seq.Date(ymd('2018-05-01'), #primeiro mes da sua base +1
+                                ymd('2022-06-01'), #último mes da sua base
+                                by = 'month'),
+                       each = 17), #quantidade de variáveis
+              .y = rep(names(drift), 50), #quantidade de meses entre o início e fim das datas
+              .f = ~ ks_stat_drift(.x, .y, base)) %&gt;% setDT()
+
+x[, sig:=as.integer(ks_p_val&lt;=0.05)]
+
+x2 &lt;- data.table::dcast(x,var~m0,value.var = 'ks_stat')
+
+#função para plotar o gráfico
+ggplot(x,aes(x=m0,y=var,fill=ks_stat))+
+  geom_tile(width=50,col='white')+
+  scale_x_date(date_labels = &quot;%m/%Y&quot;,date_breaks = &quot;29 day&quot;,expand = c(0,0))+
+  # scale_x_date(expand = c(0,0))+
+  labs(x=&quot;&quot;,y=&quot;&quot;,title = &quot;Drift ao longo do tempo - Wasserstein mês anterior&quot;,
+       fill = &quot;&quot;)+
+  theme_minimal()+
+  scale_fill_distiller(type='div')+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+</code></pre>
+<h1 id="5-regression">5 - Regression</h1>
+<p>A regressão, por sua simplicidade, deve ser sempre a primeira escolha na hora de criar seu modelo baseline. Após um primeiro teste podemos partir para outros modelos mais robustos.</p>
+<ul>
+<li>
+<p>Devemos interpretar os coeficientes e suas direções e ver se fazem sentido para o contexto estudado</p>
+</li>
+<li>
+<p>Escalar as variáveis e retreinar o modelo. Como a regressão logística é muito sensível a outliers coisas muito estranhas, como KS variando muito safra a safra ou coeficiente que esperasse ser significativo não sendo, podem ser explicados por não escalar as variáveis.</p>
+</li>
+</ul>
+<p>Em alguns casos ter o trabalho de escalar as variáveis pode ser em vão, como por exemplo em casos que temos padrões muito diferentes de nossas features safra a safra, com comportamentos completamente aleatórios para uma mesma variável.</p>
+<p>Uma alternativa para a regressão linear, por exemplo, em que as variáveis não são significativas, é utilizar <code>GAMs</code> para testar se as variáveis tem uma relação não linear, de maneira simples.</p>
+<h2 id="51-machine-learning">5.1 - Machine Learning</h2>
+<p>Outra possibilidade é utilizar modelos mais robustos como por exemplo XGBoost, que nada mais é que um conjunto de árvores, com seus parâmetros bem tunados ou LightGBM que é uma versão mais rápida do XGBoost.</p>
+<h3 id="tunando-parametros">Tunando parâmetros</h3>
+<p>Esse passo é essencial para encontrar qual o melhor conjunto de parâmetros para obter uma melhor performance para seu modelo</p>
+<pre><code>tune_grid_xgb&lt;- expand.grid(
+    nrounds= c(50,100),
+    eta = c(0.02, 0.01), #taxa de aprendizado, quanto menor, menor a chance de overfitting
+    gamma = c(1), #quanto maior mais conservador o algoritmo [0,infinito]
+    max_depth = 4:6, #profundidade da árvore(complexidade) de [0,infinito] sendo 0 sem limitação de profundidade
+    min_child_weight = c(5),
+    subsample= c(0.5),#proporção de subamostra de treinamento, 50% dos dados de treino serão amostrados antes da criação das arvores
+    colsample_bytree=0.2 #proporção das variáveis escolhidas aleatoriamente para contruir cada árvore
+  )
+</code></pre>
+<h3 id="interpretacao">Interpretação</h3>
+<p>Em modelos mais robustos, assim como na regressão, existe a necessidade de interpretação. Enquanto em um basta interpretar os coeficientes e observar se o sentido de cada um faz sentido para o contexto estudado, para esses modelos "Black Box" temos o SHAP(SHapley Additive exPlanations) para permitir a interpretabilidade das variáveis. Utilizando o SHAP na nossa base de treino conseguimos tirar insights sobre o que o modelo aprender com cada uma das variáveis dispostas.</p>
+<p>Para utilizar o SHAP, caso estejamos com um modelo xgboost precisamos primeiro trasformar nossa base em uma matriz para posteriormente utilizarmos a função, como podemos ver abaixo:</p>
+<pre><code>pred_data &lt;- model.matrix(.outcome~., model$trainingData)[,-1]#passando uma matriz(caso o modelo seja um xgboost)
+explain(model$finalModel, exact = TRUE, newdata = pred_data) %&gt;% setDT() #função para retornar shap value, caso o modelo seja um xgboost é necessário passar uma matriz
+
+</code></pre>
+<p>Após a análise do SHAP, caso tenha muitas features, na hora de apresentar a relevância das variáveis pode ser interessante utilizar o detalhamento de Pareto para mostrar apenas os "20% de features que explicam 80% do modelo"</p>
+<h1 id="6-modelagem">6 - Modelagem</h1>
+<h2 id="splitting">Splitting</h2>
+<ul>
+<li>
+<p>Dividir nossa base em treino, teste (Out of Sample) e homologação (Out Of Time)</p>
+</li>
+<li>
+<p><em>Homologação (OOT):</em> pegamos os meses mais recentes para conseguirmos uma validação mais quente da performance do nosso modelo. A homologação só pode ser testada uma única vez, após todo o trâmite com a base de treino e teste. Utilizar a base de homologação mais de uma vez é incorreto pois você estará balizando seu resultado mais recente para definir se seu modelo está bom ou não, quando na verdade ele deve servir apenas para validar se o que foi feito com o treino e teste estava bom. Via de regra, se tudo estiver ok com o treino/teste a homologação será um reflexo disso. O que não siginifca que caso o OOT estiveja ruim, tenhamos necessariamente um problema como o modelo, pode ser que a população de treino já não é mais reflexo da população atual, ou que tenhamos uma sazonalidade no período do OOT analisado, ou que existam padrões temporais que não conseguimos captar como o modelo, ou que passou despercebido pelo analista.</p>
+</li>
+</ul>
+<p>Do restante da base dividimos em 2 grupos seguindo a lógico do 70/30 ou outras, como por exemplo considerar um erro fixo para treino e teste e a partir dai definir o tamanho ideal das amostras</p>
+<ul>
+<li><em>Treino:</em> selecionando 70% da base restante</li>
+<li><em>Teste:</em> selecionando 30% da base restante</li>
+</ul>
+<pre><code>#Opção 1
+split_test &lt;- function(z = 1.96, e = 0.025, sd = 0.5){
+  n_teste = ((z*sd)/e)^2
+  n_teste
+} #função para encontrar o tamanho da amostra de teste fixando o erro do treino e teste
+#depende indiretamente do tamanho da base pois e = z*(sigma/sqrt(n))
+
+#Opção 2
+split_test &lt;- function(base){
+  n &lt;- nrow(base) #tamanho populacao
+  z &lt;- 1.96 #z-score
+  e &lt;- 0.025#margem de erro
+  sd &lt;- 0.5 #desvio padrão
+
+  (((z^2)*sd*(1-sd))/e^2)/1+(((z^2)*sd*(1-sd))/(e^2)/n)
+}#função para encontrar o tamanho da amostra de teste fixando o erro do treino e teste
+
+</code></pre>
+<p>Após a separação das amostras devemos fazer um teste PSI (Population Stability Index) para avaliar se nossa Homologação, Treino e Teste estão semelhantes. Como no OOT não existe amostragem pode ser que ele se distingua muito da sua base de treino e teste. Bastaria fazer a comparação de Homologação com o Treino ou o Teste, porém, para uma maior certeza da aleatoriedade da função do R fazemos a comparação tanto com o Treino quanto com o Teste apenas como um double check.</p>
+<p>Para testar o PSI podemos utilizar pacotes como <code>creditmodel</code> e <code>PDtoolkit</code></p>
+<p>Além do PSI é interessante fazer uma análise de drift para avaliar se features das amostras de treino, teste e homologação estão bem representadas.</p>
+<p>Na análise exploratória deve ter observado se mês a mês as variáveis mantem um padrão de comportamento</p>
+<p>De início, testamos um modelo mais simples para avaliar a performance do nosso baseline, em um segundo momento vale a pena compararmos a performance do Random Forest, XGboost, dentre diversos outros possíveis.</p>
+<h2 id="modeling">Modeling</h2>
+<h3 id="full-model">Full model</h3>
+<p>Primeiro devemos transformar nosso target em fator e em seguida podemos rodar um primeiro modelo com todas as variáveis (modelo full).</p>
+<p>Após cada passo a seguir podemos rodar um modelo para ir acompanhando a performance do modelo através do KS</p>
+<p>Utilizamos a função abaixo para retornar um vetor com a probabilidade de cada variável ser considerada 1 no nosso target</p>
+<pre><code>probabilities &lt;- model %&gt;% predict(teste, type = &quot;response&quot;)
+</code></pre>
+<p>Caso possua um valor de referência para avaliar a precisão do modelo (por exemplo 0.8), o código abaixo pode ser útil</p>
+<pre><code>### predição ----
+predicted.classes &lt;- ifelse(probabilities &gt; 0.8, &quot;PG&quot;, &quot;NPG&quot;)
+# precisao do modelo
+mean(predicted.classes == teste$fl_good)
+</code></pre>
+<p>Para calcular o KS da base de treino utilizamos:</p>
+<pre><code>### KS treino ----
+setDT(treino)
+treino[, fl_good := ifelse(target == &quot;NPG&quot;, 0, 1)]#transformando seu target em numérico para medir o KS
+MLmetrics::KS_Stat(y_pred = model$fitted.values, y_true = treino$target)
+</code></pre>
+<p>Para calcular o KS da base de teste utilizamos:</p>
+<pre><code>### KS teste ----
+setDT(teste)
+teste[, target := ifelse(target == &quot;NPG&quot;, 0, 1)]#transformando seu target em numérico para medir o KS
+MLmetrics::KS_Stat(y_pred = probabilities, y_true = teste$target)
+
+</code></pre>
+<p>Após calcular o KS vai ser interessante olhar a curva ROC e o valor do AUC e PRAUC que seu modelo retorna.</p>
+<ul>
+<li>Vale resaltar que o AUC independe de escala pois não utiliza valores absolutos e sim a precisão das classificações</li>
+<li>O AUC não é uma boa métrica para se observado em uma base desbalanceada, pois como avalia apenas a taxa de verdadeiro positivo e falso positivo ela facilmente conseguirá um alto AUC caso tenha muitos TRUE e baixo caso tenha muitos FALSE</li>
+<li>O PRAUC é utilizado em bases desbalanceadas</li>
+</ul>
+<p>Precision: $\frac{True Positive}{True Positive + False Positive}$
+  Recall: $\frac{True Positive}{True Positive + False Negative}$</p>
+<p>Bases desbalanceadas facilmente conseguem um AUC alto</p>
+<pre><code>roc1=plot.roc(treino$target,fitted(model))
+
+plot(roc1,
+     print.auc=TRUE,
+     auc.polygon=TRUE,
+     grud=c(0.1,0.2),
+     max.auc.polygon=TRUE,
+     auc.polygon.col=&quot;#ff7a00&quot;,
+     print.thres=TRUE)
+</code></pre>
+<h3 id="filtered-models">Filtered models</h3>
+<h4 id="without-zerovar-features">without ZeroVar features</h4>
+<p>Em seguida podemos avaliar se temos variáveis sem variância utilizando <code>nearZeroVar(DT,freqCut=98/2, saveMetrics= TRUE)</code> e rodar um novo modelo seguindo os passos de modelagem anteriores. A cada novo passo adicione as variáveis que vão sair do seu modelo em um vetor <code>cols_ignore &lt;- append(cols_ignore, rownames(var_nearzerovar)[var_nearzerovar$nzv])</code></p>
+<h4 id="with-little-correlation">with little correlation</h4>
+<p>Depois de avaliar se temos variáveis sem variância podemos buscar por correlação entre as restantes com <code>findCorrelation(DT %&gt;% select_if(is.numeric) %&gt;% cor(), cutoff = .75)</code></p>
+<p><em>Note que utilizamos apenas variáveis numéricas pois para outras variáveis não faz sentido olhar correlação dessa forma</em></p>
+<p>Adicione as novas variáveis no seu vetor de variáveis a serem ignoradas <code>cols_ignore &lt;- append(cols_ignore, var_corr)</code> e rode um novo modelo para continuar acompanhando o desempenho do modelo com o <code>MLmetrics::KS_Stat(y_pred = probabilities, y_true = teste$target)</code></p>
+<h4 id="with-little-vif">with little VIF</h4>
+<p>Para esse passo retiramos variáveis que tenham um VIF alto, na literatura VIF &gt; 5 é considerado alto, porém para sermos mais conservadores podemos considerar VIF &gt; 10. Esse passo serve como um double-check da análise de correlação feita anteriormente, para garantir que as variáveis não estão correlacionadas, então é bem comum que nesse passo não encontre variáveis para serem retiradas caso tenha considerado um cut razoável para seu findCorrelation (\&lt; 0.7 por exemplo)</p>
+<pre><code>vif_model &lt;- vif(model)
+vif_model &lt;- as.data.frame(vif(model))
+cols_ignore &lt;- append(cols_ignore, rownames(vif_model)[vif_model &gt; 10])
+</code></pre>
+<h4 id="value-of-the-information">Value of the Information</h4>
+<h5 id="information-value">Information Value</h5>
+<p>Após os passos anteriores, rodamos um Information Value afim de observar se existe alguma relação linear univariada entre alguma feature e o target.</p>
+<p>No caso em que você tenha muitas features e o calculo da correlação estiver demorando muito, é possível utilizar o Information Value com um valor baixo (0.02 por exemplo) antes do calculo da correlação. Mesmo que ele fará a análise univariada, e dessa forma já reduzirá dimensionalidade do seu banco total para na hora de rodar a correlação tenhamos menos variáveis e o processo seja menos custoso.</p>
+<p>Rules related from <em>Siddiqi (2006)</em></p>
+<p>Not useful for prediction: <em>&lt; 0.02</em>
+Weak predictive Power: <em>0.02 to 0.1</em>
+Medium predictive Power: <em>0.1 to 0.3</em>
+Strong predictive Power: <em>0.3 to 0.5</em>
+Suspicious Predictive Power <em>&gt; 0.5</em></p>
+<p>Limitações:</p>
+<ul>
+<li>O IV assume uma relação linear entre as categorias, dessa forma caso essa relação não seja linear a importância da variável estará incorretamente calculada.</li>
+<li>Não considera correlação: O IV trata cada variável individualmente, não considerando possíveis iterações entre variáveis. Dessa for, não captura totalmente a complexidade a qual várias variáveis podem influenciar o resultado desejado em conjunto.</li>
+<li>É sensível ao número de <code>bins</code>, pois categorias com baixa volumetria podem não ser significativamente grande para termos uma proporção real de bons e maus</li>
+<li>É mais apropriado o uso em contextos de classificação binária</li>
+</ul>
+<pre><code>IV &lt;- Information::create_infotables(data = DT[, c(vars, 'target'), with = F], y = 'target')$Summary %&gt;% setDT()
+</code></pre>
+<p>$$WOE = ln(Good Distribution / Bad Distribuition)$$</p>
+<p>$$IV = \sum(Good Distribution - BadDistribution)*WOE$$</p>
+<p>WOE avalia o poder de previsão de uma categoria em relação a outra. Se uma categoria apresenta um valor alto de WOE significa que a categoria distingue eficientemente os eventos dos não eventos</p>
+<h5 id="mutual-information">Mutual Information</h5>
+<p>Após os passos anteriores, rodamos um Mutual Information afim de observar se existe alguma relação não linear entre alguma feature e nosso target.</p>
+<h4 id="stepwise">Stepwise</h4>
+<p>Utilizar caso precise avaliar o melhor conjunto de features para sua modelagem.</p>
+<pre><code>RcmdrMisc::stepwise(model, direction = 'backward/forward', criterion = 'BIC')
+</code></pre>
+<h4 id="feature-selection-methods">Feature Selection Methods</h4>
+<p>Nessa etapa final de Feature Engineering podemos utilizar métodos como <code>Boruta</code>, <code>infgain</code>, <code>mrmr</code>, dentre outros, para um passo extra de seleção de features.</p>
+<ul>
+<li><em>Boruta:</em> cria uma variável aleatória e desconsidera todas as existentes que explicarem menos que a variável aleatória gerada.</li>
+<li><em>InfGain:</em> entropy of the class distribution before and after the split resultando em algo entre 0 (sem ganho) e 1 (ganho máximo)</li>
+<li>
+<p><em>mrmr:</em> maximum Relevancy Minimum Redundancy</p>
+</li>
+<li>
+<p><em>Lasso</em></p>
+</li>
+</ul>
+<pre><code>Boruta::Boruta(DT, target~.)
+</code></pre>
+<h3 id="teste-hosmer-e-lemeshow">Teste Hosmer e Lemeshow</h3>
+<p>Utilizamos o teste de Hosmer e Lemeshow (Teste Qui-quadrado) para demonstrar a qualidade do ajuste de nosso modelo de regressão logística, ou seja, se o modelo pode explicar os dados observados. A hipótese nula do teste é a de as proporções observadas e esperadas serem as mesmas ao longo da amostra (alto poder preditiva)</p>
+<p>$$H_0$: $Prop_{o_i}$ = $Prop_{e_i}$$</p>
+<pre><code>hl = ResourceSelection::hoslem.test(treino$target,fitted(modelo), g = 10)
+</code></pre>
+<h3 id="matriz-de-confusao">Matriz de Confusão</h3>
+<p>A matriz de confusão te retornará a Sensibilidade, Especificidade, dentre outros indicadores para avaliar a acertividade do seu modelo</p>
+<p>Para a criação dessa matriz, temos que sugerir um ponto de corte, por exemplo, no caso de uma modelagem de pagamento temos que definir um ponto de corte em que dizemos se aquele cliente vai ou não nos pagar. Vimos isso no tópico de modelagem para medir a precisão do modelo. Nesse contexto agora, não temos esse valor de referência, então queremos encontrá-lo, e para isso temos algumas possibilidades:</p>
+<p>1- Olhar o ponto de corte do KS para o score</p>
+<pre><code>pred &lt;- ROCR::prediction(predictions = dados_teste$pred, labels = dados_teste$true)
+perf &lt;- ROCR::performance(pred, &quot;tpr&quot;, &quot;fpr&quot;)
+TPR &lt;- unlist(perf@y.values)
+FPR &lt;- unlist(perf@x.values)
+diff_TPRFPR &lt;- TPR - FPR
+max(diff_TPRFPR)#KS
+cutoffAtKS &lt;- unlist(perf@alpha.values)[which.max(diff_TPRFPR)][]#corte do Score
+</code></pre>
+<p>2 - Olhar qual ponto de corte maximiza o F1</p>
+<pre><code>
+</code></pre>
+<p>3 - Olhar o ponto de inflexão da curva ROC</p>
+<pre><code>
+</code></pre>
+<p>Como ambos (KS e F1) são medidas de qualidade geral do modelo, esperasse que os valores encontrados para cada um estejam próximos</p>
+<h2 id="ks">KS</h2>
+<p>Um KS muito alto é um ponto de atenção, pode ser que uma variável foi coletada incorretamente, existe alguma variável correlacionada com sua resposta, dentre outros. Por exemplo, um KS de 60 em um contexto real, utilizando uma regressão é algo para se colocar em alerta.</p>
+<h3 id="ks-por-safra">KS por safra</h3>
+<p>Avaliar o KS por safras para avaliar o desempenho do seu modelo safra a safra. Caso utilize mês a mês e sua volumetria seja baixa, seu KS pode ficar bastante volátil. Uma maneira de validar essa hipótese é olhar a distribuição do KS em intervalos de tempo maiores para aumentar a volumetria, por exemplo bimestral ou semestralmente.</p>
+<h3 id="intervalo-de-confianca-para-o-ks">Intervalo de Confiança para o KS</h3>
+<p>Rodar um bootstrap para calcular o intervalo de confiança do nosso KS. Calcular também o IC do KS safra a safra, para observarmos se os limites são respeitados.</p>
+<pre><code>IC_KS = function(data, B, safra){
+  ks_interv &lt;- map_dbl(1:B,~{
+    idx &lt;- sample(dim(data)[1],replace = T)
+    bd &lt;- data[idx]
+    inter.ai::ks_calc(bd[dt_ref == safra, pred],bd[dt_ref == safra, fl_good])
+  }, .progress = TRUE
+  )
+  summary(ks_interv)
+  hist(ks_interv, probability = TRUE)
+  quantile(ks_interv,c(.025,.975))
+}#função retorna o IC do KS do seu modelo a partir de um bootstrap
+#pega a media (ou mediana por a distribuição do KS ser simétrica)
+
+ic_ks_safra &lt;- map_dfr(.x = seq.Date(ymd('2018-04-01'),
+                                     ymd('2018-07-01'),
+                                     by = 'months'),
+                       .f = ~ IC_KS(safra = .x, B = 5000, data = treino)) %&gt;% setDT()#função retorna KS safra a safra
+
+</code></pre>
+<h3 id="modelo-aleatorio">Modelo Aleatório</h3>
+<p>Pode acontecer de o modelo estar aparentemente bom, porém temos apenas uma correlação espúria entre nossas variáveis, para isso podemos utilizar um bootstrap (caso nossa amostra seja pequena) e rodar um modelo somente com intercepto e <code>rnorm</code> e avaliar o KS desse modelo safra a safra. Esse modelo necessariamente deve ser ruim, pois uma variável completamente aleatória não pode explicar bem seu modelo.</p>
+<h3 id="oversampling">Oversampling</h3>
+<p>Para caso de baixa volumetria, uma tentativa válida é utilizar a técnica de Oversampling para aumentar sua amostragem. (Existem muitas críticas a essa metodologia, vale a pena estudar mais sobre o assunto)</p>
+<p>A ausência de informação também é informação. Treinar um modelo que seja desbalanceado é ser fidedígno a realidade do seu problema.</p>
+<h3 id="cross-validate">Cross-Validate</h3>
+<p>Se estiver cogitando utilizar CV deveria responder três perguntas:</p>
+<ul>
+<li>What problem am I trying to solve by using k-fold cross validation?</li>
+<li>How will I know if k-fold cross validation has solved that problem?</li>
+<li>Will a different approach be more effective at solving my problem?</li>
+</ul>
+<p>Caso algum fold tenha uma discrepância no KS é sinal que temos problemas na base. Um valor baixa de <em>kappa</em> também é um forte indício que o modelo não está bom.</p>
+<p>Algo interessante a se observar é a comparação entre o <code>model$pred</code> e o <code>predict(model, type = "prob)</code> quando se utiliza o método de cross-validate em seu modelo no caret. Esses valores vão ser diferentes pois com o cross-validate temos uma base de treino um pouco diferente da base original.</p>
+<p>Caso seu modelo esteja com overfitting você terá um valor muito discrepante entre ambos, mas caso os valores estejam próximos não significa que não temos overfitting</p>
+<p>Em um contexto geral após dividir sua base em treino e teste utiliza o CV em sua base de treino para tunar seus hiperparâmetros, de modo que internamente sua base de treino será redividida em treino e teste na proporção de <code>100 - (100/k-folds)</code> para treino e <code>100/k-folds</code> para teste <code>k-folds</code> vezes, definindo entre os <code>k-folds</code> cenários testados qual teve as melhores estimativas de desempenho com maior grau de precisão. O benefício de utilizar esse método é reduzir a variação de nossa estimativa para desempenho fora da amostra (base de treino), não de fato melhorando nosso modelo. Posteriormente ao aplicar o melhor conjunto de hiperparâmetros para nossa base de teste original não estaremos tendo um problema de overfitting, pois a nossa base de teste não foi utilizada para essa definição.</p>
+<p>Se temos por exemplo 5 folds, a validação cruzada pelo caret irá selecionar o fold com os melhores hiperparâmetros e aplicar na base original de treino. Uma alternativa a se pensar seria utilizar como base de treino o modelo treinado pelo melhor fold, dessa forma podendo dar um perdict no que antes era sua base original de treino, utilizando o predict de teste interno dos demais 4 folds como insumo para a área ne negócio. Dessa forma seria possível dar um predict na base que originariamente era de treino para enviar a área de negócios, diferentemente de se tivessemos treinado o modelo com a base original de treino. É importante lembrar que dar um predict na abse que você utilizou para treinar seu modelo resultará em dados excessivamente otimistas que dificilmente serão generalizados para novos dados</p>
+<p>O Nested Cross Validate é utilizado quando originalmente não é separada a base em treino e teste, pois internamente já será separada em treino, teste e validação e serão testados os hiperparâmetros da mesma forma que vimos anteriormente</p>
+<pre><code># WIP - codigo nao roda e não foi validado
+set.seed(998)
+
+folds &lt;- createMultiFolds(iris$Species, k = 5, times = 2) ## 2 rep 5-fold CV for performance evaluation
+
+inner_res &lt;- trainControl(method = &quot;cv&quot;, number = 5) ## 5-fold CV for hyperparameter tuning
+
+mod_list &lt;- lapply(folds, function(x) { # train models for each of the 10 training sets
+  train(Species ~ ., data = iris[x,], 
+        method = &quot;rf&quot;, 
+        trControl = inner_res,
+        verbose = FALSE)
+})
+
+pred_list &lt;- mapply(function(x, y) { # compute predictions on each of the 100 test sets
+  predict(x, iris[-y,])}, 
+  x = mod_list, y = folds)
+
+perf_sens_spec_list &lt;- mapply(function(x, y) { # calculate performance measures I
+  confusionMatrix(x, iris[-y, &quot;Species&quot;, drop = TRUE])$byClass[c(1,2)]}, 
+  x = pred_list, y = folds)
+
+perf_accuracy_kappa_list &lt;- mapply(function(x, y) { # calculate performance measures II
+  confusionMatrix(x, iris[-y, &quot;Species&quot;, drop = TRUE])$overall[c(1,2)]}, 
+  x = pred_list, y = folds)
+
+# average performance across the 100 test sets
+mean(perf_sens_spec_list[&quot;Sensitivity&quot;, ])
+mean(perf_sens_spec_list[&quot;Specificity&quot;, ])
+mean(perf_accuracy_kappa_list[&quot;Accuracy&quot;, ])
+mean(perf_accuracy_kappa_list[&quot;Kappa&quot;, ])
+</code></pre>
+<h3 id="importancia-e-comportamento-da-feature">Importância e Comportamento da feature</h3>
+<p>Um ponto interessante de se observar é a importância que a feature tem no seu modelo. Quando estamos trabalhando com modelos de Machine Learning não temos de cara o valor dos nossos coeficientes como temos na regressão. Para contornar isso utilizamos a técnica de SHAP, que por meio do shapley value, permite uma interpretação do nosso modelo, retornando um coeficiente para cada feature.</p>
+<pre><code>library(fastshap)
+library(shapviz)
+
+dados_treino1 &lt;- model$finalModel$data
+vars_model &lt;- model$finalModel$xNames
+
+shap &lt;- fastshap::explain(model$finalModel, exact = TRUE, new_data = model$finalModel$xNames)
+
+shap_plot &lt;- shapviz(object = shap, X = dados_treino1 %&gt;% select(all_of(vars_model)))
+
+sv_importance(shap_plot, max_display = 10,kind = &quot;bar&quot;, fill = &quot;#ff7a00&quot;) +
+  labs(title = &quot;SHAP Feature Importance&quot;)
+</code></pre>
+<p>Além da importância conseguimos também analisar o comportamento das features</p>
+<pre><code>sv_dependence(shap_plot, v = &quot;vl_last_atraso&quot;)# feature única
+
+#SHAP Beeswarm (Consistência :: Sensibility &amp; Sanity)
+sv_importance(shap_plot, kind = &quot;beeswarm&quot;, size = 0.5) +
+  labs(title = &quot;SHAP Beeswarm&quot;)
+</code></pre>
+<p>Podemos analisar feature a feature com esse conjunto de 4 gráficos:</p>
+<pre><code>lucyR::feature_sanity()
+</code></pre>
+<p>ressaltando que para variáveis contínuas o scatterplot é utilizado enquanto para variáveis discretas utilizamos o boxplot</p>
+<h2 id="61-comparacao-de-modelos">6.1 Comparação de modelos</h2>
+<p>Para comparar modelos, com objetivo inferencial, podemos utilizamos o BIC, que é um critério de seleção de modelos, que penaliza a verossimilhança pelo número de parâmetros do modelo proposto. Porém em grande parte dos nosso problemas, queremos fazer previsões, por esse motivo não o utilizamos.</p>
+<p>Bayes Factor é uma opção de critério</p>
+<h2 id="analise-de-drift">Análise de Drift</h2>
+<h3 id="kl-divergence">KL Divergence</h3>
+<p>Sensível a pequenas mudanças, especialmente probabilidades próximas de zero, levando a grandes flutuações pois penaliza áreas com probabilidade baixa ou próxima de zero.</p>
+<p>Depende da sobreposição entre distribuições, ou seja, à medida que os dados de produção se afastam dos dados de referência, a falta de sobreposição aumenta a volatilidade da métrica</p>
+<p>É altamente responsiva a outliers, pois mudanças nas caudas da distribuição podem levar a picos ou quedas repentinas nos valores, tornando-a mais instável na presença de outliers</p>
+<h3 id="wasserstein">Wasserstein</h3>
+<p>Mede o 'custo' cumulativo para transformar uma distribuição em outra, com foco nas distâncias entre massas de probabilidade. Essa abordagem permite um tratamento mais suave de pequenas flutuações, resultando em uma métrica mais estável que o KL Divergence ao longo do tempo</p>
+<p>AA distância de Wasserstein é independente de sobreposição e pode lidar muito bem com mudanças significativas de distribuição em forma ou localização</p>
+<h3 id="psi">PSI</h3>
+<h3 id="ks_1">KS</h3>
+<h1 id="7-grupos-homogeneos">7 - Grupos Homogêneos</h1>
+<p>Com a modelagem finalizada, ou pelo menos uma V0, é preciso agrupar seus resultados por grupos homogêneos (GHs). A ideia de criar grupos homogêneos é observar o desempenho do modelo para cada grupo, ao invés de olhar o seu desempenho geral. Pode acontecer de no geral o modelo estar bem preditivo, porém ao quebrar em grupos observamos que determinados grupos estão subindo a média de nossa preditividade, enquanto outros estão pouquíssimo preditivos.</p>
+<p>Para a criação dos GHs utilizamos a função <code>grupos_risco</code> do pacote <code>inter.ai</code>, que utiliza a função <code>classInt::classIntervals</code> para encontrar o melhor ponto de corte</p>
+<pre><code>inter.ai::gerar_grupos_homogeneos(y_true, y_pred, try_bins = 4:20)
+</code></pre>
+<p>É preciso testar diferentes combinações de bins para encontrar a melhor partição para os grupos homogêneos, uma vez que a alteração dos bins máximos e mínimos impacta na função.</p>
+<h2 id="71-matriz-de-confusao">7.1 - Matriz de confusão</h2>
+<p>Podemos ao invés de comparar os modelos, pode ser o caso de termos modelos complementares, dessa forma a comparação se torna um pouco mais difícil, como é o exemplo da criação de um modelo específico de fim de mês e outro para meio de mês. Nesse caso, se torna interessante avaliar o quão acertívo ambos os modelos são, para isso pegamos uma mesma base de dados (por exemplo a base do meio de mês) e fazemos uma matriz de confusão para ambos, utilizando o melhor ponto de corte para ser utilizado para</p>
+<h2 id="teste-de-proporcao-com-correcao-de-bonferroni">Teste de Proporção com correção de Bonferroni</h2>
+<p>Após agrupar sua base por GH, criando uma coluna com a soma do seu target e a quantidade de observações por grupo, rodamos o teste de Bonferroni.</p>
+<pre><code>pairwise.prop.test(x=teste$soma_target,
+                   n=teste$N_grupo,
+                   p.adjust.method = &quot;bonferroni&quot;,
+                   alternative = &quot;two.sided&quot;,
+                   correct = FALSE)
+</code></pre>
+<p>O teste de proporção com ajuste de Bonferroni, feito pela função acima, multiplica o p-valor encontrado pelo número de grupos, não sendo necessário utilizar a correção de $\frac{\alpha}{m}$ manualmente para avaliar o p-valor, em que $H_0$ seria os grupos serem iguais, desse modo p-valor &lt; 0.05 significa não ter diferença significativa entre as comparações múltiplas.</p>
+<p>Vale ressaltar que o teste acima faz a comparação múltipla de todos os grupos, podendo estar superestimando os p-valores, para o caso de GHs é interessante colocar o <code>p.adjust.method</code> como <code>none</code> e fazer a correção manualmente multiplicando o p-valor pela quantidade de comparações (quantidade de grupos - 1) pois dessa forma teremos para a comparação de A, B, C e D apenas A -&gt; B, B -&gt; C, C -&gt; D.</p>
+<h1 id="8-atualizacao-do-modelo">8 - Atualização do Modelo</h1>
+<p>A ideia é entregar um modelo rápido, para podermos aprender com ele e gerar valor o mais rápido possível. Após a primeira entrega ser feita, não devemos nos contentar com os resultados, pelo contrário, como já temos uma entrega devemos buscar por melhorias no modelo que antes não eram possíveis devido a necessidade de tempo junto a necessidade da entrega.</p>
+<h1 id="9-pontos-de-atencao-aos-resultados">9 - Pontos de atenção aos resultados</h1>
+<p>Entender o quão preditivo está meu modelo. Acertar muito em públicos óbvios e pouco em públicos mais complexos com um ks de 90 é pior do que acertar razoável em públicos mais complexos e ks de 40</p>
+<p>Como medir objetivamente se a resposta do meu modelo está de fato agregando, além de olhar valor do KS?</p>
+<p>Comparar o modelo antigo (se existir) com o modelo novo, utilizando a mesma base para efeito de comparação</p>
+<p>Mudar a visão de sua modelagem pode ser uma saída viável, caso esteja estagnado em sua modelagem. Uma nova abordagem, como por exemplo modelar por contrato ao invés de cpf, buscar features de outros lugares, tentar uma régra de negócios ao invés de uma modelagem mais robusta, etc, podem ser boas alternativas.</p>
+<h1 id="10-pos-modelagem">10 - Pós modelagem</h1>
+<p>Com o modelo pronto o próximo passo é o deploy, que pode ocorrer de forma automática ou manual, o "manuático" consiste em um código com apenas o necesário para conseguir rodar o modelo manualmente de acordo com a demanda. Feito isso, existem algum caminhos a se seguir, seu modelo pode subir para produção ou passar por uma experimentação por exemplo. No caso do experimento pode ser necessário um direcionamento ao cliente para que seja feito de forma correta, evitando inconsistências futuras.</p>
+<p>A <code>calibração de modelo</code> consiste em um conjunto de análises, compostos por <code>Diagnóstico</code> e <code>Remediação</code> para avaliar as probabilidades retornadas pelo modelo. O objetivo da calibração do modelo é garantir que as probabilidades de classe estimadas sejam consistentes com o que ocorreria naturalmente. (No caso de estimativas pontuais PODE fazer sentido essa abordagem, porém ao criar os GHs temos uma mitigação do erro a partir da predição intervalar de cada grupo com bootstrap para avaliar o intervalo de 95%)</p>
+<h1 id="11-modelo-nao-supervisionado">11 - Modelo não supervisionado</h1>
+<p>Para modelos não supervisionados não temos um target pré-definido para podermos utilizar de insumo para nossa modelagem, dessa forma temos que utilizar de outras técnicas para chegarmos em resultados satisfatórios.</p>
+<h2 id="o-que-queremos-modelar">O que queremos modelar?</h2>
+<h2 id="e-possivel-obter-uma-proxy-do-que-esperamos-ao-final-da-modelagem">É possível obter uma proxy do que esperamos ao final da modelagem?</h2>
+<p>Esse é um tópico sensível pois exige bastante conhecimento acerca de nosso problema, além de termos que nos atentar a viéses para nossa modelagem, caso tenhamos alguma ideia a priori do que fazer.</p>
+<p>Devemos seguir com o monitoramento afim de garantirmos a funcionalidade/eficácia do mesmo. </p>
+<h1 id="12-algorithms">12 - Algorithms</h1>
+<h2 id="supervised">Supervised</h2>
+<h3 id="regressao">Regressão</h3>
+<h4 id="regressao-linear">Regressão Linear</h4>
+<h4 id="regressao-logistica">Regressão Logistica</h4>
+<h3 id="cubist-regression">Cubist Regression</h3>
+<p>Modelo de regressão que utiliza recortes simples de árvores de decisão e cria modelos de regressão dentro cada regra</p>
+<pre><code>Cubist::cubist(
+  x = X,
+  y = Y,
+  committees = 1, 
+  control = cubistControl(
+    unbiased = FALSE,
+    rules = 100,
+    extrapolation = 100,
+    sample = 0,
+    seed = sample.int(4096, size = 1) - 1L,
+    label = &quot;outcome&quot;
+    )
+  )
+</code></pre>
+<h5 id="binomial">Binomial</h5>
+<h5 id="binomial-negativa">Binomial Negativa</h5>
+<p>É mais flexível que a Poisson, pois possui um parâmetro que ajusta a variância independentemente da média.</p>
+<h5 id="multinomial">Multinomial</h5>
+<p>É mais geral que a regressão logística porque a variável dependente não está restrita a duas categorias, mas a um número finito maior que 2 podendo ser ordinal ou não.</p>
+<h5 id="poisson">Poisson</h5>
+<p>É um caso especial da distribuição binomial negativa. Assume média e variâncias iguais (tal qual a regressão assume dados normais)</p>
+<p>Tem como objetivo modelar contagens de eventos infinitos (Sem restrição para o número máximo do target). Muitas vezes funciona com variáveis contínuas não negativas</p>
+<h4 id="regressao-quantilica">Regressão Quantílica</h4>
+<h4 id="regressao-zoib-zero-one-inflated-beta">Regressão zoib (Zero-One-Inflated Beta)</h4>
+<h3 id="generalized-additive-model-gam">Generalized Additive Model (GAM)</h3>
+<h3 id="decision-tree">Decision Tree</h3>
+<p>Árvore de decisão baseada em regras</p>
+<h3 id="random-forest-ensemble">Random Forest (ensemble)</h3>
+<h3 id="gradiente-boosted-regression-trees">Gradiente Boosted Regression Trees</h3>
+<h3 id="support-vector-machine">Support Vector Machine</h3>
+<p>Geralmente utilizado em contextos de classificação, encontra um hiperplano (podendo ser uma linha) para segregar categorias</p>
+<h3 id="naive-bayes">Naive Bayes</h3>
+<h3 id="xgboost">XGBoost</h3>
+<h3 id="lgbm">Lgbm</h3>
+<h3 id="catboost">Catboost</h3>
+<h3 id="adaboost">AdaBoost</h3>
+<p>Ajusta o peso das amostras em cada iteração, as amostras mal classificadas recebem mais peso. O algoritmo foca em corrigir as amostras difíceis. O modelo final será a combinação de classificadores fracos ponderados.</p>
+<h3 id="gradient-boosting">Gradient Boosting</h3>
+<p>Diferente do AdaBoosting, vai ajustar os erros residuais (diferença entre valor real e previsão) em cada iteração. Cada modelo irá tentar prever e corrigir os erros das rodadas anteriores.</p>
+<p>Exemplo: O gradient começa com uma previsão simples de 180 mil para todas as casas e vai ajustando a cada iteração as previsões, baseando na tentativa de descobrir o erro residual. A cada rodada o modelo vai ajustar os erros residuais. Na tabela abaixo o erro inicial de +20.000 na casa 1 foi ajustado para 10.000, resultando em uma nova previsão de 190.000. O resultado final é a soma das correções feitas em cada rodada, aproximando-se do valor real</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Casa</th>
+<th style="text-align: center;">Preço Real</th>
+<th style="text-align: center;">Predição (Round1)</th>
+<th style="text-align: center;">Erro Residual (Round1)</th>
+<th style="text-align: center;">Previsão Residual</th>
+<th style="text-align: center;">Nova Predição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">200.000</td>
+<td style="text-align: center;">180.000</td>
+<td style="text-align: center;">+20.000</td>
+<td style="text-align: center;">+10.000</td>
+<td style="text-align: center;">190.000</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">300.000</td>
+<td style="text-align: center;">180.000</td>
+<td style="text-align: center;">+120.000</td>
+<td style="text-align: center;">+70.000</td>
+<td style="text-align: center;">250.000</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">250.000</td>
+<td style="text-align: center;">180.000</td>
+<td style="text-align: center;">+70.000</td>
+<td style="text-align: center;">+40.000</td>
+<td style="text-align: center;">220.000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rusboost">RusBoost</h3>
+<h3 id="bagging-bootstrap-aggregation">Bagging (Bootstrap Aggregation)</h3>
+<p>Em caso de termos muitas variáveis categóricas o Catboost é utilizado, evitando ter que fazer diversas dummies para a modelagem</p>
+<h3 id="neural-network">Neural Network</h3>
+<p>Se remover as camadas ocultas de uma rede neural ela se torna apenas um classificador linear simples, ou seja, pode lidar com tarefas diretas e linearmente separáveis como AND e OR mas não pode lidar com XOR (OR exclusivo) que precisa de pelo menos uma camada oculta (junto da função de ativação linear) para capturar seu padrão não linear</p>
+<h4 id="recurrent-neural-network">Recurrent Neural Network</h4>
+<h4 id="convolutional-neural-network">Convolutional Neural Network</h4>
+<h4 id="graph-neural-network">Graph Neural Network</h4>
+<h2 id="unsupervised">Unsupervised</h2>
+<h3 id="hierarchical-clustering">Hierarchical Clustering</h3>
+<h3 id="k-clustering">K- Clustering</h3>
+<h4 id="k-means">K-Means</h4>
+<h4 id="k-median">K-Median</h4>
+<h4 id="k-modes">K-Modes</h4>
+<h4 id="mini-batch-k-means-clustering">Mini Batch K-Means Clustering</h4>
+<h3 id="fuzzy-k-modes">Fuzzy K-Modes</h3>
+<p>É uma extensão do K-Modes, que ao invés de apontar cada objeto a um cluster, calcula o valor do grau de proximidade para cada objeto em cada cluster</p>
+<h3 id="fuzzy-c-means">Fuzzy C-Means</h3>
+<p>É uma versão probabilistica do K-Means. Associa todos os objetos em todos os clusters, sendo que a soma de todas as associações é 1. Desse modo todos os clusters tem uma associação contínua (diferentemente do K-Means que é discreta) com cada cluster em relação a cada outro cluster</p>
+<p>O algoritmo atribui iterativamente e computa o centróide dos clusters igual ao K-Means até que qualquer função de critério seja otimizada ou a convergência caia abaixo de um threshold pré-determinado.ld value.</p>
+<p>Esse algoritmo não é rigoroso como o K-Means na atribuição e funciona bem para conjuntos de dados sobrepostos. No entanto, tem a mesma desvantagem que o K-Means de ter uma suposição prévia do número de clusters. Além disso, um valor de threshold baixo fornece melhores resultados, mas é mais caro do ponto de vista computacional.</p>
+<h3 id="dbscan-clustering">DBSCAN Clustering</h3>
+<h3 id="gaussian-mixture-model-gmm">Gaussian Mixture Model (GMM)</h3>
+<h3 id="jenks">Jenks</h3>
+<p>Jenks, Fisher e Fisher-Jenks</p>
+<h3 id="principal-component-analysis-pca">Principal Component Analysis (PCA)</h3>
+<p>Técnica de redução de dimensionalidade</p>
+<h2 id="otimizacoes">Otimizações</h2>
+<p>Antes de definir qual abordagem utilizar faz-se necessário responder algumas perguntas:</p>
+<ul>
+<li>Seu problema tem uma função objetiva definida?</li>
+<li>Seu problema tem solução linear?</li>
+<li>Seu problema tem um espaço amostral convexo? (seu ótimo local também é global, então encontrar uma solução local é suficiente)</li>
+</ul>
+<p>Respondidas as perguntas podemos optar por algoritmos de busca mais simples ou mais complexos, mas para essa decisão pode ser interessante levar em consideração o Teorema de Bolzano-Weierstrass:</p>
+<p>A complexidade de uma problema de otimização está diretamente relacionado ao tamanho do Espaço de Busca coorespondente. O processo de solução de um problema pode ser reduzido a um Algoritmo de Busca Heurística, cujo Espaço de Busca é formado por transformações sucessivas de Estados em uma certa ordem de geração e percurso, enquanto Algoritmos mais simples podem ir diretamente ao ponto ótimo.</p>
+<p>Algoritmos heurísticos não garantem encontrar a solução ótima, mas podem encontrar boas soluções em tempo menor (no caso de problemas mais complexos) e são extremamente úteis quando o espaço de busca é grande ou a estrutura não é bem definida.</p>
+<p>Podemos utilizar algoritmos heurísitocs quando:
+  - o espaço de busca é grande, tornando a busca simples impraticável
+- uma solução aproximada ou subótima é aceitável
+- os dados são complexos e dinâmicos</p>
+<h3 id="algoritmos-convexos">Algoritmos Convexos</h3>
+<h4 id="simplex">Simplex</h4>
+<p>Se o seu problema tiver uma solução linear, você pode usar o Método Simplex. Ele começa na borda do poliedro das soluções viáveis porque os vértices são candidatos a soluções ótimas e permite uma exploração eficiente do espaço de soluções usando a geometria dos problemas lineares. Isso se deve ao fato de que a solução ótima de uma função linear, se existir, está em um vértice, já que funções lineares atingem máximos ou mínimos nos extremos, uma vez que não tem curvatura para alcançar ótimos no interior. Desta forma, o Simplex pode explorar os vértices sistematicamente sem computar todo o espaço de soluções.</p>
+<h4 id="ordinary-least-squares-ols">Ordinary Least Squares (OLS)</h4>
+<h3 id="algoritmos-heuristicos">Algoritmos Heurísticos</h3>
+<h4 id="buscas-em-profundidade-limitada">Buscas em profundidade limitada</h4>
+<h4 id="simulated-annealing">Simulated Annealing</h4>
+<h4 id="genetic-algorithms">Genetic Algorithms</h4>
+<h1 id="12-model-monitoring">12 - Model Monitoring</h1>
+<p>Quando temos um modelo em produção, seja online ou em batch devemos fazer seu monitoramento afim de garantirmos a funcionalidade/eficácia do mesmo. Podemos utilizar como material de consulta o <code>Working Paper No. 14</code></p>
+<h2 id="121">12.1</h2>
+<p>O que?
+  - Consistência no resultado do modelo
+Como?
+  - Taxa de aprovações estável, conversando com a taxa esperada do modelo</p>
+<h2 id="122">12.2</h2>
+<p>O que?
+  - Comportamento dos grupos se manteve?
+  Como?
+  - Taxa de aprovações x taxa de bads dos GHs</p>
+<h2 id="123">12.3</h2>
+<p>O que?
+  - Continuamos tratando da mesma população de quando treinamos?
+  Como?
+  - Observar o drift das features e seu descolocamento em função da média</p>
+<h2 id="124">12.4</h2>
+<p>O que?
+  - Avaliação da qualidade do ajuste do modelo. (O modelo ainda pode explicar os dados observados?)
+Como?
+  - Teste de Hosmer e Lemeshow para avaliar se as proporções observadas e esperadas são as mesmas ao longo da amostra</p>
+<h2 id="13-append">13 - Append</h2>
+<h2 id="mathematical-definitions-in-data-science">Mathematical definitions in data science</h2>
+<h3 id="gradient-descent">Gradient Descent</h3>
+<p>$$\theta_{j+1} = \theta_{j} - \alpha \nabla J(\theta_{j})$$ ### Normal Distribution</p>
+<p>$$f(x|\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}}exp(- \frac{(x-\mu)^2}{2\sigma^2})$$</p>
+<h3 id="z-score">Z-score</h3>
+<p>$$z = \frac{x-\mu}{\sigma}$$</p>
+<h3 id="sigmoid">Sigmoid</h3>
+<p>$$\theta(x) = \frac{1}{1+e^{-x}}$$</p>
+<h3 id="correlation">Correlation</h3>
+<p>$$Correlation = \frac{Cov(X,Y)}{Std(X) \dot{} Std(Y)}$$</p>
+<h3 id="cosine-similarity">Cosine Similarity</h3>
+<p>$$Similarity = \frac{A \dot{} B}{||A|| \dot{} ||B||}$$</p>
+<p>Avi Chawla Save posts
+orrelation = \frac{Cov(X,Y)}{Std(X) \dot{} Std(Y)}$$</p>
+<h3 id="cosine-similarity_1">Cosine Similarity</h3>
+<p>$$Similarity = \frac{A \dot{} B}{||A|| \dot{} ||B||}$$</p>
+<p>Avi Chawla Save posts</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.instant"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
