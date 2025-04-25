@@ -20,7 +20,7 @@ nav:
   - Artifacts: 
     - 🧾 Discovery: B_artifacts/canvas.md
     - 🆗 Model Approval: B_artifacts/go_nogo.md
-    - 📝 Work Instructions: B_artifacts/work_instruction.md
+    - 📝 Technical Documentation: B_artifacts/technical_documentation.md
   
   - Patterns:
     - Data Preparation: C_patterns/data_preparation.md
