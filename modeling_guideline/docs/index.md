@@ -1,5 +1,1 @@
-# Página inicial
-
-meu github!
-
-Obrigado por logar
+Projeto pessoal para consulta desde Guia de Modelagem,  boas práticas, até Study Notes, Links e Artigos interessantes e suas respectivas referências

@@ -9,7 +9,7 @@ nav:
     - 📊 Data Understanding and Preparation: A_modeling_guideline/C_data_preparation.md
     - 🔍 Exploratory Data Analysis: A_modeling_guideline/D_eda.md
     - 🛠️ Feature Engineering: A_modeling_guideline/E_feature_engineering.md
-    - 🧮 Modeling and Evaluation: A_modeling_guideline/F_model_selection.md
+    - 🧮 Modeling and Evaluation or Model Design: A_modeling_guideline/F_model_selection.md
     - 🚀 Deployment and Operationalization: A_modeling_guideline/J_deployment.md
     - 📈 Model Monitoring and Maintenance: A_modeling_guideline/K_monitoring.md
     - ⚖️ Governance, Ethical, and Regulatory Considerations: A_modeling_guideline/L_governance.md
