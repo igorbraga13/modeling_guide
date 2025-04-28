@@ -50,8 +50,11 @@ You can configure alerts using tools like:
 ## 🧠 5. Best Practices
 
 ✅ Monitoring is separate from training
+
 ✅ Monitoring runs automatically
+
 ✅ Monitoring dashboards are shared with Data Science and MLOps
+
 ✅ Monitoring results are audited (especially if you're in banking/regulated sectors)
 
 ## 🚀 Bonus: Tools that help you monitor automatically
