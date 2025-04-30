@@ -30,15 +30,43 @@ nav:
     #- Model Monitoring: model_monitoring.md
   
   - Statistical Concepts:
+    - Bayesian Statistics: D_statistical_concepts/bayesian_statistics.md
+    - Bagging: D_statistical_concepts/bagging.md
+    - Boosting: D_statistical_concepts/boosting.md
     - Correlation: D_statistical_concepts/correlation.md
+    - Covariance: D_statistical_concepts/covariance.md
+    - Cross-Validation: D_statistical_concepts/cross_validation.md
     - Chi-Squared: D_statistical_concepts/chisq_test.md
-    - Homoscedasticity: D_statistical_concepts/homoscedasticity.md
+    - Entropy: D_statistical_concepts/entropy.md
+    - Hypothesis Testing: D_statistical_concepts/hypothesis_testing.md
+    - Homoscedasticity: D_statistical_concepts/homoscedasticity.md 
+    - Information Gain: D_statistical_concepts/information_gain.md
+    - Kolmogorov-Smirnov: D_statistical_concepts/kolmogorov_smirnov.md
     - Kullback-Leibler Divergence: D_statistical_concepts/kl_divergence.md
-    - Kolmogorov-Smirnov Test: D_statistical_concepts/ks.md
+    - Kurtosis: D_statistical_concepts/kurtosis.md
+    - Lasso Regression: D_statistical_concepts/lasso_regression.md 
+    - Levene Test: D_statistical_concepts/levene_test.md
+    - Linear Regression: D_statistical_concepts/linear_regression.md  
+    - Multicollinearity: D_statistical_concepts/multicollinearity.md
+    - Mann-Whitney U Test: D_statistical_concepts/mann_whitney.md
+    - Normalization: D_statistical_concepts/normalization.md
     - Optimization: D_statistical_concepts/optimization.md
     - Outliers: D_statistical_concepts/outliers.md
+    - Overfitting: D_statistical_concepts/overfitting.md
+    - PCA: D_statistical_concepts/pca.md
+    - Precision-Recall Curve: D_statistical_concepts/precision_recall_curve.md
+    - R Squared: D_statistical_concepts/r_squared.md
+    - Regularization: D_statistical_concepts/regularization.md
+    - Ridge Regression: D_statistical_concepts/ridge_regression.md
+    - ROC Curve: D_statistical_concepts/roc_curve.md
     - Seasonality: D_statistical_concepts/seasonality.md
+    - SHAP: D_statistical_concepts/shap.md
+    - Skewness: D_statistical_concepts/skewness.md
+    - Standard Deviation: D_statistical_concepts/standard_deviation.md
+    - Stationarity: D_statistical_concepts/stationarity.md
     - Trend: D_statistical_concepts/trend.md
+    - Variance: D_statistical_concepts/variance.md
+    - Variance Inflation Factor: D_statistical_concepts/vif.md
     - Volatility: D_statistical_concepts/volatility.md
 
   
