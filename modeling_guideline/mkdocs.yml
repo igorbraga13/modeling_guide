@@ -96,7 +96,9 @@ nav:
   
   - Study Notes: 
     - Teste: G_study_notes/study_notes.md
-    - Optimization: G_study_notes/optimization.md
+    - Optimization: 
+      - Heuristical: G_study_notes/heuristical_optimization.md
+      - Convex: G_study_notes/convex_optimization.md
   
   - Links: H_links/links.md
   
