@@ -21,7 +21,7 @@ Start by partnering with the business area to define:
 
 Because this step sets the foundation for the entire project, it's critical to ensure nothing important is overlooked. That includes:
 
-- **Clarifying success metrics:** both business KPIs (e.g., approval rate, NPS, default rate) and technical performance metrics (e.g., AUC, precision, recall)
+- **Clarifying success metrics:** both business KPIs (e.g., approval rate, NPS, default rate) and technical performance metrics (e.g., AUC, KS, precision, recall)
 
 - **Understanding the decision context:** who will use the model, how often, and how the output will be interpreted and acted upon
 
@@ -32,6 +32,27 @@ Because this step sets the foundation for the entire project, it's critical to e
             been tried and what gaps remain.
 
 ## 🎯 Target Definition
+
+Once the problem is well understood, the next step is to define the target variable—the outcome the model will predict and the basis for measuring success. A well-defined target ensures that the model output is not only useful, but also measurable, actionable, and aligned with business value.
+
+✅ Best Practices:
+- **Choose a target that reflects real business value**: The outcome should be directly tied to the decision-making process and clearly represent the goal (e.g., customer default, conversion, retention).
+
+- **Ensure it is observable and measurable:** You must be able to label historical data reliably and consistently. If the outcome isn’t recorded or is ambiguous, model performance will suffer.
+
+- **Define the observation window:** Determine how far into the future you're trying to predict. This affects both the sampling strategy and the feature engineering process.
+
+- **Select the appropriate target type:** Based on the problem, decide if your task is:
+
+    - **Binary classification** (e.g., default vs. non-default)
+    - **Regression** (e.g., expected revenue, days to churn)
+    - **Multi-class classification** (e.g., customer segments, fraud types)
+
+- **Align on evaluation metrics:** Choose metrics that reflect both model quality and business impact—e.g., precision, recall, AUC-ROC, uplift, or financial return.
+
+        ⚠️ Avoid proxy targets that don’t reflect the real objective. For example, 
+            using clicks to represent user satisfaction can mislead the modeling 
+            process if the two aren’t strongly correlated.
 
 ### Classification
 
