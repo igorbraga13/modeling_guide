@@ -38,8 +38,10 @@ nav:
     - Cross-Validation: D_statistical_concepts/cross_validation.md
     - Chi-Squared: D_statistical_concepts/chisq_test.md
     - Entropy: D_statistical_concepts/entropy.md
-    - Hypothesis Testing: D_statistical_concepts/hypothesis_testing.md
+    - Heuristic: D_statistical_concepts/heuristic.md
+    - Homogeneity: D_statistical_concepts/homogeneity.md
     - Homoscedasticity: D_statistical_concepts/homoscedasticity.md 
+    - Hypothesis Testing: D_statistical_concepts/hypothesis_testing.md
     - Information Gain: D_statistical_concepts/information_gain.md
     - Kolmogorov-Smirnov: D_statistical_concepts/kolmogorov_smirnov.md
     - Kullback-Leibler Divergence: D_statistical_concepts/kl_divergence.md
@@ -87,12 +89,15 @@ nav:
           - Supply Chain: E_glossary/bank_context/supply.md
           - TPV: E_glossary/bank_context/tpv.md
 
-  - Models:
+  - Projects:
     - Application:
       - Onboarding PJ: F_models/application/onboarding_pj.md
     - Behavior: F_models/behavior/behavior.md
     - Collection: 
       - Creli: F_models/collection/creli.md
+    - Crime California (Shiny App): F_models/crime_california/crime_california.md
+    - Distributions Comparison: F_models/distributions_comparison/distributions_comparison.md
+    - Fraud Detection: F_models/fraud_detection/fraud_detection.md
   
   - Study Notes: 
     - Teste: G_study_notes/study_notes.md

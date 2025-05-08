@@ -31,7 +31,9 @@ Because this step sets the foundation for the entire project, it's critical to e
             previous models, or experiment results to understand what’s already
             been tried and what gaps remain.
 
-## 🎯 Target Definition
+On this step we present a [Discovery]("../B_artifacts/discovery.md")
+
+## 🎯 Target Definition 
 
 Once the problem is well understood, the next step is to define the target variable—the outcome the model will predict and the basis for measuring success. A well-defined target ensures that the model output is not only useful, but also measurable, actionable, and aligned with business value.
 
