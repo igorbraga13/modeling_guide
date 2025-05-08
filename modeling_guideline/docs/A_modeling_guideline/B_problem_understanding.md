@@ -45,6 +45,8 @@ Once the problem is well understood, the next step is to define the target varia
 - **Select the appropriate target type:** Based on the problem, decide if your task is:
 
     - **Binary classification** (e.g., default vs. non-default)
+        - **Ever:** refers to **any occurrence** during that period/ **Existence at any point** within the window.  
+        - **Over:** refers to the **cumulative or final state** by the end of that period/ **Aggregate/result by the end** of the window.
     - **Regression** (e.g., expected revenue, days to churn)
     - **Multi-class classification** (e.g., customer segments, fraud types)
 
@@ -54,17 +56,26 @@ Once the problem is well understood, the next step is to define the target varia
             using clicks to represent user satisfaction can mislead the modeling 
             process if the two aren’t strongly correlated.
 
-### Classification
+## 🧩 Solution Definition
 
-#### Ever
+This step encourages pragmatism—simpler approaches like business rules or heuristics can often outperform complex models, especially in early iterations. These solutions are typically faster to implement, easier to explain, and sufficient for generating business value.
 
-#### Over
+Start by identifying how the model or solution will be used and what impact it should create. Then evaluate trade-offs between model complexity, time-to-value, and operational constraints.
 
-### Regression
+    💡 Ask: What is the minimum viable solution that delivers reliable value 
+        with acceptable effort and risk?
 
-## 💡 Solution Definition
+When appropriate, deploy a quick-win baseline model—such as logistic regression or decision trees—and evolve from there as needed.
 
-Identify how the model will be used and what impact it should have.
+- **Start simple:** Consider whether a rule set or scorecard meets the need—particularly if interpretability, regulatory approval, or fast deployment is a priority.
+
+- **Deploy baseline models early:** Techniques like logistic regression or shallow decision trees provide quick, interpretable wins and can serve as solid baselines.
+
+- **Assess feasibility and maintainability:** Consider the effort to maintain and retrain complex models over time. Sometimes, operational simplicity outweighs marginal gains in accuracy.
+
+        🛠️ Example: In credit risk modeling, a scorecard with well-defined thresholds 
+            may be more practical and trusted by risk committees than a black-box 
+            ensemble model—especially when regulatory transparency is required.
 
 ## ✨ Optional Enhancements (Only If You Want to Expand Further)
 
