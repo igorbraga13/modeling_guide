@@ -12,6 +12,8 @@ Detailed evaluation: metrics results (ROC AUC, F1-score, KS, etc.), important va
 
 Desvio padrao da feature para olhar drift feature a feature juntamente de KS, AUC e PR-AUC
 
+https://christophm.github.io/interpretable-ml-book/
+
 ### Model Bias and Fairness Analysis
 
 ## 💡 Interpretation and Explanability
