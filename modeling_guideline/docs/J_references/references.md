@@ -6,3 +6,4 @@
 
 [Layout 3040](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bcb.gov.br/content/estabilidadefinanceira/Leiaute_de_documentos/scrdoc3040/SCR3040_Leiaute.xls&ved=2ahUKEwjmzsv6qPOMAxUZqZUCHWDENt4QjBB6BAgPEAE&usg=AOvVaw2Rydeqc-4QpcX5K-8EIArl)
 
+[Sklearn Cross Validation](https://scikit-learn.org/stable/modules/cross_validation.html)

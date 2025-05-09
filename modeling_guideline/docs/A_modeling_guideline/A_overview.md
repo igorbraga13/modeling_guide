@@ -1,15 +1,19 @@
-Antes de iniciar esse direcionamento para Modelagem, lembre-se que todo modelo é fruto de um trabalho artesanal, e esse material é meramente um pilar para sua obra...
+Before diving into the modeling process, it’s important to recognize that every model is a handcrafted product. This guide is not a recipe, but a foundation—a structured set of good practices to support your work and help you build models that are robust, interpretable, and valuable.
 
-Após cada passo valide seu trabalho, caso não consiga validar todos, ao menos uma amostra para ter alguma ideia se o que está fazendo está caminhando da forma esperada.
+Throughout each step, validate your work incrementally. If you can’t validate an entire pipeline immediately, validate small samples to ensure you’re heading in the right direction.
 
-O conteúdo desse material foi desenvolvido pensando principalmente em modelos supervisionados em um contexto bancário, tendo espaço para alguns insights sobre modelos não supervisionados.
+This material was developed primarily with supervised models in a banking context in mind, but it also includes insights that are applicable to unsupervised learning and general modeling strategy.
 
-É importante lembrarmos que independente do algoritmo que utilizarmos posteriormente, o maior ganho que teremos será durante os primeiros passos da modelagem:
+📌 Regardless of the algorithm chosen, the greatest value in a modeling project comes from decisions made in the early stages:
 
-- Na definição de um target aderente ao problema que queremos solucionar
-- Na definição de público elegível fiel ao nosso contexto real
-- Na criação de features que, em conjunto, possam melhor explicar nosso modelo
-- No melhor conjunto de features selecionadas para nosso contexto
-- No método correto, coerente com o entendimento do negócio, para definir o período a ser considerado na amostragem
+Defining a target variable that accurately reflects the business problem
 
-A utilização de algoritmos de ponta não será nosso 'game change', ele pode nos garantir aquele ponto de métrica a mais em nosso modelo, mas não será o protagonista da modelagem.
+Selecting an eligible population that truly represents the operational context
+
+Creating relevant, informative features that capture the underlying patterns
+
+Selecting the most appropriate subset of features for the model
+
+Defining a sampling window aligned with business cycles and data reality
+
+While cutting-edge algorithms can provide marginal performance gains, they are rarely the defining factor in a successful modeling project. A well-defined problem, solid data, and thoughtful feature engineering will always be the real drivers of impact.

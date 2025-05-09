@@ -18,8 +18,8 @@ nav:
     - Legado: A_modeling_guideline/modeling_guideline.md
 
   - Artifacts: 
-    - 🧾 Discovery: B_artifacts/canvas.md
-    - 🆗 Model Approval: B_artifacts/go_nogo.md
+    - 🧾 Discovery: B_artifacts/discovery.md
+    - 🆗 Model Approval: B_artifacts/model_approval.md
     - 📝 Technical Documentation: B_artifacts/technical_documentation.md
   
   - Patterns:
@@ -95,9 +95,9 @@ nav:
     - Behavior: F_models/behavior/behavior.md
     - Collection: 
       - Creli: F_models/collection/creli.md
-    - Crime California (Shiny App): F_models/crime_california/crime_california.md
-    - Distributions Comparison: F_models/distributions_comparison/distributions_comparison.md
-    - Fraud Detection: F_models/fraud_detection/fraud_detection.md
+    - Crime California (Shiny App): F_models/crime_california.md
+    - Distributions Comparison: F_models/distributions_comparison.md
+    - Fraud Detection: F_models/fraud_detection.md
   
   - Study Notes: 
     - Teste: G_study_notes/study_notes.md
