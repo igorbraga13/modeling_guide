@@ -37,18 +37,21 @@ nav:
     - Covariance: D_statistical_concepts/covariance.md
     - Cross-Validation: D_statistical_concepts/cross_validation.md
     - Chi-Squared: D_statistical_concepts/chisq_test.md
+    - Design of Experiments: D_statistical_concepts/doe.md
     - Entropy: D_statistical_concepts/entropy.md
     - Heuristic: D_statistical_concepts/heuristic.md
     - Homogeneity: D_statistical_concepts/homogeneity.md
     - Homoscedasticity: D_statistical_concepts/homoscedasticity.md 
     - Hypothesis Testing: D_statistical_concepts/hypothesis_testing.md
     - Information Gain: D_statistical_concepts/information_gain.md
-    - Kolmogorov-Smirnov: D_statistical_concepts/kolmogorov_smirnov.md
+    - Kolmogorov-Smirnov: D_statistical_concepts/ks.md
     - Kullback-Leibler Divergence: D_statistical_concepts/kl_divergence.md
     - Kurtosis: D_statistical_concepts/kurtosis.md
     - Lasso Regression: D_statistical_concepts/lasso_regression.md 
     - Levene Test: D_statistical_concepts/levene_test.md
+    - LIME: D_statistical_concepts/lime.md
     - Linear Regression: D_statistical_concepts/linear_regression.md  
+    - Logistic Regression: D_statistical_concepts/logistic_regression.md
     - Multicollinearity: D_statistical_concepts/multicollinearity.md
     - Mann-Whitney U Test: D_statistical_concepts/mann_whitney.md
     - Normalization: D_statistical_concepts/normalization.md
@@ -65,6 +68,7 @@ nav:
     - SHAP: D_statistical_concepts/shap.md
     - Skewness: D_statistical_concepts/skewness.md
     - Standard Deviation: D_statistical_concepts/standard_deviation.md
+    - Standardization: D_statistical_concepts/standardization.md
     - Stationarity: D_statistical_concepts/stationarity.md
     - Trend: D_statistical_concepts/trend.md
     - Variance: D_statistical_concepts/variance.md
@@ -79,13 +83,19 @@ nav:
           - BNPL: E_glossary/bank_context/bnpl.md
           - Churn: E_glossary/bank_context/churn.md
           - CSI: E_glossary/bank_context/csi.md
+          - EAD: E_glossary/bank_context/ead.md
+          - ECL: E_glossary/bank_context/ecl.md
           - IFRS9: E_glossary/bank_context/ifrs9.md
+          - LGD: E_glossary/bank_context/lgd.md
           - LTV: E_glossary/bank_context/ltv.md
           - NPL: E_glossary/bank_context/npl.md
+          - PD: E_glossary/bank_context/pd.md
           - PDD: E_glossary/bank_context/pdd.md
+          - Revolving Credit: E_glossary/bank_context/revolving_credit.md
           - ROE: E_glossary/bank_context/roe.md
           - ROI: E_glossary/bank_context/roi.md
           - SLA: E_glossary/bank_context/sla.md
+          - Stop Accural: E_glossary/bank_context/stop_accural.md
           - Supply Chain: E_glossary/bank_context/supply.md
           - TPV: E_glossary/bank_context/tpv.md
 
