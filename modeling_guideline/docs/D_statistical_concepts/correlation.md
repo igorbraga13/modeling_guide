@@ -9,7 +9,7 @@ Measures how strongly two variable move together
 ## Kendall
 Is a non-parametric test that measures the strength of dependence between two variables
 
-$$\tau = $$
+$$ \tau = a $$
 
 ## Pearson
 Both variable should be normally distributed and need assumptions like linearity (assumes a straight line relationship between each of the two variables) and [homoscedasticity](homoscedasticity.md) (data is equally distributed about the regression line)

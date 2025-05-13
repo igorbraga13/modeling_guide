@@ -2,4 +2,4 @@ The Central Limit THeorem states that the sampling distribution of the sample me
 
 - Works even if the original data is not normally distributed
 - Sample size should be sufficiently large (n>30)
-- The mean of the sample means $\approx$ population mean
+- The mean of the sample means $ \approx$ population mean

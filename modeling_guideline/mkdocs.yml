@@ -33,6 +33,8 @@ nav:
     - Bayesian Statistics: D_statistical_concepts/bayesian_statistics.md
     - Bagging: D_statistical_concepts/bagging.md
     - Boosting: D_statistical_concepts/boosting.md
+    - Calibration: D_statistical_concepts/calibration.md
+    - Central Limit Theorem: D_statistical_concepts/central_limit_theorem.md
     - Correlation: D_statistical_concepts/correlation.md
     - Covariance: D_statistical_concepts/covariance.md
     - Cross-Validation: D_statistical_concepts/cross_validation.md
@@ -64,6 +66,7 @@ nav:
     - Regularization: D_statistical_concepts/regularization.md
     - Ridge Regression: D_statistical_concepts/ridge_regression.md
     - ROC Curve: D_statistical_concepts/roc_curve.md
+    - Sampling: D_statistical_concepts/sampling.md  
     - Seasonality: D_statistical_concepts/seasonality.md
     - SHAP: D_statistical_concepts/shap.md
     - Skewness: D_statistical_concepts/skewness.md
@@ -82,15 +85,24 @@ nav:
           - Ativo Problemático: E_glossary/bank_context/ativo_problematico.md
           - BNPL: E_glossary/bank_context/bnpl.md
           - Churn: E_glossary/bank_context/churn.md
+          - CAC: E_glossary/bank_context/cac.md
+          - COGS: E_glossary/bank_context/cogs.md
+          - Credit Cycle: E_glossary/bank_context/credit_cycle.md
           - CSI: E_glossary/bank_context/csi.md
+          - CTS: E_glossary/bank_context/cts.md
           - EAD: E_glossary/bank_context/ead.md
           - ECL: E_glossary/bank_context/ecl.md
+          - FGC: E_glossary/bank_context/fgc.md
+          - Float: E_glossary/bank_context/float.md
+          - FPD: E_glossary/bank_context/fpd.md
           - IFRS9: E_glossary/bank_context/ifrs9.md
+          - Is Delayed: E_glossary/bank_context/is_delayed.md
           - LGD: E_glossary/bank_context/lgd.md
           - LTV: E_glossary/bank_context/ltv.md
           - NPL: E_glossary/bank_context/npl.md
           - PD: E_glossary/bank_context/pd.md
           - PDD: E_glossary/bank_context/pdd.md
+          - Receivables Assignment: E_glossary/bank_context/receivables_assignment.md
           - Revolving Credit: E_glossary/bank_context/revolving_credit.md
           - ROE: E_glossary/bank_context/roe.md
           - ROI: E_glossary/bank_context/roi.md
@@ -141,3 +153,15 @@ theme:
       toggle:
         icon: material/white-balance-sunny
         name: Switch to light mode
+
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  - mermaid2

@@ -1,0 +1,1 @@
+Por meio, por exemplo, de CDB (Certificado de Depósito Bancário) a instituição pega esse dinheiro gasto no cartão de crédito ou parado em conta corrente e o movimenta afim de gerar receita
