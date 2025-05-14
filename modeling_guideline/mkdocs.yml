@@ -97,11 +97,13 @@ nav:
           - FPD: E_glossary/bank_context/fpd.md
           - IFRS9: E_glossary/bank_context/ifrs9.md
           - Is Delayed: E_glossary/bank_context/is_delayed.md
+          - KPI: E_glossary/bank_context/kpi.md
           - LGD: E_glossary/bank_context/lgd.md
           - LTV: E_glossary/bank_context/ltv.md
           - NPL: E_glossary/bank_context/npl.md
           - PD: E_glossary/bank_context/pd.md
           - PDD: E_glossary/bank_context/pdd.md
+          - Ratio: E_glossary/bank_context/ratio.md
           - Receivables Assignment: E_glossary/bank_context/receivables_assignment.md
           - Revolving Credit: E_glossary/bank_context/revolving_credit.md
           - ROE: E_glossary/bank_context/roe.md
