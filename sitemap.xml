@@ -2,166 +2,450 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/A_overview/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/B_problem_understanding/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/C_data_preparation/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/D_eda/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/E_feature_engineering/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/F_model_selection/</loc>
-         <lastmod>2025-04-24</lastmod>
-    </url>
-    <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/G_model_development/</loc>
-         <lastmod>2025-04-24</lastmod>
-    </url>
-    <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/H_validation/</loc>
-         <lastmod>2025-04-24</lastmod>
-    </url>
-    <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/I_model_interpretation/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/J_deployment/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/K_monitoring/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/L_governance/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/M_tools/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/N_appendix/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/A_modeling_guideline/modeling_guideline/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/B_artifacts/canvas/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <loc>https://igorbraga13.github.io/modeling_guide/B_artifacts/discovery/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/B_artifacts/go_nogo/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <loc>https://igorbraga13.github.io/modeling_guide/B_artifacts/model_approval/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/B_artifacts/work_instruction/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <loc>https://igorbraga13.github.io/modeling_guide/B_artifacts/technical_documentation/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/C_patterns/data_preparation/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/accuracy/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/bagging/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/bayesian_statistics/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/boosting/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/calibration/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/central_limit_theorem/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/chisq_test/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/correlation/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/covariance/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/cross_validation/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/decision_tree/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/doe/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/entropy/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/f1_score/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/heuristic/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/homogeneity/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/homoscedasticity/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/hypothesis_testing/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/information_gain/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/kl_divergence/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/ks/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/kurtosis/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/lasso_regression/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/levene_test/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/lime/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/linear_regression/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/logistic_regression/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/mae/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/mann_whitney/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/multicollinearity/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/normalization/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/optimization/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/outliers/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/overfitting/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/pca/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/precision/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/precision_recall_curve/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/r_squared/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/recall/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/regularization/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/ridge_regression/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/roc_auc/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/sampling/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/seasonality/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/shap/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/skewness/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/specificity/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/standard_deviation/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/standardization/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/stationarity/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/trend/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/variance/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/vif/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/volatility/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/approval_rating/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/bnpl/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/cac/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/churn/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/cogs/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/credit_cycle/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/csi/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/cts/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/ead/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/ecl/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/fgc/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/float/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/fpd/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/ifrs9/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/is_delayed/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/kpi/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/ks/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/lgd/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/ltv/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/npl/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/pd/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/pdd/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/ratio/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/receivables_assignment/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/revolving_credit/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/roe/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/roi/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/sla/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/stop_accrual/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/supply/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/tpv/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/F_models/models/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/F_models/application/onboarding_pj/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/F_models/behavior/behavior/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/F_models/collection/creli/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/G_study_notes/convex_optimization/</loc>
+         <lastmod>2025-05-16</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/G_study_notes/heuristical_optimization/</loc>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/G_study_notes/study_notes/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/H_links/links/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/I_articles/articles/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
     <url>
          <loc>https://igorbraga13.github.io/modeling_guide/J_references/references/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-05-16</lastmod>
     </url>
 </urlset>

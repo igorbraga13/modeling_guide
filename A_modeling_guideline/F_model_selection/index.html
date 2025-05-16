@@ -14,7 +14,7 @@
         <link rel="prev" href="../E_feature_engineering/">
       
       
-        <link rel="next" href="../G_model_development/">
+        <link rel="next" href="../J_deployment/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>🎲 Model Selection - TechDocs</title>
+        <title>🧮 Modeling and Evaluation or Model Design - TechDocs</title>
       
     
     
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#development-and-hyperparameter-tuning" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🎲 Model Selection
+              🧮 Modeling and Evaluation or Model Design
             
           </span>
         </div>
@@ -319,7 +324,7 @@
   
   
   <span class="md-ellipsis">
-    🎯 Problem Understanding
+    ❓ Problem Understanding
     
   </span>
   
@@ -413,87 +418,174 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    🧮 Modeling and Evaluation or Model Design
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    🎲 Model Selection
+    🧮 Modeling and Evaluation or Model Design
     
   </span>
   
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../G_model_development/" class="md-nav__link">
         
-  
-  
-  <span class="md-ellipsis">
-    🧠 Model Development and Hyperparameter Tuning
-    
-  </span>
-  
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
   
-    <li class="md-nav__item">
-      <a href="../H_validation/" class="md-nav__link">
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#development-and-hyperparameter-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Development and Hyperparameter Tuning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 Development and Hyperparameter Tuning">
+      <ul class="md-nav__list">
         
+          <li class="md-nav__item">
+  <a href="#hyperparameter-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyperparameter Tuning
+    </span>
+  </a>
   
-  
-  <span class="md-ellipsis">
-    ✅ Model Validation and Evaluation
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../I_model_interpretation/" class="md-nav__link">
+    <nav class="md-nav" aria-label="Hyperparameter Tuning">
+      <ul class="md-nav__list">
         
+          <li class="md-nav__item">
+  <a href="#grid-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grid Search
+    </span>
+  </a>
   
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomized-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Randomized Search
+    </span>
+  </a>
   
-  <span class="md-ellipsis">
-    💡 Model Interpretation and Explanability
-    
-  </span>
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bayesina-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bayesina Optimization
+    </span>
+  </a>
   
-
-      </a>
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convex-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Convex Algorithms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genetic-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Genetic Algorithms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperband" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyperband
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-and-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Validation and Evaluation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Validation and Evaluation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#model-bias-and-fairness-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Bias and Fairness Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpretation-and-explanability" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Interpretation and Explanability
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -689,12 +781,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../B_artifacts/canvas/" class="md-nav__link">
+      <a href="../../B_artifacts/discovery/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Canvas
+    🧾 Discovery
     
   </span>
   
@@ -712,12 +804,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../B_artifacts/go_nogo/" class="md-nav__link">
+      <a href="../../B_artifacts/model_approval/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Go / No Go
+    🆗 Model Approval
     
   </span>
   
@@ -735,12 +827,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../B_artifacts/work_instruction/" class="md-nav__link">
+      <a href="../../B_artifacts/technical_documentation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Work Instructions
+    📝 Technical Documentation
     
   </span>
   
@@ -871,12 +963,288 @@
   
   
     <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/bayesian_statistics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bayesian Statistics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/bagging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bagging
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/boosting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Boosting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/calibration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Calibration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/central_limit_theorem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Central Limit Theorem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../D_statistical_concepts/correlation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Correlation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/covariance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Covariance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/cross_validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Validation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/chisq_test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chi-Squared
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/doe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Design of Experiments
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/entropy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entropy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/heuristic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Heuristic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/homogeneity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Homogeneity
     
   </span>
   
@@ -917,12 +1285,518 @@
   
   
     <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/hypothesis_testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hypothesis Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/information_gain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Information Gain
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/ks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kolmogorov-Smirnov
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/kl_divergence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kullback-Leibler Divergence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/kurtosis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kurtosis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/lasso_regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lasso Regression
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/levene_test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Levene Test
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/lime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LIME
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/linear_regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linear Regression
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/logistic_regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logistic Regression
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/multicollinearity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Multicollinearity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/mann_whitney/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mann-Whitney U Test
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/normalization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Normalization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Optimization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../D_statistical_concepts/outliers/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Outliers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/overfitting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overfitting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/pca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PCA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/precision_recall_curve/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Precision-Recall Curve
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/r_squared/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    R Squared
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/regularization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regularization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/ridge_regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ridge Regression
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/roc_curve.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ROC Curve
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/sampling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sampling
     
   </span>
   
@@ -963,12 +1837,173 @@
   
   
     <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/shap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SHAP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/skewness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Skewness
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/standard_deviation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Standard Deviation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/standardization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Standardization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/stationarity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stationarity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../D_statistical_concepts/trend/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Trend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/variance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Variance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_statistical_concepts/vif/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Variance Inflation Factor
     
   </span>
   
@@ -1070,7 +2105,7 @@
   
   
   <span class="md-ellipsis">
-    Bank Context
+    💰 Bank Context
     
   </span>
   
@@ -1081,9 +2116,55 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_1">
             <span class="md-nav__icon md-icon"></span>
-            Bank Context
+            💰 Bank Context
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/approval_rating/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Approval Rating
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/ativo_problematico.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ativo Problemático
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1098,6 +2179,98 @@
   
   <span class="md-ellipsis">
     BNPL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/churn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Churn
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/cac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CAC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/cogs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    COGS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/credit_cycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Credit Cycle
     
   </span>
   
@@ -1138,6 +2311,282 @@
   
   
     <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/cts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CTS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/ead/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EAD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/ecl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ECL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/fgc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FGC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/float/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Float
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/fpd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FPD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/ifrs9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IFRS9
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/is_delayed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Is Delayed
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/kpi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    KPI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/ks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    KS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/lgd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LGD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/ltv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LTV
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../E_glossary/bank_context/npl/" class="md-nav__link">
         
   
@@ -1161,12 +2610,127 @@
   
   
     <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/pd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../E_glossary/bank_context/pdd/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     PDD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/ratio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ratio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/receivables_assignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Receivables Assignment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/revolving_credit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Revolving Credit
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/roe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ROE
     
   </span>
   
@@ -1213,6 +2777,52 @@
   
   <span class="md-ellipsis">
     SLA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/stop_accrual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stop Accrural
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E_glossary/bank_context/supply/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supply Chain
     
   </span>
   
@@ -1284,7 +2894,7 @@
   
   
   <span class="md-ellipsis">
-    Models
+    Projects
     
   </span>
   
@@ -1295,7 +2905,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Models
+            Projects
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1460,6 +3070,75 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_models/crime_california.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Crime California (Shiny App)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_models/distributions_comparison.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Distributions Comparison
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_models/fraud_detection.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fraud Detection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1473,9 +3152,20 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../G_study_notes/study_notes/" class="md-nav__link">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -1484,7 +3174,134 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Study Notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../G_study_notes/study_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teste
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Optimization
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            Optimization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../G_study_notes/heuristical_optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Heuristical
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../G_study_notes/convex_optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Convex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1573,6 +3390,140 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#development-and-hyperparameter-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Development and Hyperparameter Tuning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 Development and Hyperparameter Tuning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hyperparameter-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyperparameter Tuning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hyperparameter Tuning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grid-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grid Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomized-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Randomized Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bayesina-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bayesina Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convex-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Convex Algorithms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genetic-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Genetic Algorithms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperband" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyperband
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-and-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Validation and Evaluation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Validation and Evaluation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#model-bias-and-fairness-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Bias and Fairness Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpretation-and-explanability" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Interpretation and Explanability
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1590,9 +3541,133 @@
   
 
 
-  <h1>🎲 Model Selection</h1>
+  <h1>🧮 Modeling and Evaluation or Model Design</h1>
 
 <p>This is the design phase</p>
+<h2 id="development-and-hyperparameter-tuning">🧠 Development and Hyperparameter Tuning</h2>
+<p>The algorithm(s) used, architectures if relevant (e.g., XGBoost, Neural Net).</p>
+<p>Train/test splits, metrics used, hyperparameters tuning, validation strategy (CV, OOT, etc).</p>
+<h3 id="hyperparameter-tuning">Hyperparameter Tuning</h3>
+<p>A busca de hiperparêmetro é importante para...Temos diversas técnicas de busca para otimização de hiperparâmetros</p>
+<h4 id="grid-search">Grid Search</h4>
+<p>O Grid Search testa todas as combinações possíveis de hiperparâmetros dentro de um grid definido por você.</p>
+<pre><code class="language-python">param_grid = {
+    'learning_rate': [0.01, 0.1],
+    'max_depth': [3, 5, 7]
+}
+</code></pre>
+<p>→ Total de combinações: 2 × 3 = 6 modelos treinados</p>
+<p>✅ Vantagens:</p>
+<ul>
+<li>Explora exaustivamente o espaço definido.</li>
+<li>Útil quando você tem poucos parâmetros e valores específicos em mente.</li>
+</ul>
+<p>❌ Desvantagens:</p>
+<ul>
+<li>Muito lento se o número de combinações for alto.</li>
+<li>Pode gastar tempo testando combinações irrelevantes ou redundantes.</li>
+</ul>
+<p>Exemplo de código utilizando validação cruzada e RMSE como métrica principal</p>
+<pre><code class="language-python">from sklearn.model_selection import GridSearchCV
+from sklearn.ensemble import HistGradientBoostingRegressor
+from sklearn.metrics import make_scorer, mean_squared_error
+
+# Função de erro RMSE (quanto menor, melhor)
+def rmse(y_true, y_pred):
+    return mean_squared_error(y_true, y_pred, squared=False)
+
+rmse_scorer = make_scorer(rmse, greater_is_better=False)
+
+# Grade de hiperparâmetros
+param_grid = {
+    'learning_rate': [0.01, 0.05, 0.1],
+    'max_iter': [300, 500], #Evite max_iter muito alto no início — use valores moderados para teste rápido.
+    'max_leaf_nodes': [15, 31],
+    'min_samples_leaf': [10, 20],
+    'l2_regularization': [0.0, 1.0]
+}
+
+# Grid Search com validação cruzada
+grid_search = GridSearchCV(
+    estimator=HistGradientBoostingRegressor(),
+    param_grid=param_grid,
+    scoring=rmse_scorer,
+    cv=3,
+    verbose=2,
+    n_jobs=-1 #usar todos os núcleos do processador.
+)
+
+# Executa busca
+grid_search.fit(X, y)
+
+# Mostra melhor combinação
+print(&quot;Melhores hiperparâmetros encontrados:&quot;)
+print(grid_search.best_params_)
+
+print(f&quot;Melhor RMSE médio (validação cruzada): {-grid_search.best_score_:.4f}&quot;)
+
+# Modelo otimizado
+best_model = grid_search.best_estimator_
+</code></pre>
+<h4 id="randomized-search">Randomized Search</h4>
+<p>O Randomized Search seleciona aleatoriamente combinações de hiperparâmetros dentro de um grid definido, por um número fixo de tentativas (n_iter).</p>
+<pre><code class="language-python">param_grid = {
+    'learning_rate': [0.01, 0.05, 0.1],
+    'max_depth': [3, 5, 7],
+    'min_samples_leaf': [10, 20, 30]
+}
+</code></pre>
+<p>→ Possíveis combinações = 3 × 3 × 3 = 27
+→ Mas você define n_iter=10, então só 10 combinações aleatórias serão testadas</p>
+<p>✅ Vantagens:</p>
+<ul>
+<li>Muito mais eficiente em tempo.</li>
+<li>Pode encontrar bons resultados rapidamente mesmo em grids grandes.</li>
+<li>Permite testar mais parâmetros simultaneamente com menos custo.</li>
+</ul>
+<p>❌ Desvantagens:</p>
+<ul>
+<li>Pode não testar a melhor combinação possível, pois é aleatório.</li>
+<li>Resultados variam a cada execução (a menos que defina random_state).</li>
+</ul>
+<h4 id="bayesina-optimization">Bayesina Optimization</h4>
+<p>Podemos utilizar o optuna ou hyperopt</p>
+<h4 id="convex-algorithms">Convex Algorithms</h4>
+<h4 id="genetic-algorithms">Genetic Algorithms</h4>
+<h4 id="hyperband">Hyperband</h4>
+<h4 id="overview">Overview</h4>
+<table>
+<thead>
+<tr>
+<th>Situação</th>
+<th>Melhor escolha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Poucos hiperparâmetros e valores específicos</td>
+<td>Grid Search</td>
+</tr>
+<tr>
+<td>Muitos hiperparâmetros ou ranges grandes</td>
+<td>Randomized Search</td>
+</tr>
+<tr>
+<td>Tempo de execução limitado</td>
+<td>Randomized Search</td>
+</tr>
+<tr>
+<td>Busca precisa e exaustiva é prioridade</td>
+<td>Grid Search</td>
+</tr>
+</tbody>
+</table>
+<h2 id="validation-and-evaluation">✅ Validation and Evaluation</h2>
+<p>Detailed evaluation: metrics results (ROC AUC, F1-score, KS, etc.), important variables.</p>
+<p>Desvio padrao da feature para olhar drift feature a feature juntamente de KS, AUC e PR-AUC</p>
+<p>https://christophm.github.io/interpretable-ml-book/</p>
+<h3 id="model-bias-and-fairness-analysis">Model Bias and Fairness Analysis</h3>
+<h2 id="interpretation-and-explanability">💡 Interpretation and Explanability</h2>
 
 
 
@@ -1651,6 +3726,8 @@
     
     
       <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
