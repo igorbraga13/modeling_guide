@@ -799,6 +799,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../accuracy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accuracy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../bayesian_statistics/" class="md-nav__link">
         
   
@@ -1095,6 +1118,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../decision_trees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Decision Trees
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../doe/" class="md-nav__link">
         
   
@@ -1124,6 +1170,29 @@
   
   <span class="md-ellipsis">
     Entropy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../f1_score/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    F1 Score
     
   </span>
   
@@ -1440,12 +1509,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../multicollinearity/" class="md-nav__link">
+      <a href="../mann_whitney/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Multicollinearity
+    Mann-Whitney U Test
     
   </span>
   
@@ -1463,12 +1532,58 @@
   
   
     <li class="md-nav__item">
-      <a href="../mann_whitney/" class="md-nav__link">
+      <a href="../mae/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Mann-Whitney U Test
+    Mean Absolute Error
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mean Squared Error
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multicollinearity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Multicollinearity
     
   </span>
   
@@ -1601,6 +1716,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../precision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Precison
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../precision_recall_curve/" class="md-nav__link">
         
   
@@ -1630,6 +1768,29 @@
   
   <span class="md-ellipsis">
     R Squared
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Recall
     
   </span>
   
@@ -1693,12 +1854,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../roc_curve.md" class="md-nav__link">
+      <a href="../roc_auc/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ROC Curve
+    ROC AUC
     
   </span>
   
@@ -1791,6 +1952,29 @@
   
   <span class="md-ellipsis">
     Skewness
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../specificity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Specificity
     
   </span>
   
@@ -3412,7 +3596,7 @@
 - Seus dados são pequenos/médios
 - Você precisa de precisão nos splits
 - Quer explicações mais detalhadas dos critérios de divisão</p>
-<p>Em GradientBoostingRegressor e outros modelos como <a href="../decision_tree/">DecisionTreeRegressor</a>, um valor NaN é um problema, pois o algoritmo precisa comparar valores numéricos para fazer os splits, mas NaN não pode ser comparado com operadores como &lt;, &gt;, ==, etc. Desse modo o modelo quebra com erro ou exige que você impute os valores antes (média, mediana, etc). Nesse caso podemos utilizar o HistGradientBoostingRegressor</p>
+<p>Em GradientBoostingRegressor e outros modelos como <a href="decision_tree.md">DecisionTreeRegressor</a>, um valor NaN é um problema, pois o algoritmo precisa comparar valores numéricos para fazer os splits, mas NaN não pode ser comparado com operadores como &lt;, &gt;, ==, etc. Desse modo o modelo quebra com erro ou exige que você impute os valores antes (média, mediana, etc). Nesse caso podemos utilizar o HistGradientBoostingRegressor</p>
 <h3 id="histogram-gradient-boosting-regressor">Histogram Gradient Boosting Regressor</h3>
 <p>O HistGradientBoostingRegressor é uma versão otimizada inspirada no LightGBM, introduzida no scikit-learn a partir da versão 0.22.</p>
 <p>A grande diferença:</p>
