@@ -92,3 +92,8 @@ Include a short check for data availability, regulatory limits (e.g., fair lendi
 
 ### Baseline/Benchmark Expectations
 What existing rule or model exists? What lift is expected? This sets realistic expectations.
+
+## Examples
+
+- Binary target to predict if the client will or not default
+- Poisson target distribution to forecast the number of days with orders of your client

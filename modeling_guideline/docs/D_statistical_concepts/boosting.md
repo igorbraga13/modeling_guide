@@ -33,7 +33,7 @@ Usamos quando:
 - Você precisa de precisão nos splits
 - Quer explicações mais detalhadas dos critérios de divisão
 
-Em GradientBoostingRegressor e outros modelos como [DecisionTreeRegressor](decision_tree.md), um valor NaN é um problema, pois o algoritmo precisa comparar valores numéricos para fazer os splits, mas NaN não pode ser comparado com operadores como <, >, ==, etc. Desse modo o modelo quebra com erro ou exige que você impute os valores antes (média, mediana, etc). Nesse caso podemos utilizar o HistGradientBoostingRegressor
+Em GradientBoostingRegressor e outros modelos como [DecisionTreeRegressor](decision_trees.md), um valor NaN é um problema, pois o algoritmo precisa comparar valores numéricos para fazer os splits, mas NaN não pode ser comparado com operadores como <, >, ==, etc. Desse modo o modelo quebra com erro ou exige que você impute os valores antes (média, mediana, etc). Nesse caso podemos utilizar o HistGradientBoostingRegressor
 
 ### Histogram Gradient Boosting Regressor
 O HistGradientBoostingRegressor é uma versão otimizada inspirada no LightGBM, introduzida no scikit-learn a partir da versão 0.22.

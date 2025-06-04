@@ -1,3 +1,9 @@
-a
+## Univariate Analysis
 
-## teste
+## Bivariate Analysis
+
+## Multivariate Analysis
+
+## Data Quality Checks
+
+## Document and Share Insights

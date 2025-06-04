@@ -30,6 +30,7 @@ nav:
     #- Model Monitoring: model_monitoring.md
   
   - Statistical Concepts:
+    - Accuracy: D_statistical_concepts/accuracy.md
     - Bayesian Statistics: D_statistical_concepts/bayesian_statistics.md
     - Bagging: D_statistical_concepts/bagging.md
     - Boosting: D_statistical_concepts/boosting.md
@@ -39,37 +40,52 @@ nav:
     - Covariance: D_statistical_concepts/covariance.md
     - Cross-Validation: D_statistical_concepts/cross_validation.md
     - Chi-Squared: D_statistical_concepts/chisq_test.md
+    - Decision Trees: D_statistical_concepts/decision_trees.md
     - Design of Experiments: D_statistical_concepts/doe.md
     - Entropy: D_statistical_concepts/entropy.md
+    - F1 Score: D_statistical_concepts/f1_score.md
+    - Hellinger Distance: D_statistical_concepts/hellinger_distance.md
     - Heuristic: D_statistical_concepts/heuristic.md
     - Homogeneity: D_statistical_concepts/homogeneity.md
     - Homoscedasticity: D_statistical_concepts/homoscedasticity.md 
     - Hypothesis Testing: D_statistical_concepts/hypothesis_testing.md
+    - ICE: D_statistical_concepts/ice.md
     - Information Gain: D_statistical_concepts/information_gain.md
+    - Information Value: D_statistical_concepts/information_value.md
+    - Jensen-Shannon Divergence: D_statistical_concepts/js_divergence.md
     - Kolmogorov-Smirnov: D_statistical_concepts/ks.md
     - Kullback-Leibler Divergence: D_statistical_concepts/kl_divergence.md
     - Kurtosis: D_statistical_concepts/kurtosis.md
+    - L1 Regularization: D_statistical_concepts/l1_regularization.md
+    - L2 Regularization: D_statistical_concepts/l2_regularization.md
     - Lasso Regression: D_statistical_concepts/lasso_regression.md 
     - Levene Test: D_statistical_concepts/levene_test.md
     - LIME: D_statistical_concepts/lime.md
     - Linear Regression: D_statistical_concepts/linear_regression.md  
     - Logistic Regression: D_statistical_concepts/logistic_regression.md
-    - Multicollinearity: D_statistical_concepts/multicollinearity.md
     - Mann-Whitney U Test: D_statistical_concepts/mann_whitney.md
+    - Mean Absolute Error: D_statistical_concepts/mae.md
+    - Mean Squared Error: D_statistical_concepts/mse.md
+    - Multicollinearity: D_statistical_concepts/multicollinearity.md
     - Normalization: D_statistical_concepts/normalization.md
     - Optimization: D_statistical_concepts/optimization.md
     - Outliers: D_statistical_concepts/outliers.md
     - Overfitting: D_statistical_concepts/overfitting.md
     - PCA: D_statistical_concepts/pca.md
+    - PDP: D_statistical_concepts/pdp.md
+    - Permutation Importance: D_statistical_concepts/permutation_importance.md
+    - Precison: D_statistical_concepts/precision.md
     - Precision-Recall Curve: D_statistical_concepts/precision_recall_curve.md
     - R Squared: D_statistical_concepts/r_squared.md
+    - Recall: D_statistical_concepts/recall.md
     - Regularization: D_statistical_concepts/regularization.md
     - Ridge Regression: D_statistical_concepts/ridge_regression.md
-    - ROC Curve: D_statistical_concepts/roc_curve.md
+    - ROC AUC: D_statistical_concepts/roc_auc.md
     - Sampling: D_statistical_concepts/sampling.md  
     - Seasonality: D_statistical_concepts/seasonality.md
     - SHAP: D_statistical_concepts/shap.md
     - Skewness: D_statistical_concepts/skewness.md
+    - Specificity: D_statistical_concepts/specificity.md
     - Standard Deviation: D_statistical_concepts/standard_deviation.md
     - Standardization: D_statistical_concepts/standardization.md
     - Stationarity: D_statistical_concepts/stationarity.md
@@ -77,7 +93,7 @@ nav:
     - Variance: D_statistical_concepts/variance.md
     - Variance Inflation Factor: D_statistical_concepts/vif.md
     - Volatility: D_statistical_concepts/volatility.md
-
+    - Wasserstein Distance: D_statistical_concepts/wasserstein_distance.md
   
   - Glossary:
       - 💰 Bank Context:

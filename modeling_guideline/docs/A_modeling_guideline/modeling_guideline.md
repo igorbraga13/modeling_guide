@@ -311,6 +311,8 @@ explain(model$finalModel, exact = TRUE, newdata = pred_data) %>% setDT() #funç�
 
 Após a análise do SHAP, caso tenha muitas features, na hora de apresentar a relevância das variáveis pode ser interessante utilizar o detalhamento de Pareto para mostrar apenas os "20% de features que explicam 80% do modelo"
 
+Além do SHAP temos outras opções como o LIME, PDP, ICE, dentre outros
+
 # 6 - Modelagem
 
 ## Splitting
