@@ -31,6 +31,7 @@ nav:
   
   - Statistical Concepts:
     - Accuracy: D_statistical_concepts/accuracy.md
+    - ARIMA: D_statistical_concepts/arima.md
     - Bayesian Statistics: D_statistical_concepts/bayesian_statistics.md
     - Bagging: D_statistical_concepts/bagging.md
     - Boosting: D_statistical_concepts/boosting.md
@@ -58,15 +59,20 @@ nav:
     - Kurtosis: D_statistical_concepts/kurtosis.md
     - L1 Regularization: D_statistical_concepts/l1_regularization.md
     - L2 Regularization: D_statistical_concepts/l2_regularization.md
+    - Large Language Models (LLMs): D_statistical_concepts/llm.md
     - Lasso Regression: D_statistical_concepts/lasso_regression.md 
     - Levene Test: D_statistical_concepts/levene_test.md
     - LIME: D_statistical_concepts/lime.md
     - Linear Regression: D_statistical_concepts/linear_regression.md  
     - Logistic Regression: D_statistical_concepts/logistic_regression.md
+    - Long Short-Term Memory (LSTM): D_statistical_concepts/lstm.md
+    - Loss Function: D_statistical_concepts/loss_function.md
     - Mann-Whitney U Test: D_statistical_concepts/mann_whitney.md
     - Mean Absolute Error: D_statistical_concepts/mae.md
     - Mean Squared Error: D_statistical_concepts/mse.md
     - Multicollinearity: D_statistical_concepts/multicollinearity.md
+    - Neural Networks: D_statistical_concepts/neural_networks.md
+    - NLP: D_statistical_concepts/nlp.md
     - Normalization: D_statistical_concepts/normalization.md
     - Optimization: D_statistical_concepts/optimization.md
     - Outliers: D_statistical_concepts/outliers.md
@@ -77,6 +83,7 @@ nav:
     - Precison: D_statistical_concepts/precision.md
     - Precision-Recall Curve: D_statistical_concepts/precision_recall_curve.md
     - R Squared: D_statistical_concepts/r_squared.md
+    - Random Forest: D_statistical_concepts/random_forest.md
     - Recall: D_statistical_concepts/recall.md
     - Regularization: D_statistical_concepts/regularization.md
     - Ridge Regression: D_statistical_concepts/ridge_regression.md
@@ -85,15 +92,18 @@ nav:
     - Seasonality: D_statistical_concepts/seasonality.md
     - SHAP: D_statistical_concepts/shap.md
     - Skewness: D_statistical_concepts/skewness.md
+    - Sobol: D_statistical_concepts/sobol.md
     - Specificity: D_statistical_concepts/specificity.md
     - Standard Deviation: D_statistical_concepts/standard_deviation.md
     - Standardization: D_statistical_concepts/standardization.md
     - Stationarity: D_statistical_concepts/stationarity.md
+    - Transformers: D_statistical_concepts/transformers.md
     - Trend: D_statistical_concepts/trend.md
     - Variance: D_statistical_concepts/variance.md
     - Variance Inflation Factor: D_statistical_concepts/vif.md
     - Volatility: D_statistical_concepts/volatility.md
     - Wasserstein Distance: D_statistical_concepts/wasserstein_distance.md
+    - Weight of Evidence: D_statistical_concepts/woe.md
   
   - Glossary:
       - 💰 Bank Context:
@@ -145,7 +155,7 @@ nav:
     - Optimization: 
       - Heuristical: G_study_notes/heuristical_optimization.md
       - Convex: G_study_notes/convex_optimization.md
-  
+    - Kanban: G_study_notes/kanban.md
   - Links: H_links/links.md
   
   - Articles: I_articles/articles.md

@@ -991,7 +991,9 @@ Como?
 
 ### Gradient Descent
 
-$$\theta_{j+1} = \theta_{j} - \alpha \nabla J(\theta_{j})$$ \### Normal Distribution
+$$\theta_{j+1} = \theta_{j} - \alpha \nabla J(\theta_{j})$$
+
+### Normal Distribution
 
 $$f(x|\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}}exp(- \frac{(x-\mu)^2}{2\sigma^2})$$
 
@@ -1012,7 +1014,8 @@ $$Correlation = \frac{Cov(X,Y)}{Std(X) \dot{} Std(Y)}$$
 $$Similarity = \frac{A \dot{} B}{||A|| \dot{} ||B||}$$
 
 Avi Chawla Save posts
-orrelation = \frac{Cov(X,Y)}{Std(X) \dot{} Std(Y)}$$
+
+Correlation = $$\frac{Cov(X,Y)}{Std(X) \dot{} Std(Y)}$$
 
 ### Cosine Similarity
 

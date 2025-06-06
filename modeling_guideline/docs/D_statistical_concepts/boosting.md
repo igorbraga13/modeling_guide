@@ -66,4 +66,51 @@ Quando o HistGradientBoostingRegressor encontra uma feature com valores faltante
     - Para o lado esquerdo?
     - Ele testa ambas as opções e escolhe a que resulta em menor erro.
 
+## XGBoost (Extreme Gradient Boosting)
+XGBoost = Gradient Boosting + otimizações de performance + regularização avançada + suporte a missing values + paralelismo.
+
+- Ensemble de árvores sequenciais, onde cada nova árvore corrige os erros da anterior (boosting).
+- Árvores são construídas sequencialmente, cada uma tentando minimizar a função de perda.
+- Usa gradiente descendente e otimiza uma função de perda regularizada (com L1/L2).
+- Inclui penalização por complexidade no modelo via parâmetros como lambda e alpha.
+- Geralmente tem melhor performance preditiva, especialmente em competições e problemas mais complexos.
+- Tem ferramentas avançadas (ex: SHAP) e métricas como ganho e cobertura por split.
+
 ## RusBoost
+
+
+## Comparing
+
+| Aspecto                           | Gradient Boosting Tradicional | XGBoost                                        |
+| --------------------------------- | ----------------------------- | ---------------------------------------------- |
+| **Velocidade**                    | Mais lento                    | Mais rápido (implementado em C++, paralelismo) |
+| **Regularização**                 | Básico ou inexistente         | Inclui L1 e L2 (evita overfitting)             |
+| **Manuseio de valores faltantes** | Pode exigir tratamento manual | XGBoost trata automaticamente                  |
+| **Paralelização**                 | Serial                        | Paraleliza construção de árvores               |
+| **Função de perda personalizada** | Limitado                      | Suporta funções de perda customizadas          |
+| **Importância de variáveis**      | Simples                       | Mais opções e precisão                         |
+| **Controle de complexidade**      | Por profundidade da árvore    | Por número de folhas + penalidade              |
+
+
+| Característica                      | Decision Tree                | Random Forest                | Gradient Boosting                   | XGBoost (Extreme GB)                  | LightGBM                                   |
+| ----------------------------------- | ---------------------------- | ---------------------------- | ----------------------------------- | ------------------------------------- | ------------------------------------------ |
+| **Tipo**                            | Árvore única                 | Ensemble (bagging)           | Ensemble (boosting sequencial)      | Boosting com regularização avançada   | Boosting otimizado para performance        |
+| **Construção**                      | Top-down, greedy split       | Muitas árvores independentes | Árvores construídas sequencialmente | Igual ao GB, mas com melhorias        | Árvores construídas com histogramas        |
+| **Overfitting**                     | Alto risco                   | Reduzido via agregação       | Reduzido com regularização          | Reduzido com L1/L2 + early stopping   | Reduzido com regularização e early stop    |
+| **Velocidade de treino**            | Muito rápido                 | Médio (pode ser paralelo)    | Mais lento (sequencial)             | Mais rápido com otimizações paralelas | Muito rápido com histogramas + paralelismo |
+| **Precisão**                        | Baixa a média                | Boa                          | Alta                                | Muito alta                            | Similar ou melhor que XGBoost              |
+| **Interpretação**                   | Fácil (visualização simples) | Média (muitas árvores)       | Difícil (ensemble sequencial)       | Difícil                               | Difícil                                    |
+| **Paralelização**                   | Nativa                       | Sim                          | Limitada                            | Sim (com divisão em blocos)           | Sim (mais eficiente)                       |
+| **Uso de memória**                  | Baixo                        | Alto (várias árvores)        | Médio a alto                        | Médio                                 | Muito eficiente com grandes dados          |
+| **Trabalha bem com dados esparsos** | Não                          | Não                          | Parcialmente                        | Sim (nativamente)                     | Sim (ótimo para sparse/dense)              |
+| **Suporte a missing values**        | Não nativo                   | Não nativo                   | Depende da implementação            | Sim                                   | Sim                                        |
+
+✅ Decision Tree: simples e interpretável, bom para baseline ou pequenos dados.
+
+✅ Random Forest: robusto, boa performance geral, ótimo para evitar overfitting.
+
+✅ Gradient Boosting: mais preciso que Random Forest, porém mais lento.
+
+✅ XGBoost: versão otimizada do GB, com regularização e alta performance.
+
+✅ LightGBM: ideal para grandes volumes de dados, muito rápido e eficiente.
