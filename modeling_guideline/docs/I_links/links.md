@@ -13,7 +13,6 @@
 [Introduction to Machine Learning](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/course/)
 [YT Introduction to Machine Learning](https://youtube.com/playlist?list=PLxC_ffO4q_rW0bqQB80_vcQB09HOA3ClV)
 
-
 [Deep Learning](https://introtodeeplearning.com)
 [YT Deep Learning](https://youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI)
 
@@ -28,3 +27,7 @@
 
 [Linear Algebra](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/)
 [YT Linear Algebra](https://youtube.com/playlist?list=PLE7DDD91010BC51F8)
+
+# Stanford
+
+[Machine Learning with Graphs](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn&index=1)

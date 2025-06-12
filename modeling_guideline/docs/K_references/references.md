@@ -8,4 +8,4 @@
 
 [Sklearn Cross Validation](https://scikit-learn.org/stable/modules/cross_validation.html)
 
-[Hands-On Large Language Models](hands on large language models)
+[Hands-On Large Language Models] hands on large language models

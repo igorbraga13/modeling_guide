@@ -43,6 +43,8 @@ nav:
     - Chi-Squared: D_statistical_concepts/chisq_test.md
     - Decision Trees: D_statistical_concepts/decision_trees.md
     - Design of Experiments: D_statistical_concepts/doe.md
+    - Distributions: D_statistical_concepts/distributions.md
+    - Elastic Net: D_statistical_concepts/elastic_net.md
     - Entropy: D_statistical_concepts/entropy.md
     - F1 Score: D_statistical_concepts/f1_score.md
     - Hellinger Distance: D_statistical_concepts/hellinger_distance.md
@@ -57,10 +59,9 @@ nav:
     - Kolmogorov-Smirnov: D_statistical_concepts/ks.md
     - Kullback-Leibler Divergence: D_statistical_concepts/kl_divergence.md
     - Kurtosis: D_statistical_concepts/kurtosis.md
-    - L1 Regularization: D_statistical_concepts/l1_regularization.md
-    - L2 Regularization: D_statistical_concepts/l2_regularization.md
+    - L1 Regularization (LASSO): D_statistical_concepts/l1_regularization.md
+    - L2 Regularization (Ridge): D_statistical_concepts/l2_regularization.md
     - Large Language Models (LLMs): D_statistical_concepts/llm.md
-    - Lasso Regression: D_statistical_concepts/lasso_regression.md 
     - Levene Test: D_statistical_concepts/levene_test.md
     - LIME: D_statistical_concepts/lime.md
     - Linear Regression: D_statistical_concepts/linear_regression.md  
@@ -85,8 +86,6 @@ nav:
     - R Squared: D_statistical_concepts/r_squared.md
     - Random Forest: D_statistical_concepts/random_forest.md
     - Recall: D_statistical_concepts/recall.md
-    - Regularization: D_statistical_concepts/regularization.md
-    - Ridge Regression: D_statistical_concepts/ridge_regression.md
     - ROC AUC: D_statistical_concepts/roc_auc.md
     - Sampling: D_statistical_concepts/sampling.md  
     - Seasonality: D_statistical_concepts/seasonality.md
@@ -108,7 +107,6 @@ nav:
   - Glossary:
       - 💰 Bank Context:
           - Approval Rating: E_glossary/bank_context/approval_rating.md
-          - Ativo Problemático: E_glossary/bank_context/ativo_problematico.md
           - BNPL: E_glossary/bank_context/bnpl.md
           - Churn: E_glossary/bank_context/churn.md
           - CAC: E_glossary/bank_context/cac.md
@@ -141,26 +139,29 @@ nav:
           - TPV: E_glossary/bank_context/tpv.md
 
   - Projects:
-    - Application:
-      - Onboarding PJ: F_models/application/onboarding_pj.md
-    - Behavior: F_models/behavior/behavior.md
-    - Collection: 
-      - Creli: F_models/collection/creli.md
-    - Crime California (Shiny App): F_models/crime_california.md
-    - Distributions Comparison: F_models/distributions_comparison.md
-    - Fraud Detection: F_models/fraud_detection.md
+    - Crime California (Shiny App): F_projects/crime_california.md
+    - Distributions Comparison: F_projects/distributions_comparison.md
+    - Fraud Detection: F_projects/fraud_detection.md
   
+  - Presentations:
+    - 📊 Data Science: G_presentations/data_science.md
+    - 📈 Machine Learning: G_presentations/machine_learning.md
+    - 🧠 Deep Learning: G_presentations/deep_learning.md
+    - 🕸️ Graphs: G_presentations/graphs.md
+    - 📚 Statistics: G_presentations/statistics.md
+    - 🛠️ Tools and Technologies: G_presentations/tools_and_technologies.md
+
   - Study Notes: 
-    - Teste: G_study_notes/study_notes.md
+    - Teste: H_study_notes/study_notes.md
     - Optimization: 
-      - Heuristical: G_study_notes/heuristical_optimization.md
-      - Convex: G_study_notes/convex_optimization.md
-    - Kanban: G_study_notes/kanban.md
-  - Links: H_links/links.md
+      - Heuristical: H_study_notes/heuristical_optimization.md
+      - Convex: H_study_notes/convex_optimization.md
+    - Kanban: H_study_notes/kanban.md
+  - Links: I_links/links.md
   
-  - Articles: I_articles/articles.md
+  - Articles: J_articles/articles.md
   
-  - References: J_references/references.md
+  - References: K_references/references.md
 
 theme:
   name: material
@@ -189,7 +190,9 @@ markdown_extensions:
       generic: true
 
 extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - js/mathjax-refresh.js
 
 plugins:
   - search
