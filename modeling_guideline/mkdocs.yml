@@ -86,6 +86,7 @@ nav:
     - R Squared: D_statistical_concepts/r_squared.md
     - Random Forest: D_statistical_concepts/random_forest.md
     - Recall: D_statistical_concepts/recall.md
+    - Regression: D_statistical_concepts/regression.md
     - ROC AUC: D_statistical_concepts/roc_auc.md
     - Sampling: D_statistical_concepts/sampling.md  
     - Seasonality: D_statistical_concepts/seasonality.md
@@ -104,6 +105,17 @@ nav:
     - Wasserstein Distance: D_statistical_concepts/wasserstein_distance.md
     - Weight of Evidence: D_statistical_concepts/woe.md
   
+  - Engineering Concepts:
+    - Data Engineering: D_engineering_concepts/data_engineering.md
+    - Data Quality: D_engineering_concepts/data_quality.md
+    - Data Versioning: D_engineering_concepts/data_versioning.md
+    - Data Warehouse: D_engineering_concepts/data_warehouse.md
+    - Data Lake: D_engineering_concepts/data_lake.md
+    - ETL: D_engineering_concepts/etl.md
+    - Feature Store: D_engineering_concepts/feature_store.md
+    - MLOps: D_engineering_concepts/mlops.md
+    - Pipeline Orchestration: D_engineering_concepts/pipeline_orchestration.md
+
   - Glossary:
       - 💰 Bank Context:
           - Approval Rating: E_glossary/bank_context/approval_rating.md
@@ -120,6 +132,7 @@ nav:
           - Float: E_glossary/bank_context/float.md
           - FPD: E_glossary/bank_context/fpd.md
           - IFRS9: E_glossary/bank_context/ifrs9.md
+          - Indice de Basileia: E_glossary/bank_context/indice_basileia.md
           - Is Delayed: E_glossary/bank_context/is_delayed.md
           - KPI: E_glossary/bank_context/kpi.md
           - KS: E_glossary/bank_context/ks.md
@@ -128,13 +141,12 @@ nav:
           - NPL: E_glossary/bank_context/npl.md
           - PD: E_glossary/bank_context/pd.md
           - PDD: E_glossary/bank_context/pdd.md
-          - Ratio: E_glossary/bank_context/ratio.md
           - Receivables Assignment: E_glossary/bank_context/receivables_assignment.md
           - Revolving Credit: E_glossary/bank_context/revolving_credit.md
           - ROE: E_glossary/bank_context/roe.md
           - ROI: E_glossary/bank_context/roi.md
           - SLA: E_glossary/bank_context/sla.md
-          - Stop Accrural: E_glossary/bank_context/stop_accrual.md
+          - Stop Accrual: E_glossary/bank_context/stop_accrual.md
           - Supply Chain: E_glossary/bank_context/supply.md
           - TPV: E_glossary/bank_context/tpv.md
 
