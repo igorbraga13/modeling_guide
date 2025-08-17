@@ -106,74 +106,102 @@ nav:
     - Weight of Evidence: D_statistical_concepts/woe.md
   
   - Engineering Concepts:
-    - Data Engineering: D_engineering_concepts/data_engineering.md
-    - Data Quality: D_engineering_concepts/data_quality.md
-    - Data Versioning: D_engineering_concepts/data_versioning.md
-    - Data Warehouse: D_engineering_concepts/data_warehouse.md
-    - Data Lake: D_engineering_concepts/data_lake.md
-    - ETL: D_engineering_concepts/etl.md
-    - Feature Store: D_engineering_concepts/feature_store.md
-    - MLOps: D_engineering_concepts/mlops.md
-    - Pipeline Orchestration: D_engineering_concepts/pipeline_orchestration.md
+    - Data Engineering: E_engineering_concepts/data_engineering.md
+    - Data Quality: E_engineering_concepts/data_quality.md
+    - Data Versioning: E_engineering_concepts/data_versioning.md
+    - Data Warehouse: E_engineering_concepts/data_warehouse.md
+    - Data Lake: E_engineering_concepts/data_lake.md
+    - ETL: E_engineering_concepts/etl.md
+    - Feature Store: E_engineering_concepts/feature_store.md
+    - MLOps: E_engineering_concepts/mlops.md
+    - Pipeline Orchestration: E_engineering_concepts/pipeline_orchestration.md
 
   - Glossary:
       - 💰 Bank Context:
-          - Approval Rating: E_glossary/bank_context/approval_rating.md
-          - BNPL: E_glossary/bank_context/bnpl.md
-          - Churn: E_glossary/bank_context/churn.md
-          - CAC: E_glossary/bank_context/cac.md
-          - COGS: E_glossary/bank_context/cogs.md
-          - Credit Cycle: E_glossary/bank_context/credit_cycle.md
-          - CSI: E_glossary/bank_context/csi.md
-          - CTS: E_glossary/bank_context/cts.md
-          - EAD: E_glossary/bank_context/ead.md
-          - ECL: E_glossary/bank_context/ecl.md
-          - FGC: E_glossary/bank_context/fgc.md
-          - Float: E_glossary/bank_context/float.md
-          - FPD: E_glossary/bank_context/fpd.md
-          - IFRS9: E_glossary/bank_context/ifrs9.md
-          - Indice de Basileia: E_glossary/bank_context/indice_basileia.md
-          - Is Delayed: E_glossary/bank_context/is_delayed.md
-          - KPI: E_glossary/bank_context/kpi.md
-          - KS: E_glossary/bank_context/ks.md
-          - LGD: E_glossary/bank_context/lgd.md
-          - LTV: E_glossary/bank_context/ltv.md
-          - NPL: E_glossary/bank_context/npl.md
-          - PD: E_glossary/bank_context/pd.md
-          - PDD: E_glossary/bank_context/pdd.md
-          - Receivables Assignment: E_glossary/bank_context/receivables_assignment.md
-          - Revolving Credit: E_glossary/bank_context/revolving_credit.md
-          - ROE: E_glossary/bank_context/roe.md
-          - ROI: E_glossary/bank_context/roi.md
-          - SLA: E_glossary/bank_context/sla.md
-          - Stop Accrual: E_glossary/bank_context/stop_accrual.md
-          - Supply Chain: E_glossary/bank_context/supply.md
-          - TPV: E_glossary/bank_context/tpv.md
+          - Approval Rating: F_glossary/bank_context/approval_rating.md
+          - BNPL: F_glossary/bank_context/bnpl.md
+          - Churn: F_glossary/bank_context/churn.md
+          - CAC: F_glossary/bank_context/cac.md
+          - COGS: F_glossary/bank_context/cogs.md
+          - Credit Cycle: F_glossary/bank_context/credit_cycle.md
+          - CSI: F_glossary/bank_context/csi.md
+          - CTS: F_glossary/bank_context/cts.md
+          - EAD: F_glossary/bank_context/ead.md
+          - ECL: F_glossary/bank_context/ecl.md
+          - FGC: F_glossary/bank_context/fgc.md
+          - Float: F_glossary/bank_context/float.md
+          - FPD: F_glossary/bank_context/fpd.md
+          - IFRS9: F_glossary/bank_context/ifrs9.md
+          - Indice de Basileia: F_glossary/bank_context/indicF_basileia.md
+          - Is Delayed: F_glossary/bank_context/is_delayed.md
+          - KPI: F_glossary/bank_context/kpi.md
+          - KS: F_glossary/bank_context/ks.md
+          - LGD: F_glossary/bank_context/lgd.md
+          - LTV: F_glossary/bank_context/ltv.md
+          - NPL: F_glossary/bank_context/npl.md
+          - PD: F_glossary/bank_context/pd.md
+          - PDD: F_glossary/bank_context/pdd.md
+          - Receivables Assignment: F_glossary/bank_context/receivables_assignment.md
+          - Revolving Credit: F_glossary/bank_context/revolving_credit.md
+          - ROE: F_glossary/bank_context/roe.md
+          - ROI: F_glossary/bank_context/roi.md
+          - SLA: F_glossary/bank_context/sla.md
+          - Stop Accrual: F_glossary/bank_context/stop_accrual.md
+          - Supply Chain: F_glossary/bank_context/supply.md
+          - TPV: F_glossary/bank_context/tpv.md
+
+      - 🕵️‍♂️ Fraud Context:
+        - Fraud: F_glossary/fraud_context/fraud.md
+        - Fraud Detection: F_glossary/fraud_context/fraud_detection.md
+        - Fraud Prevention: F_glossary/fraud_context/fraud_prevention.md
+        - Fraud Risk Management: F_glossary/fraud_context/fraud_risk_management.md
+        - Fraudulent Transaction: F_glossary/fraud_context/fraudulent_transaction.md
+        - KYC: F_glossary/fraud_context/kyc.md
+        - Money Laundering: F_glossary/fraud_context/money_laundering.md
+        - Suspicious Activity: F_glossary/fraud_context/suspicious_activity.md
+
+  - Tutorials:
+    - GCP: G_tutorials/gcp.md
+    - AWS: G_tutorials/aws.md
+    - Python: G_tutorials/python.md
+    - R: G_tutorials/r.md
+    - SQL: G_tutorials/sql.md
+    - Git and GitHub: G_tutorials/git_github.md
+    - Docker: G_tutorials/docker.md
+    - Cloud Computing: G_tutorials/cloud_computing.md
+    - APIs: G_tutorials/apis.md
+    - Big Data: G_tutorials/big_data.md
+    - Data Visualization: G_tutorials/data_visualization.md
+    - Jupyter Notebooks: G_tutorials/jupyter_notebooks.md
+    - VS Code: G_tutorials/vs_code.md
+    - Power BI: G_tutorials/power_bi.md
+    - Tableau: G_tutorials/tableau.md
 
   - Projects:
-    - Crime California (Shiny App): F_projects/crime_california.md
-    - Distributions Comparison: F_projects/distributions_comparison.md
-    - Fraud Detection: F_projects/fraud_detection.md
+    - Crime California (Shiny App): H_projects/crime_california.md
+    - Distributions Comparison: H_projects/distributions_comparison.md
+    - Fraud Detection: H_projects/fraud_detection.md
   
   - Presentations:
-    - 📊 Data Science: G_presentations/data_science.md
-    - 📈 Machine Learning: G_presentations/machine_learning.md
-    - 🧠 Deep Learning: G_presentations/deep_learning.md
-    - 🕸️ Graphs: G_presentations/graphs.md
-    - 📚 Statistics: G_presentations/statistics.md
-    - 🛠️ Tools and Technologies: G_presentations/tools_and_technologies.md
+    - 📊 Data Science: I_presentations/data_science.md
+    - 📈 Machine Learning: I_presentations/machine_learning.md
+    - 🧠 Deep Learning: I_presentations/deep_learning.md
+    - 🕸️ Graphs: I_presentations/graphs.md
+    - 📚 Statistics: I_presentations/statistics.md
+    - 🛠️ Tools and Technologies: I_presentations/tools_and_technologies.md
 
   - Study Notes: 
-    - Teste: H_study_notes/study_notes.md
+    - Teste: J_study_notes/study_notes.md
     - Optimization: 
-      - Heuristical: H_study_notes/heuristical_optimization.md
-      - Convex: H_study_notes/convex_optimization.md
-    - Kanban: H_study_notes/kanban.md
-  - Links: I_links/links.md
-  
-  - Articles: J_articles/articles.md
-  
-  - References: K_references/references.md
+      - Heuristical: J_study_notes/heuristical_optimization.md
+      - Convex: J_study_notes/convex_optimization.md
+    - Kanban: J_study_notes/kanban.md
+
+  - Articles: K_articles/articles.md
+
+  - Links: L_links/links.md
+
+  - References: M_references/references.md
 
 theme:
   name: material
