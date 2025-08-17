@@ -69,42 +69,6 @@
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/D_engineering_concepts/data_engineering/</loc>
-         <lastmod>2025-08-17</lastmod>
-    </url>
-    <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/D_engineering_concepts/data_lake/</loc>
-         <lastmod>2025-08-17</lastmod>
-    </url>
-    <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/D_engineering_concepts/data_quality/</loc>
-         <lastmod>2025-08-17</lastmod>
-    </url>
-    <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/D_engineering_concepts/data_versioning/</loc>
-         <lastmod>2025-08-17</lastmod>
-    </url>
-    <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/D_engineering_concepts/data_warehouse/</loc>
-         <lastmod>2025-08-17</lastmod>
-    </url>
-    <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/D_engineering_concepts/etl/</loc>
-         <lastmod>2025-08-17</lastmod>
-    </url>
-    <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/D_engineering_concepts/feature_store/</loc>
-         <lastmod>2025-08-17</lastmod>
-    </url>
-    <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/D_engineering_concepts/mlops/</loc>
-         <lastmod>2025-08-17</lastmod>
-    </url>
-    <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/D_engineering_concepts/pipeline_orchestration/</loc>
-         <lastmod>2025-08-17</lastmod>
-    </url>
-    <url>
          <loc>https://igorbraga13.github.io/modeling_guide/D_statistical_concepts/accuracy/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
@@ -401,191 +365,231 @@
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/approval_rating/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_engineering_concepts/data_engineering/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/bnpl/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_engineering_concepts/data_lake/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/cac/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_engineering_concepts/data_quality/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/churn/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_engineering_concepts/data_versioning/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/cogs/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_engineering_concepts/data_warehouse/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/credit_cycle/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_engineering_concepts/etl/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/csi/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_engineering_concepts/feature_store/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/cts/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_engineering_concepts/mlops/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/ead/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/E_engineering_concepts/pipeline_orchestration/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/ecl/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/approval_rating/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/fgc/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/bnpl/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/float/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/cac/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/fpd/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/churn/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/ifrs9/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/cogs/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/indice_basileia/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/credit_cycle/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/is_delayed/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/csi/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/kpi/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/cts/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/ks/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/ead/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/lgd/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/ecl/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/ltv/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/fgc/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/npl/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/float/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/pd/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/fpd/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/pdd/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/ifrs9/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/receivables_assignment/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/indice_basileia/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/revolving_credit/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/is_delayed/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/roe/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/kpi/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/roi/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/ks/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/sla/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/lgd/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/stop_accrual/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/ltv/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/supply/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/npl/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/E_glossary/bank_context/tpv/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/pd/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/F_projects/crime_california/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/pdd/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/F_projects/distributions_comparison/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/receivables_assignment/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/F_projects/fraud_detection/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/revolving_credit/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/G_presentations/data_science/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/roe/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/G_presentations/deep_learning/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/roi/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/G_presentations/graphs/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/sla/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/G_presentations/machine_learning/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/stop_accrual/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/G_presentations/statistics/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/supply/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/G_presentations/tools_and_technologies/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/F_glossary/bank_context/tpv/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/H_study_notes/convex_optimization/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/G_tutorials/gcp/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/H_study_notes/heuristical_optimization/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/H_projects/crime_california/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/H_study_notes/kanban/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/H_projects/distributions_comparison/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/H_study_notes/study_notes/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/H_projects/fraud_detection/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/I_links/links/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/I_presentations/data_science/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/J_articles/articles/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/I_presentations/deep_learning/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
-         <loc>https://igorbraga13.github.io/modeling_guide/K_references/references/</loc>
+         <loc>https://igorbraga13.github.io/modeling_guide/I_presentations/graphs/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/I_presentations/machine_learning/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/I_presentations/statistics/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/I_presentations/tools_and_technologies/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/J_study_notes/convex_optimization/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/J_study_notes/heuristical_optimization/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/J_study_notes/kanban/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/J_study_notes/study_notes/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/K_articles/articles/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/L_links/links/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://igorbraga13.github.io/modeling_guide/M_references/references/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
 </urlset>
