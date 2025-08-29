@@ -41,12 +41,14 @@ nav:
     - Covariance: D_statistical_concepts/covariance.md
     - Cross-Validation: D_statistical_concepts/cross_validation.md
     - Chi-Squared: D_statistical_concepts/chisq_test.md
+    - Convolutional Neural Networks (CNN): D_statistical_concepts/cnn.md
     - Decision Trees: D_statistical_concepts/decision_trees.md
     - Design of Experiments: D_statistical_concepts/doe.md
     - Distributions: D_statistical_concepts/distributions.md
     - Elastic Net: D_statistical_concepts/elastic_net.md
     - Entropy: D_statistical_concepts/entropy.md
     - F1 Score: D_statistical_concepts/f1_score.md
+    - Graph Neural Networks: D_statistical_concepts/gnn.md
     - Hellinger Distance: D_statistical_concepts/hellinger_distance.md
     - Heuristic: D_statistical_concepts/heuristic.md
     - Homogeneity: D_statistical_concepts/homogeneity.md
@@ -86,6 +88,7 @@ nav:
     - R Squared: D_statistical_concepts/r_squared.md
     - Random Forest: D_statistical_concepts/random_forest.md
     - Recall: D_statistical_concepts/recall.md
+    - Recurrent Neural Networks (RNN): D_statistical_concepts/rnn.md
     - Regression: D_statistical_concepts/regression.md
     - ROC AUC: D_statistical_concepts/roc_auc.md
     - Sampling: D_statistical_concepts/sampling.md  
@@ -127,12 +130,13 @@ nav:
           - CSI: F_glossary/bank_context/csi.md
           - CTS: F_glossary/bank_context/cts.md
           - EAD: F_glossary/bank_context/ead.md
+          - EBIT: F_glossary/bank_context/ebit.md
           - ECL: F_glossary/bank_context/ecl.md
           - FGC: F_glossary/bank_context/fgc.md
           - Float: F_glossary/bank_context/float.md
           - FPD: F_glossary/bank_context/fpd.md
           - IFRS9: F_glossary/bank_context/ifrs9.md
-          - Indice de Basileia: F_glossary/bank_context/indicF_basileia.md
+          - Indice de Basileia: F_glossary/bank_context/indice_basileia.md
           - Is Delayed: F_glossary/bank_context/is_delayed.md
           - KPI: F_glossary/bank_context/kpi.md
           - KS: F_glossary/bank_context/ks.md
@@ -161,21 +165,24 @@ nav:
         - Suspicious Activity: F_glossary/fraud_context/suspicious_activity.md
 
   - Tutorials:
-    - GCP: G_tutorials/gcp.md
+    - APIs: G_tutorials/apis.md
     - AWS: G_tutorials/aws.md
-    - Python: G_tutorials/python.md
+    - Big Data: G_tutorials/big_data.md
+    - Cloud Computing: G_tutorials/cloud_computing.md
+    - Data Visualization: G_tutorials/data_visualization.md
+    - Docker: G_tutorials/docker.md
+    - GCP: G_tutorials/gcp.md
+    - Git and GitHub: G_tutorials/git_github.md
+    - Jupyter Notebooks: G_tutorials/jupyter_notebooks.md
+    - Power BI: G_tutorials/power_bi.md
+    - Python: 
+      - Pycaret: G_tutorials/python.md
     - R: G_tutorials/r.md
     - SQL: G_tutorials/sql.md
-    - Git and GitHub: G_tutorials/git_github.md
-    - Docker: G_tutorials/docker.md
-    - Cloud Computing: G_tutorials/cloud_computing.md
-    - APIs: G_tutorials/apis.md
-    - Big Data: G_tutorials/big_data.md
-    - Data Visualization: G_tutorials/data_visualization.md
-    - Jupyter Notebooks: G_tutorials/jupyter_notebooks.md
-    - VS Code: G_tutorials/vs_code.md
-    - Power BI: G_tutorials/power_bi.md
+    - Streamlit: G_tutorials/streamlit.md
+    - TensorFlow: G_tutorials/tensorflow.md 
     - Tableau: G_tutorials/tableau.md
+    - VS Code: G_tutorials/vs_code.md
 
   - Projects:
     - Crime California (Shiny App): H_projects/crime_california.md
@@ -209,6 +216,7 @@ theme:
     #- navigation.expand        # Menus expansíveis
     - navigation.top           # Mostra o menu de navegação no topo também
     - navigation.instant       # Navegação sem recarregar a página
+    - content.code.copy       # Botão de copiar código com um clique nos blocos de código
   palette:
     - scheme: default         # Light mode
       primary: indigo

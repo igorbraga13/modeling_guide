@@ -1,0 +1,1 @@
+Conjunto de ação para assegurar a identidade e a atividade econômica dos clientes, bom como a origem de sua renda e utilização de seus recursos financeiros.

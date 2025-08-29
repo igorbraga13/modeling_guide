@@ -13,3 +13,6 @@ mkdocs -h - Print help message and exit.
 PLUGINS
 
 pip install mkdocs-awesome-pages-plugin -> permite criar um grupo de subpáginas que é também uma página
+
+SUBIR PÁGINA ONLINE
+mkdocs gh-deploy

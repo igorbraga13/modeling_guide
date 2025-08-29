@@ -1,12 +1,9 @@
-[MLFlow for Machine Learning Development](https://www.youtube.com/playlist?list=PLQqR_3C2fhUUOmaeowgv4WquvH515zVmo)
-
-[Capital One Machine Learning](https://www.capitalone.com/tech/machine-learning/)
-
-[Building Nubank YT](https://www.youtube.com/@building.nubank)
-
-[Hexbin Color pallets](https://color.adobe.com/pt/create/color-wheel)
+# Books
 
 [Deep Learning Book (Data Science Academy)](https://www.deeplearningbook.com.br/)
+
+[Machine Learning Engineering by Andriy Burkov](https://mlebook.com/wiki/doku.php)
+
 
 # MIT
 
@@ -28,6 +25,20 @@
 [Linear Algebra](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/)
 [YT Linear Algebra](https://youtube.com/playlist?list=PLE7DDD91010BC51F8)
 
+# Sites
+
+[Capital One Machine Learning](https://www.capitalone.com/tech/machine-learning/)
+
 # Stanford
 
 [Machine Learning with Graphs](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn&index=1)
+
+# Utils
+
+[Hexbin Color pallets](https://color.adobe.com/pt/create/color-wheel)
+
+# Youtube
+
+[MLFlow for Machine Learning Development](https://www.youtube.com/playlist?list=PLQqR_3C2fhUUOmaeowgv4WquvH515zVmo)
+
+[Building Nubank YT](https://www.youtube.com/@building.nubank)
