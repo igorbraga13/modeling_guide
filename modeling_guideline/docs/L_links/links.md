@@ -4,6 +4,7 @@
 
 [Machine Learning Engineering by Andriy Burkov](https://mlebook.com/wiki/doku.php)
 
+[Applied Predictive Modeling](https://www.ic.unicamp.br/~wainer/cursos/1s2021/432/2013_Book_AppliedPredictiveModeling.pdf)
 
 # MIT
 

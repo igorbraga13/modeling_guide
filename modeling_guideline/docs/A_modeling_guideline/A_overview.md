@@ -14,3 +14,7 @@ This material was developed primarily with supervised models in a banking contex
 - Defining a sampling window aligned with business cycles and data reality
 
 While cutting-edge algorithms can provide marginal performance gains, they are rarely the defining factor in a successful modeling project. A well-defined problem, solid data, and thoughtful feature engineering will always be the real drivers of impact.
+
+
+
+Entendeu o problema → Preparou os dados → Analisou e montou as features → Treinou e avaliou o modelo → registrou e versionou → garantiu reprodutibilidade/documentação → deploy → Experimentou e viu o impacto no negócio → Monitorou

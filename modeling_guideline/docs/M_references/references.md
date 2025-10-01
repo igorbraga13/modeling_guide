@@ -9,3 +9,5 @@
 [Sklearn Cross Validation](https://scikit-learn.org/stable/modules/cross_validation.html)
 
 [Hands-On Large Language Models] hands on large language models
+
+[Applied Predictive Modeling](https://www.ic.unicamp.br/~wainer/cursos/1s2021/432/2013_Book_AppliedPredictiveModeling.pdf)

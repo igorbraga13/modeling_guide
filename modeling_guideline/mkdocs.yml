@@ -9,8 +9,11 @@ nav:
     - 📊 Data Understanding and Preparation: A_modeling_guideline/C_data_preparation.md
     - 🔍 Exploratory Data Analysis: A_modeling_guideline/D_eda.md
     - 🛠️ Feature Engineering: A_modeling_guideline/E_feature_engineering.md
-    - 🧮 Modeling and Evaluation or Model Design: A_modeling_guideline/F_model_selection.md
-    - 🚀 Deployment and Operationalization: A_modeling_guideline/J_deployment.md
+    - 🧮 Modeling and Evaluation (Model Design): A_modeling_guideline/F_model_design.md
+    - 🧾 Experiment Tracking & Model Registry: A_modeling_guideline/G_experiment_tracking.md
+    - 🔁 Reproducibility & Documentation: A_modeling_guideline/H_reproducibility_and_documentation.md
+    - 🚀 Deployment and Operationalization: A_modeling_guideline/I_deployment.md
+    - 🧪 Experimentation and Causal Evaluation: A_modeling_guideline/J_experimentation.md
     - 📈 Model Monitoring and Maintenance: A_modeling_guideline/K_monitoring.md
     - ⚖️ Governance, Ethical, and Regulatory Considerations: A_modeling_guideline/L_governance.md
     - 🧰 Tools, Technologies, and Best Practices: A_modeling_guideline/M_tools.md
@@ -109,6 +112,7 @@ nav:
     - Weight of Evidence: D_statistical_concepts/woe.md
   
   - Engineering Concepts:
+    - Containerization: E_engineering_concepts/containerization.md
     - Data Engineering: E_engineering_concepts/data_engineering.md
     - Data Quality: E_engineering_concepts/data_quality.md
     - Data Versioning: E_engineering_concepts/data_versioning.md
@@ -118,6 +122,7 @@ nav:
     - Feature Store: E_engineering_concepts/feature_store.md
     - MLOps: E_engineering_concepts/mlops.md
     - Pipeline Orchestration: E_engineering_concepts/pipeline_orchestration.md
+    - Virtual Private Network (VPN): E_engineering_concepts/vpn.md
 
   - Glossary:
       - 💰 Bank Context:

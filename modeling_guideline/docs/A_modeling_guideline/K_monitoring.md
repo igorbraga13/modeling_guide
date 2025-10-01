@@ -1,3 +1,5 @@
+Quando temos um modelo em produção, seja online ou em batch devemos fazer seu monitoramento afim de garantirmos a funcionalidade/eficácia do mesmo. Podemos utilizar como material de consulta o `Working Paper No. 14`
+
 How model performance and drift will be monitored after go-live.
 
 What are the known issues, assumptions, and limitations? Can you monitor something to this issues
@@ -62,3 +64,8 @@ You can configure alerts using tools like:
 - Evidently AI (Open-source, great for drift monitoring)
 - WhyLabs (SaaS monitoring for ML models)
 - Neptune.ai (Experiment and model monitoring)
+
+
+## Continuous Training & Automation
+
+Reinforcement Learning?

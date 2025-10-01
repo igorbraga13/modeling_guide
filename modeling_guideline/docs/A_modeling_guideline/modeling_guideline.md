@@ -785,7 +785,7 @@ Devemos seguir com o monitoramento afim de garantirmos a funcionalidade/eficáci
 
 ### Cubist Regression
 
-Modelo de regressão que utiliza recortes simples de árvores de decisão e cria modelos de regressão dentro cada regra
+Modelo de regressão que utiliza recortes simples de árvores de decisão e cria modelos de regressão dentro de cada regra
 
 ```{r}
 Cubist::cubist(
