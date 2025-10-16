@@ -637,6 +637,8 @@ Com o modelo pronto o próximo passo é o deploy, que pode ocorrer de forma auto
 
 A `calibração de modelo` consiste em um conjunto de análises, compostos por `Diagnóstico` e `Remediação` para avaliar as probabilidades retornadas pelo modelo. O objetivo da calibração do modelo é garantir que as probabilidades de classe estimadas sejam consistentes com o que ocorreria naturalmente. (No caso de estimativas pontuais PODE fazer sentido essa abordagem, porém ao criar os GHs temos uma mitigação do erro a partir da predição intervalar de cada grupo com bootstrap para avaliar o intervalo de 95%)
 
+https://medium.com/data-hackers/calibrando-modelos-de-classifica%C3%A7%C3%A3o-bin%C3%A1ria-com-previs%C3%A3o-conforme-f547e68602ee
+
 # 11 - Modelo não supervisionado
 
 Para modelos não supervisionados não temos um target pré-definido para podermos utilizar de insumo para nossa modelagem, dessa forma temos que utilizar de outras técnicas para chegarmos em resultados satisfatórios.

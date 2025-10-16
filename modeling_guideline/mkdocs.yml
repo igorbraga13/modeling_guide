@@ -35,6 +35,7 @@ nav:
   - Statistical Concepts:
     - Accuracy: D_statistical_concepts/accuracy.md
     - ARIMA: D_statistical_concepts/arima.md
+    - AUC: D_statistical_concepts/auc.md
     - Bayesian Statistics: D_statistical_concepts/bayesian_statistics.md
     - Bagging: D_statistical_concepts/bagging.md
     - Boosting: D_statistical_concepts/boosting.md
@@ -44,6 +45,7 @@ nav:
     - Covariance: D_statistical_concepts/covariance.md
     - Cross-Validation: D_statistical_concepts/cross_validation.md
     - Chi-Squared: D_statistical_concepts/chisq_test.md
+    - Confusion Matrix: D_statistical_concepts/confusion_matrix.md
     - Convolutional Neural Networks (CNN): D_statistical_concepts/cnn.md
     - Decision Trees: D_statistical_concepts/decision_trees.md
     - Design of Experiments: D_statistical_concepts/doe.md
@@ -51,6 +53,7 @@ nav:
     - Elastic Net: D_statistical_concepts/elastic_net.md
     - Entropy: D_statistical_concepts/entropy.md
     - F1 Score: D_statistical_concepts/f1_score.md
+    - Gini: D_statistical_concepts/gini.md
     - Graph Neural Networks: D_statistical_concepts/gnn.md
     - Hellinger Distance: D_statistical_concepts/hellinger_distance.md
     - Heuristic: D_statistical_concepts/heuristic.md
@@ -60,8 +63,9 @@ nav:
     - ICE: D_statistical_concepts/ice.md
     - Information Gain: D_statistical_concepts/information_gain.md
     - Information Value: D_statistical_concepts/information_value.md
+    - Isolation Forest: D_statistical_concepts/isolation_forest.md
     - Jensen-Shannon Divergence: D_statistical_concepts/js_divergence.md
-    - Kolmogorov-Smirnov: D_statistical_concepts/ks.md
+    - Kolmogorov-Smirnov (KS): D_statistical_concepts/ks.md
     - Kullback-Leibler Divergence: D_statistical_concepts/kl_divergence.md
     - Kurtosis: D_statistical_concepts/kurtosis.md
     - L1 Regularization (LASSO): D_statistical_concepts/l1_regularization.md
@@ -77,8 +81,8 @@ nav:
     - Mean Absolute Error: D_statistical_concepts/mae.md
     - Mean Squared Error: D_statistical_concepts/mse.md
     - Multicollinearity: D_statistical_concepts/multicollinearity.md
+    - Natural Language Processing (NLP): D_statistical_concepts/nlp.md
     - Neural Networks: D_statistical_concepts/neural_networks.md
-    - NLP: D_statistical_concepts/nlp.md
     - Normalization: D_statistical_concepts/normalization.md
     - Optimization: D_statistical_concepts/optimization.md
     - Outliers: D_statistical_concepts/outliers.md
@@ -93,7 +97,7 @@ nav:
     - Recall: D_statistical_concepts/recall.md
     - Recurrent Neural Networks (RNN): D_statistical_concepts/rnn.md
     - Regression: D_statistical_concepts/regression.md
-    - ROC AUC: D_statistical_concepts/roc_auc.md
+    - ROC Curve: D_statistical_concepts/roc_curve.md
     - Sampling: D_statistical_concepts/sampling.md  
     - Seasonality: D_statistical_concepts/seasonality.md
     - SHAP: D_statistical_concepts/shap.md
@@ -118,10 +122,13 @@ nav:
     - Data Versioning: E_engineering_concepts/data_versioning.md
     - Data Warehouse: E_engineering_concepts/data_warehouse.md
     - Data Lake: E_engineering_concepts/data_lake.md
+    - DBT: E_engineering_concepts/dbt.md
     - ETL: E_engineering_concepts/etl.md
     - Feature Store: E_engineering_concepts/feature_store.md
     - MLOps: E_engineering_concepts/mlops.md
     - Pipeline Orchestration: E_engineering_concepts/pipeline_orchestration.md
+    - RAG: E_engineering_concepts/rag.md
+    - Roles: E_engineering_concepts/roles.md
     - Virtual Private Network (VPN): E_engineering_concepts/vpn.md
 
   - Glossary:
@@ -172,20 +179,18 @@ nav:
   - Tutorials:
     - APIs: G_tutorials/apis.md
     - AWS: G_tutorials/aws.md
-    - Big Data: G_tutorials/big_data.md
     - Cloud Computing: G_tutorials/cloud_computing.md
-    - Data Visualization: G_tutorials/data_visualization.md
+    - Data Visualization: G_tutorials/data_viz.md
     - Docker: G_tutorials/docker.md
     - GCP: G_tutorials/gcp.md
     - Git and GitHub: G_tutorials/git_github.md
-    - Jupyter Notebooks: G_tutorials/jupyter_notebooks.md
-    - Power BI: G_tutorials/power_bi.md
+    - Looker: G_tutorials/looker.md
     - Python: 
-      - Pycaret: G_tutorials/python.md
-    - R: G_tutorials/r.md
+      - Pycaret: G_tutorials/python/pycaret.md
+    - R: 
+      - G_tutorials/R/r_base.md
     - SQL: G_tutorials/sql.md
     - Streamlit: G_tutorials/streamlit.md
-    - TensorFlow: G_tutorials/tensorflow.md 
     - Tableau: G_tutorials/tableau.md
     - VS Code: G_tutorials/vs_code.md
 

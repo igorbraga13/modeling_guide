@@ -1,0 +1,1 @@
+Usar na Loss da GAN 

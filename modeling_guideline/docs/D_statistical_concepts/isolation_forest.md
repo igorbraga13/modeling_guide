@@ -1,0 +1,1 @@
+Algoritmo de detecção de anomalias que isola observações incomuns em um conjunto de dados.

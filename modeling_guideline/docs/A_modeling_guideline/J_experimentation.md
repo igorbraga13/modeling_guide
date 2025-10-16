@@ -10,10 +10,21 @@ Interpretação de resultados: separar efeito direto do modelo do efeito de outr
 
 Ciclo de feedback: resultados da experimentação alimentam nova rodada de modelagem e priorização de features.
 
-## A/B testing & uplift modeling
+## Inferência Causal
 
-Inferência Causal
+### A/B testing & uplift modeling
 
-Controle Sintético
+### Controle Sintético
+
+[Causal Inference for the Brave and True](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
+[Notebook Python](https://github.com/matheusfacure/causal-inference-in-python-code/blob/main/causal-inference-in-python/09-Synthetic-Control.ipynb)
+
+As features são as volumetrias dos outros estados
+Ajusta-se uma regressão com os dados dos outros estados para estimar como seria seu estado de interesse.
+
+Resíduos aleatórios (igual regressão)
+
+Nosso médio aumentdo  é o percentual de impacto da ação
+
 
 ## Business Impact & Value Realization
