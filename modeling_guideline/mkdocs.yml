@@ -38,7 +38,13 @@ nav:
       - Density-Based: B_algorithms/clustering/density_based.md
       - Model-Based: B_algorithms/clustering/model_based.md
       - Graph/Prototype-Based: B_algorithms/clustering/graph_prototype_based.md
-    - ⏱️ Time Series: B_algorithms/time_series.md
+    - ⏱️ Time Series:
+      - B_algorithms/time_series/index.md
+      - Classical Statistical Models: B_algorithms/time_series/classical_statistical_models.md
+      - Exponential Smoothing and Trend Methods: B_algorithms/time_series/exponential_smoothing_trend.md
+      - State Space & Kalman-Based Models: B_algorithms/time_series/state_space_kalman.md
+      - Decomposition & Regression-Based Models: B_algorithms/time_series/decomposition_regression.md
+      - Machine Learning & Hybrid Approaches: B_algorithms/time_series/machine_learning_hybrid.md
     - 🗣️ Natural Language Processing (NLP): B_algorithms/nlp.md
     - 🚨 Anomaly Detection: B_algorithms/anomaly_detection.md
     - 🧠 Deep Learning: B_algorithms/deep_learning.md
@@ -286,6 +292,8 @@ theme:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - tables
+  - md_in_html # Necessário p/ Markdown (tabela) dentro de HTML
 
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6

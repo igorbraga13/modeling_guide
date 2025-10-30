@@ -29,6 +29,48 @@ Each page in this section provides detailed theory, use cases, and best practice
 
 ---
 
+```mermaid
+
+graph TD
+
+A[📊 Parametric Models] --> B[🧮 Non-Parametric Models]
+A --> C[∑ Bayesian Methods]
+B --> D[🧩 Clustering]
+B --> E[↘️ Dimensionality Reduction]
+B --> F[🌳 Tree-Based Models]
+F --> G[🌲 Ensemble Methods]
+G --> H[🧠 Deep Learning]
+H <--> I[🎮 Reinforcement Learning]
+H <--> J[🗣️ Natural Language Processing]
+H <--> K[⚙️ Hybrid Models]
+
+classDef param fill:#fdd835,stroke:#000,color:#000,font-weight:bold;
+classDef nonparam fill:#81c784,stroke:#000,color:#000,font-weight:bold;
+classDef bayes fill:#ffca28,stroke:#000,color:#000,font-weight:bold;
+classDef cluster fill:#4fc3f7,stroke:#000,color:#000,font-weight:bold;
+classDef dimred fill:#29b6f6,stroke:#000,color:#000,font-weight:bold;
+classDef tree fill:#aed581,stroke:#000,color:#000,font-weight:bold;
+classDef ensemble fill:#66bb6a,stroke:#000,color:#000,font-weight:bold;
+classDef deep fill:#ba68c8,stroke:#000,color:#000,font-weight:bold;
+classDef rl fill:#ab47bc,stroke:#000,color:#000,font-weight:bold;
+classDef nlp fill:#8e24aa,stroke:#000,color:#fff,font-weight:bold;
+classDef hybrid fill:#26a69a,stroke:#000,color:#fff,font-weight:bold;
+
+class A param;
+class B nonparam;
+class C bayes;
+class D cluster;
+class E dimred;
+class F tree;
+class G ensemble;
+class H deep;
+class I rl;
+class J nlp;
+class K hybrid;
+```
+
+---
+
 ## 🔍 Relationships Between Families
 
 - **Parametric → Non-Parametric → Tree-Based → Ensemble**  

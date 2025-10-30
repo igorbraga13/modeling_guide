@@ -1,5 +1,9 @@
-Parametric → Non-Parametric → Tree-Based → Ensemble
-           ↘ Bayesian
-Non-Parametric → Clustering / Dimensionality Reduction
-Tree-Based → Ensemble
-Deep Learning ↔ Reinforcement / NLP / Hybrid
+Modelos para detectar padrões anômalos.
+
+Inclui:
+
+- Isolation Forest
+- One-Class SVM
+- Local Outlier Factor (LOF)
+- Elliptic Envelope
+- PCA-based Anomaly Detection
