@@ -20,205 +20,244 @@ nav:
     - 📚 Appendix: A_modeling_guideline/N_appendix.md
     - Legado: A_modeling_guideline/modeling_guideline.md
 
+  - Algorithms: 
+    - B_algorithms/index.md
+    - 📈 Parametric Models:
+      - B_algorithms/parametric_models/index.md
+      - Linear Models: B_algorithms/parametric_models/linear_models.md
+      - Generalized Linear Models (GLM): B_algorithms/parametric_models/glm.md
+      - Discriminant Analysis: B_algorithms/parametric_models/discriminant_analysis.md
+      - Generalized Additive Models (GAM): B_algorithms/parametric_models/gam.md
+      - Polynomial and Spline Regression: B_algorithms/parametric_models/polynomial_spline_regression.md
+      - Survival Analysis: B_algorithms/parametric_models/survival_analysis.md   
+    - 🧮 Non Parametric Models: B_algorithms/non_parametric_models.md
+    - 🧩 Clustering: 
+      - B_algorithms/clustering/index.md
+      - Partition-Based: B_algorithms/clustering/partition_based.md
+      - Hierarchical: B_algorithms/clustering/hierarchical.md
+      - Density-Based: B_algorithms/clustering/density_based.md
+      - Model-Based: B_algorithms/clustering/model_based.md
+      - Graph/Prototype-Based: B_algorithms/clustering/graph_prototype_based.md
+    - ⏱️ Time Series: B_algorithms/time_series.md
+    - 🗣️ Natural Language Processing (NLP): B_algorithms/nlp.md
+    - 🚨 Anomaly Detection: B_algorithms/anomaly_detection.md
+    - 🧠 Deep Learning: B_algorithms/deep_learning.md
+    - 🌳 Tree Based Models: B_algorithms/tree_based_models.md
+    - 🌲 Ensemble Methods: 
+      - B_algorithms/ensemble_methods/index.md
+      - 🧩 Bagging: B_algorithms/ensemble_methods/bagging.md
+      - 🚀 Boosting: B_algorithms/ensemble_methods/boosting.md
+      - 🪄 Stacking: B_algorithms/ensemble_methods/stacking.md
+      - 🌊 Voting: B_algorithms/ensemble_methods/voting.md
+      - Specialized Ensembles: B_algorithms/ensemble_methods/specialized_ensembles.md
+    - 🎮 Reinforcement Learning: B_algorithms/reinforcement_learning.md
+    - 🕸️ Graph Algorithms: B_algorithms/graph_algorithms.md
+    - ↘️ Dimensionality Reduction: B_algorithms/dimensionality_reduction.md
+    - 🎯 Recommendation Systems: B_algorithms/recommendation_systems.md
+    - ∑ Bayesian Methods: B_algorithms/bayesian_methods.md
+    - 🧬 Evolutionary Algorithms: B_algorithms/evolutionary_algorithms.md
+    - ⚙️ Hybrid Models: B_algorithms/hybrid_models.md
+    - Legado: B_algorithms/algorithms.md
+
   - Artifacts: 
-    - 🧾 Discovery: B_artifacts/discovery.md
-    - 🆗 Model Approval: B_artifacts/model_approval.md
-    - 📝 Technical Documentation: B_artifacts/technical_documentation.md
+    - 🧾 Discovery: C_artifacts/discovery.md
+    - 🆗 Model Approval: C_artifacts/model_approval.md
+    - 📝 Technical Documentation: C_artifacts/technical_documentation.md
   
   - Patterns:
-    - Data Preparation: C_patterns/data_preparation.md
+    - Data Preparation: D_patterns/data_preparation.md
     #- Feature Engineering: feature_engineering.md
     #- Model Evaluation: model_evaluation.md
     #- Model Deployment: model_deployment.md
     #- Model Monitoring: model_monitoring.md
   
   - Statistical Concepts:
-    - Accuracy: D_statistical_concepts/accuracy.md
-    - ARIMA: D_statistical_concepts/arima.md
-    - AUC: D_statistical_concepts/auc.md
-    - Bayesian Statistics: D_statistical_concepts/bayesian_statistics.md
-    - Bagging: D_statistical_concepts/bagging.md
-    - Boosting: D_statistical_concepts/boosting.md
-    - Calibration: D_statistical_concepts/calibration.md
-    - Central Limit Theorem: D_statistical_concepts/central_limit_theorem.md
-    - Correlation: D_statistical_concepts/correlation.md
-    - Covariance: D_statistical_concepts/covariance.md
-    - Cross-Validation: D_statistical_concepts/cross_validation.md
-    - Chi-Squared: D_statistical_concepts/chisq_test.md
-    - Confusion Matrix: D_statistical_concepts/confusion_matrix.md
-    - Convolutional Neural Networks (CNN): D_statistical_concepts/cnn.md
-    - Decision Trees: D_statistical_concepts/decision_trees.md
-    - Design of Experiments: D_statistical_concepts/doe.md
-    - Distributions: D_statistical_concepts/distributions.md
-    - Elastic Net: D_statistical_concepts/elastic_net.md
-    - Entropy: D_statistical_concepts/entropy.md
-    - F1 Score: D_statistical_concepts/f1_score.md
-    - Gini: D_statistical_concepts/gini.md
-    - Graph Neural Networks: D_statistical_concepts/gnn.md
-    - Hellinger Distance: D_statistical_concepts/hellinger_distance.md
-    - Heuristic: D_statistical_concepts/heuristic.md
-    - Homogeneity: D_statistical_concepts/homogeneity.md
-    - Homoscedasticity: D_statistical_concepts/homoscedasticity.md 
-    - Hypothesis Testing: D_statistical_concepts/hypothesis_testing.md
-    - ICE: D_statistical_concepts/ice.md
-    - Information Gain: D_statistical_concepts/information_gain.md
-    - Information Value: D_statistical_concepts/information_value.md
-    - Isolation Forest: D_statistical_concepts/isolation_forest.md
-    - Jensen-Shannon Divergence: D_statistical_concepts/js_divergence.md
-    - Kolmogorov-Smirnov (KS): D_statistical_concepts/ks.md
-    - Kullback-Leibler Divergence: D_statistical_concepts/kl_divergence.md
-    - Kurtosis: D_statistical_concepts/kurtosis.md
-    - L1 Regularization (LASSO): D_statistical_concepts/l1_regularization.md
-    - L2 Regularization (Ridge): D_statistical_concepts/l2_regularization.md
-    - Large Language Models (LLMs): D_statistical_concepts/llm.md
-    - Levene Test: D_statistical_concepts/levene_test.md
-    - LIME: D_statistical_concepts/lime.md
-    - Linear Regression: D_statistical_concepts/linear_regression.md  
-    - Logistic Regression: D_statistical_concepts/logistic_regression.md
-    - Long Short-Term Memory (LSTM): D_statistical_concepts/lstm.md
-    - Loss Function: D_statistical_concepts/loss_function.md
-    - Mann-Whitney U Test: D_statistical_concepts/mann_whitney.md
-    - Mean Absolute Error: D_statistical_concepts/mae.md
-    - Mean Squared Error: D_statistical_concepts/mse.md
-    - Multicollinearity: D_statistical_concepts/multicollinearity.md
-    - Natural Language Processing (NLP): D_statistical_concepts/nlp.md
-    - Neural Networks: D_statistical_concepts/neural_networks.md
-    - Normalization: D_statistical_concepts/normalization.md
-    - Optimization: D_statistical_concepts/optimization.md
-    - Outliers: D_statistical_concepts/outliers.md
-    - Overfitting: D_statistical_concepts/overfitting.md
-    - PCA: D_statistical_concepts/pca.md
-    - PDP: D_statistical_concepts/pdp.md
-    - Permutation Importance: D_statistical_concepts/permutation_importance.md
-    - Precison: D_statistical_concepts/precision.md
-    - Precision-Recall Curve: D_statistical_concepts/precision_recall_curve.md
-    - R Squared: D_statistical_concepts/r_squared.md
-    - Random Forest: D_statistical_concepts/random_forest.md
-    - Recall: D_statistical_concepts/recall.md
-    - Recurrent Neural Networks (RNN): D_statistical_concepts/rnn.md
-    - Regression: D_statistical_concepts/regression.md
-    - ROC Curve: D_statistical_concepts/roc_curve.md
-    - Sampling: D_statistical_concepts/sampling.md  
-    - Seasonality: D_statistical_concepts/seasonality.md
-    - SHAP: D_statistical_concepts/shap.md
-    - Skewness: D_statistical_concepts/skewness.md
-    - Sobol: D_statistical_concepts/sobol.md
-    - Specificity: D_statistical_concepts/specificity.md
-    - Standard Deviation: D_statistical_concepts/standard_deviation.md
-    - Standardization: D_statistical_concepts/standardization.md
-    - Stationarity: D_statistical_concepts/stationarity.md
-    - Transformers: D_statistical_concepts/transformers.md
-    - Trend: D_statistical_concepts/trend.md
-    - Variance: D_statistical_concepts/variance.md
-    - Variance Inflation Factor: D_statistical_concepts/vif.md
-    - Volatility: D_statistical_concepts/volatility.md
-    - Wasserstein Distance: D_statistical_concepts/wasserstein_distance.md
-    - Weight of Evidence: D_statistical_concepts/woe.md
+    - Accuracy: E_statistical_concepts/accuracy.md
+    - ARIMA: E_statistical_concepts/arima.md
+    - AUC: E_statistical_concepts/auc.md
+    - Bayesian Statistics: E_statistical_concepts/bayesian_statistics.md
+    - Bagging: E_statistical_concepts/bagging.md
+    - Boosting: E_statistical_concepts/boosting.md
+    - Calibration: E_statistical_concepts/calibration.md
+    - Central Limit Theorem: E_statistical_concepts/central_limit_theorem.md
+    - Correlation: E_statistical_concepts/correlation.md
+    - Covariance: E_statistical_concepts/covariance.md
+    - Cross-Validation: E_statistical_concepts/cross_validation.md
+    - Chi-Squared: E_statistical_concepts/chisq_test.md
+    - Confusion Matrix: E_statistical_concepts/confusion_matrix.md
+    - Convolutional Neural Networks (CNN): E_statistical_concepts/cnn.md
+    - Decision Trees: E_statistical_concepts/decision_trees.md
+    - Design of Experiments: E_statistical_concepts/doe.md
+    - Distributions: E_statistical_concepts/distributions.md
+    - Elastic Net: E_statistical_concepts/elastic_net.md
+    - Entropy: E_statistical_concepts/entropy.md
+    - F1 Score: E_statistical_concepts/f1_score.md
+    - Gini: E_statistical_concepts/gini.md
+    - Graph Neural Networks: E_statistical_concepts/gnn.md
+    - Hellinger Distance: E_statistical_concepts/hellinger_distance.md
+    - Heuristic: E_statistical_concepts/heuristic.md
+    - Homogeneity: E_statistical_concepts/homogeneity.md
+    - Homoscedasticity: E_statistical_concepts/homoscedasticity.md 
+    - Hypothesis Testing: E_statistical_concepts/hypothesis_testing.md
+    - ICE: E_statistical_concepts/ice.md
+    - Information Gain: E_statistical_concepts/information_gain.md
+    - Information Value: E_statistical_concepts/information_value.md
+    - Isolation Forest: E_statistical_concepts/isolation_forest.md
+    - Jensen-Shannon Divergence: E_statistical_concepts/js_divergence.md
+    - Kolmogorov-Smirnov (KS): E_statistical_concepts/ks.md
+    - Kullback-Leibler Divergence: E_statistical_concepts/kl_divergence.md
+    - Kurtosis: E_statistical_concepts/kurtosis.md
+    - L1 Regularization (LASSO): E_statistical_concepts/l1_regularization.md
+    - L2 Regularization (Ridge): E_statistical_concepts/l2_regularization.md
+    - Large Language Models (LLMs): E_statistical_concepts/llm.md
+    - Levene Test: E_statistical_concepts/levene_test.md
+    - LIME: E_statistical_concepts/lime.md
+    - Linear Regression: E_statistical_concepts/linear_regression.md  
+    - Logistic Regression: E_statistical_concepts/logistic_regression.md
+    - Long Short-Term Memory (LSTM): E_statistical_concepts/lstm.md
+    - Loss Function: E_statistical_concepts/loss_function.md
+    - Mann-Whitney U Test: E_statistical_concepts/mann_whitney.md
+    - Mean Absolute Error: E_statistical_concepts/mae.md
+    - Mean Squared Error: E_statistical_concepts/mse.md
+    - Multicollinearity: E_statistical_concepts/multicollinearity.md
+    - Natural Language Processing (NLP): E_statistical_concepts/nlp.md
+    - Neural Networks: E_statistical_concepts/neural_networks.md
+    - Normalization: E_statistical_concepts/normalization.md
+    - Optimization: E_statistical_concepts/optimization.md
+    - Outliers: E_statistical_concepts/outliers.md
+    - Overfitting: E_statistical_concepts/overfitting.md
+    - PCA: E_statistical_concepts/pca.md
+    - PDP: E_statistical_concepts/pdp.md
+    - Permutation Importance: E_statistical_concepts/permutation_importance.md
+    - Precison: E_statistical_concepts/precision.md
+    - Precision-Recall Curve: E_statistical_concepts/precision_recall_curve.md
+    - R Squared: E_statistical_concepts/r_squared.md
+    - Random Forest: E_statistical_concepts/random_forest.md
+    - Recall: E_statistical_concepts/recall.md
+    - Recurrent Neural Networks (RNN): E_statistical_concepts/rnn.md
+    - Regression: E_statistical_concepts/regression.md
+    - ROC Curve: E_statistical_concepts/roc_curve.md
+    - Sampling: E_statistical_concepts/sampling.md  
+    - Seasonality: E_statistical_concepts/seasonality.md
+    - SHAP: E_statistical_concepts/shap.md
+    - Skewness: E_statistical_concepts/skewness.md
+    - Sobol: E_statistical_concepts/sobol.md
+    - Specificity: E_statistical_concepts/specificity.md
+    - Standard Deviation: E_statistical_concepts/standard_deviation.md
+    - Standardization: E_statistical_concepts/standardization.md
+    - Stationarity: E_statistical_concepts/stationarity.md
+    - Transformers: E_statistical_concepts/transformers.md
+    - Trend: E_statistical_concepts/trend.md
+    - Variance: E_statistical_concepts/variance.md
+    - Variance Inflation Factor: E_statistical_concepts/vif.md
+    - Volatility: E_statistical_concepts/volatility.md
+    - Wasserstein Distance: E_statistical_concepts/wasserstein_distance.md
+    - Weight of Evidence: E_statistical_concepts/woe.md
   
   - Engineering Concepts:
-    - Containerization: E_engineering_concepts/containerization.md
-    - Data Engineering: E_engineering_concepts/data_engineering.md
-    - Data Quality: E_engineering_concepts/data_quality.md
-    - Data Versioning: E_engineering_concepts/data_versioning.md
-    - Data Warehouse: E_engineering_concepts/data_warehouse.md
-    - Data Lake: E_engineering_concepts/data_lake.md
-    - DBT: E_engineering_concepts/dbt.md
-    - ETL: E_engineering_concepts/etl.md
-    - Feature Store: E_engineering_concepts/feature_store.md
-    - MLOps: E_engineering_concepts/mlops.md
-    - Pipeline Orchestration: E_engineering_concepts/pipeline_orchestration.md
-    - RAG: E_engineering_concepts/rag.md
-    - Roles: E_engineering_concepts/roles.md
-    - Virtual Private Network (VPN): E_engineering_concepts/vpn.md
+    - Containerization: F_engineering_concepts/containerization.md
+    - Data Engineering: F_engineering_concepts/data_engineering.md
+    - Data Quality: F_engineering_concepts/data_quality.md
+    - Data Versioning: F_engineering_concepts/data_versioning.md
+    - Data Warehouse: F_engineering_concepts/data_warehouse.md
+    - Data Lake: F_engineering_concepts/data_lake.md
+    - DBT: F_engineering_concepts/dbt.md
+    - ETL: F_engineering_concepts/etl.md
+    - Feature Store: F_engineering_concepts/feature_store.md
+    - Kubernetes: F_engineering_concepts/kubernetes.md
+    - MLOps: F_engineering_concepts/mlops.md
+    - Pipeline Orchestration: F_engineering_concepts/pipeline_orchestration.md
+    - RAG: F_engineering_concepts/rag.md
+    - Roles: F_engineering_concepts/roles.md
+    - Virtual Private Network (VPN): F_engineering_concepts/vpn.md
 
   - Glossary:
       - 💰 Bank Context:
-          - Approval Rating: F_glossary/bank_context/approval_rating.md
-          - BNPL: F_glossary/bank_context/bnpl.md
-          - Churn: F_glossary/bank_context/churn.md
-          - CAC: F_glossary/bank_context/cac.md
-          - COGS: F_glossary/bank_context/cogs.md
-          - Credit Cycle: F_glossary/bank_context/credit_cycle.md
-          - CSI: F_glossary/bank_context/csi.md
-          - CTS: F_glossary/bank_context/cts.md
-          - EAD: F_glossary/bank_context/ead.md
-          - EBIT: F_glossary/bank_context/ebit.md
-          - ECL: F_glossary/bank_context/ecl.md
-          - FGC: F_glossary/bank_context/fgc.md
-          - Float: F_glossary/bank_context/float.md
-          - FPD: F_glossary/bank_context/fpd.md
-          - IFRS9: F_glossary/bank_context/ifrs9.md
-          - Indice de Basileia: F_glossary/bank_context/indice_basileia.md
-          - Is Delayed: F_glossary/bank_context/is_delayed.md
-          - KPI: F_glossary/bank_context/kpi.md
-          - KS: F_glossary/bank_context/ks.md
-          - LGD: F_glossary/bank_context/lgd.md
-          - LTV: F_glossary/bank_context/ltv.md
-          - NPL: F_glossary/bank_context/npl.md
-          - PD: F_glossary/bank_context/pd.md
-          - PDD: F_glossary/bank_context/pdd.md
-          - Receivables Assignment: F_glossary/bank_context/receivables_assignment.md
-          - Revolving Credit: F_glossary/bank_context/revolving_credit.md
-          - ROE: F_glossary/bank_context/roe.md
-          - ROI: F_glossary/bank_context/roi.md
-          - SLA: F_glossary/bank_context/sla.md
-          - Stop Accrual: F_glossary/bank_context/stop_accrual.md
-          - Supply Chain: F_glossary/bank_context/supply.md
-          - TPV: F_glossary/bank_context/tpv.md
+          - Approval Rating: G_glossary/bank_context/approval_rating.md
+          - BNPL: G_glossary/bank_context/bnpl.md
+          - Churn: G_glossary/bank_context/churn.md
+          - CAC: G_glossary/bank_context/cac.md
+          - COGS: G_glossary/bank_context/cogs.md
+          - Credit Cycle: G_glossary/bank_context/credit_cycle.md
+          - CSI: G_glossary/bank_context/csi.md
+          - CTS: G_glossary/bank_context/cts.md
+          - EAD: G_glossary/bank_context/ead.md
+          - EBIT: G_glossary/bank_context/ebit.md
+          - ECL: G_glossary/bank_context/ecl.md
+          - FGC: G_glossary/bank_context/fgc.md
+          - Float: G_glossary/bank_context/float.md
+          - FPD: G_glossary/bank_context/fpd.md
+          - IFRS9: G_glossary/bank_context/ifrs9.md
+          - Indice de Basileia: G_glossary/bank_context/indice_basileia.md
+          - Is Delayed: G_glossary/bank_context/is_delayed.md
+          - KPI: G_glossary/bank_context/kpi.md
+          - KS: G_glossary/bank_context/ks.md
+          - LGD: G_glossary/bank_context/lgd.md
+          - LTV: G_glossary/bank_context/ltv.md
+          - NPL: G_glossary/bank_context/npl.md
+          - PD: G_glossary/bank_context/pd.md
+          - PDD: G_glossary/bank_context/pdd.md
+          - Receivables Assignment: G_glossary/bank_context/receivables_assignment.md
+          - Revolving Credit: G_glossary/bank_context/revolving_credit.md
+          - ROE: G_glossary/bank_context/roe.md
+          - ROI: G_glossary/bank_context/roi.md
+          - SLA: G_glossary/bank_context/sla.md
+          - Stop Accrual: G_glossary/bank_context/stop_accrual.md
+          - Supply Chain: G_glossary/bank_context/supply.md
+          - TPV: G_glossary/bank_context/tpv.md
 
-      - 🕵️‍♂️ Fraud Context:
-        - Fraud: F_glossary/fraud_context/fraud.md
-        - Fraud Detection: F_glossary/fraud_context/fraud_detection.md
-        - Fraud Prevention: F_glossary/fraud_context/fraud_prevention.md
-        - Fraud Risk Management: F_glossary/fraud_context/fraud_risk_management.md
-        - Fraudulent Transaction: F_glossary/fraud_context/fraudulent_transaction.md
-        - KYC: F_glossary/fraud_context/kyc.md
-        - Money Laundering: F_glossary/fraud_context/money_laundering.md
-        - Suspicious Activity: F_glossary/fraud_context/suspicious_activity.md
+      - 🕵️‍♂️ Fraud Context:       
+        - Fraud Prevention: G_glossary/fraud_context/fraud_prevention.md
+        - Fraud Risk Management: G_glossary/fraud_context/fraud_risk_management.md
+        - Fraudulent Transaction: G_glossary/fraud_context/fraudulent_transaction.md
+        - KYC: G_glossary/fraud_context/kyc.md
+        - Money Laundering: G_glossary/fraud_context/money_laundering.md
+        - Suspicious Activity: G_glossary/fraud_context/suspicious_activity.md
 
   - Tutorials:
-    - APIs: G_tutorials/apis.md
-    - AWS: G_tutorials/aws.md
-    - Cloud Computing: G_tutorials/cloud_computing.md
-    - Data Visualization: G_tutorials/data_viz.md
-    - Docker: G_tutorials/docker.md
-    - GCP: G_tutorials/gcp.md
-    - Git and GitHub: G_tutorials/git_github.md
-    - Looker: G_tutorials/looker.md
+    - Airflow: H_tutorials/airflow.md
+    - APIs: H_tutorials/apis.md
+    - AWS: H_tutorials/aws.md
+    - Cloud Computing: H_tutorials/cloud_computing.md
+    - Data Visualization: H_tutorials/data_viz.md
+    - Docker: H_tutorials/docker.md
+    - GCP: H_tutorials/gcp.md
+    - Git and GitHub: H_tutorials/git_github.md
+    - Looker: H_tutorials/looker.md
     - Python: 
-      - Pycaret: G_tutorials/python/pycaret.md
+      - Pycaret: H_tutorials/python/pycaret.md
     - R: 
-      - G_tutorials/R/r_base.md
-    - SQL: G_tutorials/sql.md
-    - Streamlit: G_tutorials/streamlit.md
-    - Tableau: G_tutorials/tableau.md
-    - VS Code: G_tutorials/vs_code.md
+      - H_tutorials/R/r_base.md
+    - SQL: H_tutorials/sql.md
+    - Streamlit: H_tutorials/streamlit.md
+    - Tableau: H_tutorials/tableau.md
+    - VS Code: H_tutorials/vs_code.md
 
   - Projects:
-    - Crime California (Shiny App): H_projects/crime_california.md
-    - Distributions Comparison: H_projects/distributions_comparison.md
-    - Fraud Detection: H_projects/fraud_detection.md
+    - Crime California (Shiny App): I_projects/crime_california.md
+    - Distributions Comparison: I_projects/distributions_comparison.md
+    - Fraud Detection: I_projects/fraud_detection.md
   
   - Presentations:
-    - 📊 Data Science: I_presentations/data_science.md
-    - 📈 Machine Learning: I_presentations/machine_learning.md
-    - 🧠 Deep Learning: I_presentations/deep_learning.md
-    - 🕸️ Graphs: I_presentations/graphs.md
-    - 📚 Statistics: I_presentations/statistics.md
-    - 🛠️ Tools and Technologies: I_presentations/tools_and_technologies.md
+    - 📊 Data Science: J_presentations/data_science.md
+    - 📈 Machine Learning: J_presentations/machine_learning.md
+    - 🧠 Deep Learning: J_presentations/deep_learning.md
+    - 🕸️ Graphs: J_presentations/graphs.md
+    - 📚 Statistics: J_presentations/statistics.md
+    - 🛠️ Tools and Technologies: J_presentations/tools_and_technologies.md
 
   - Study Notes: 
-    - Teste: J_study_notes/study_notes.md
+    - Teste: K_study_notes/study_notes.md
     - Optimization: 
-      - Heuristical: J_study_notes/heuristical_optimization.md
-      - Convex: J_study_notes/convex_optimization.md
-    - Kanban: J_study_notes/kanban.md
+      - Heuristical: K_study_notes/heuristical_optimization.md
+      - Convex: K_study_notes/convex_optimization.md
+    - Kanban: K_study_notes/kanban.md
 
-  - Articles: K_articles/articles.md
+  - Articles: L_articles/articles.md
 
-  - Links: L_links/links.md
+  - Links: M_links/links.md
 
-  - References: M_references/references.md
+  - References: N_references/references.md
 
 theme:
   name: material
@@ -227,6 +266,7 @@ theme:
     - navigation.top           # Mostra o menu de navegação no topo também
     - navigation.instant       # Navegação sem recarregar a página
     - content.code.copy       # Botão de copiar código com um clique nos blocos de código
+    - navigation.indexes  # Necessário para index.md funcionar automaticamente
   palette:
     - scheme: default         # Light mode
       primary: indigo
@@ -255,3 +295,4 @@ extra_javascript:
 plugins:
   - search
   - mermaid2
+

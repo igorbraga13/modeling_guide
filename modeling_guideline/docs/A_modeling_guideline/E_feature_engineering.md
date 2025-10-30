@@ -13,4 +13,4 @@ Podemos criar features utilizando diferentes horizontes de tempo para os cliente
 
 
 ## Feature Engineering
-target encoding [CatBoost Encoder](contrib.scikit-learn.org/category_encoders/catbooost.html)
+target encoding [CatBoost Encoder](http://contrib.scikit-learn.org/category_encoders/catbooost.html)
