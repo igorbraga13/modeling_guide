@@ -33,6 +33,8 @@ Because this step sets the foundation for the entire project, it's critical to e
 
 On this step we present a [Discovery]("../B_artifacts/discovery.md")
 
+---
+
 ## 🎯 Target Definition 
 
 Once the problem is well understood, the next step is to define the target variable—the outcome the model will predict and the basis for measuring success. A well-defined target ensures that the model output is not only useful, but also measurable, actionable, and aligned with business value.
@@ -58,26 +60,66 @@ Once the problem is well understood, the next step is to define the target varia
             using clicks to represent user satisfaction can mislead the modeling 
             process if the two aren’t strongly correlated.
 
+---
+
 ## 🧩 Solution Definition
 
-This step encourages pragmatism—simpler approaches like business rules or heuristics can often outperform complex models, especially in early iterations. These solutions are typically faster to implement, easier to explain, and sufficient for generating business value.
+The first step in defining a solution is to determine whether the problem requires a Predictive or Prescriptive approach.
 
-Start by identifying how the model or solution will be used and what impact it should create. Then evaluate trade-offs between model complexity, time-to-value, and operational constraints.
+| Type of Model       | Guiding Question                                | Example                                                                                     |
+| ------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| 🔮 **Predictive**   | “What is likely to happen?”                     | Forecasting default probability, customer churn, demand, or sales.                          |
+| 🧭 **Prescriptive** | “What should I do to achieve the best outcome?” | Deciding optimal credit limits, allocating marketing budgets, or defining logistics routes. |
+
+👉 In other words:
+
+- A Predictive Model estimates future outcomes based on historical data.
+- A Prescriptive Model determines optimal actions based on objectives and constraints.
+
+🎓 Practical Examples
+
+| Scenario                | Predictive Component                 | Prescriptive Component *(e.g., Simplex, MIP)*        |
+| ----------------------- | ------------------------------------ | ---------------------------------------------------- |
+| **Credit Risk**         | Predict the probability of default.  | Decide the optimal credit limit for each customer.   |
+| **Logistics**           | Forecast regional demand.            | Optimize routing and distribution to minimize cost.  |
+| **Marketing**           | Estimate conversion rate by channel. | Allocate optimal marketing spend per channel.        |
+| **Financial Portfolio** | Predict expected return and risk.    | Choose asset weights that maximize the Sharpe ratio. |
+
+### ⚙️ From Definition to Design
+
+Once you’ve determined whether the problem follows a Predictive or Prescriptive approach, best practices emphasize pragmatism.
+Simpler approaches—such as business rules or heuristics—can often outperform complex models, especially in early iterations. These solutions are usually faster to implement, easier to explain, and sufficient to generate business value.
+
+### 🎯 Define Usage and Impact
+
+Before modeling, identify how the solution will be used and what impact it should create. Then, evaluate trade-offs between:
+
+- Model complexity
+- Time-to-value (speed of delivery)
+- Operational constraints (data availability, monitoring, maintenance)
 
     💡 Ask: What is the minimum viable solution that delivers reliable value 
         with acceptable effort and risk?
 
-When appropriate, deploy a quick-win baseline model—such as logistic regression or decision trees—and evolve from there as needed.
+### 🛠️ Recommended Starting Strategy (Predictive Context)
 
-- **Start simple:** Consider whether a rule set or scorecard meets the need—particularly if interpretability, regulatory approval, or fast deployment is a priority.
+When appropriate, deploy a quick-win baseline model—for example, logistic regression or shallow decision trees—and evolve from there as maturity grows.
 
-- **Deploy baseline models early:** Techniques like logistic regression or shallow decision trees provide quick, interpretable wins and can serve as solid baselines.
+- **Start simple:**
+Determine if a rule set or scorecard already meets the business need—especially when interpretability, regulatory validation, or rapid deployment is essential.
 
-- **Assess feasibility and maintainability:** Consider the effort to maintain and retrain complex models over time. Sometimes, operational simplicity outweighs marginal gains in accuracy.
+- **Deploy baseline models early:**
+Techniques such as logistic regression, decision trees, or Naïve Bayes provide interpretable early wins and serve as strong reference points for future improvements.
 
-        🛠️ Example: In credit risk modeling, a scorecard with well-defined thresholds 
-            may be more practical and trusted by risk committees than a black-box 
-            ensemble model—especially when regulatory transparency is required.
+- **Assess feasibility and maintainability:**
+Consider the effort required to maintain and retrain complex models over time. In many business environments, operational simplicity outweighs marginal accuracy gains.
+
+        🛠️ Example: In credit risk modeling, a well-structured scorecard with clear 
+            thresholds may be more practical and trusted by risk committees than a 
+            black-box ensemble model—particularly when regulatory transparency and 
+            auditability are required.
+
+---
 
 ## ✨ Optional Enhancements (Only If You Want to Expand Further)
 

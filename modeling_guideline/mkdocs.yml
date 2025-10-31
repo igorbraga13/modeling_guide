@@ -22,6 +22,7 @@ nav:
 
   - Algorithms: 
     - B_algorithms/index.md
+    - 🎯 Optimization & Mathematical Programming: B_algorithms/optimization_math.md
     - 📈 Parametric Models:
       - B_algorithms/parametric_models/index.md
       - Linear Models: B_algorithms/parametric_models/linear_models.md
@@ -30,7 +31,6 @@ nav:
       - Generalized Additive Models (GAM): B_algorithms/parametric_models/gam.md
       - Polynomial and Spline Regression: B_algorithms/parametric_models/polynomial_spline_regression.md
       - Survival Analysis: B_algorithms/parametric_models/survival_analysis.md   
-    - 🧮 Non Parametric Models: B_algorithms/non_parametric_models.md
     - 🧩 Clustering: 
       - B_algorithms/clustering/index.md
       - Partition-Based: B_algorithms/clustering/partition_based.md
@@ -63,6 +63,7 @@ nav:
     - ∑ Bayesian Methods: B_algorithms/bayesian_methods.md
     - 🧬 Evolutionary Algorithms: B_algorithms/evolutionary_algorithms.md
     - ⚙️ Hybrid Models: B_algorithms/hybrid_models.md
+    - 🧮 Others Non Parametric Models: B_algorithms/non_parametric_models.md
     - Legado: B_algorithms/algorithms.md
 
   - Artifacts: 
@@ -303,4 +304,3 @@ extra_javascript:
 plugins:
   - search
   - mermaid2
-

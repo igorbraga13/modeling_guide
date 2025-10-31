@@ -74,3 +74,5 @@ Modelos baseados em distribuições paramétricas para tempo até um evento.
 | **Weibull Regression**                   | Permite hazard crescente ou decrescente.       | Tempo até default ou churn.              |
 | **Log-Normal / Log-Logistic Regression** | Modela log do tempo como variável normal.      | Modelagem de durações com caudas longas. |
 | **Accelerated Failure Time (AFT)**       | Regressão sobre log do tempo de sobrevivência. | Saúde, crédito, telecom.                 |
+
+## ADICIONAR FLOWCHART DE DISTRIBUIÇÕES RELACIONADAS DO FLÁVIO
