@@ -7297,7 +7297,7 @@ sv_importance(shap_plot, kind = &quot;beeswarm&quot;, size = 0.5) +
   labs(title = &quot;SHAP Beeswarm&quot;)
 </code></pre>
 <p>Podemos analisar feature a feature com esse conjunto de 4 gráficos:</p>
-<pre><code>lucyR::feature_sanity()
+<pre><code># Gráficos feature_sanity() da lucyR
 </code></pre>
 <p>ressaltando que para variáveis contínuas o scatterplot é utilizado enquanto para variáveis discretas utilizamos o boxplot</p>
 <h2 id="61-comparacao-de-modelos">6.1 Comparação de modelos</h2>
@@ -7315,8 +7315,8 @@ sv_importance(shap_plot, kind = &quot;beeswarm&quot;, size = 0.5) +
 <h3 id="ks_1">KS</h3>
 <h1 id="7-grupos-homogeneos">7 - Grupos Homogêneos</h1>
 <p>Com a modelagem finalizada, ou pelo menos uma V0, é preciso agrupar seus resultados por grupos homogêneos (GHs). A ideia de criar grupos homogêneos é observar o desempenho do modelo para cada grupo, ao invés de olhar o seu desempenho geral. Pode acontecer de no geral o modelo estar bem preditivo, porém ao quebrar em grupos observamos que determinados grupos estão subindo a média de nossa preditividade, enquanto outros estão pouquíssimo preditivos.</p>
-<p>Para a criação dos GHs utilizamos a função <code>grupos_risco</code> do pacote <code>inter.ai</code>, que utiliza a função <code>classInt::classIntervals</code> para encontrar o melhor ponto de corte</p>
-<pre><code>inter.ai::gerar_grupos_homogeneos(y_true, y_pred, try_bins = 4:20)
+<p>Para a criação dos GHs podemos utilizar a função <code>classInt::classIntervals</code> para encontrar o melhor ponto de corte</p>
+<pre><code># função para gerar GHs usando y_pred, y_true e número de bins (pode ser otimizado)
 </code></pre>
 <p>É preciso testar diferentes combinações de bins para encontrar a melhor partição para os grupos homogêneos, uma vez que a alteração dos bins máximos e mínimos impacta na função.</p>
 <h2 id="71-matriz-de-confusao">7.1 - Matriz de confusão</h2>
