@@ -442,7 +442,7 @@ IC_KS = function(data, B, safra){
   ks_interv <- map_dbl(1:B,~{
     idx <- sample(dim(data)[1],replace = T)
     bd <- data[idx]
-    inter.ai::ks_calc(bd[dt_ref == safra, pred],bd[dt_ref == safra, fl_good])
+    ks_calc(bd[dt_ref == safra, pred],bd[dt_ref == safra, fl_good])
   }, .progress = TRUE
   )
   summary(ks_interv)
@@ -554,7 +554,7 @@ sv_importance(shap_plot, kind = "beeswarm", size = 0.5) +
 Podemos analisar feature a feature com esse conjunto de 4 gráficos:
 
 ```{r eval=FALSE, include=TRUE}
-lucyR::feature_sanity()
+# Gráficos feature_sanity() da lucyR
 ```
 
 ressaltando que para variáveis contínuas o scatterplot é utilizado enquanto para variáveis discretas utilizamos o boxplot
@@ -589,10 +589,10 @@ AA distância de Wasserstein é independente de sobreposição e pode lidar muit
 
 Com a modelagem finalizada, ou pelo menos uma V0, é preciso agrupar seus resultados por grupos homogêneos (GHs). A ideia de criar grupos homogêneos é observar o desempenho do modelo para cada grupo, ao invés de olhar o seu desempenho geral. Pode acontecer de no geral o modelo estar bem preditivo, porém ao quebrar em grupos observamos que determinados grupos estão subindo a média de nossa preditividade, enquanto outros estão pouquíssimo preditivos.
 
-Para a criação dos GHs utilizamos a função `grupos_risco` do pacote `inter.ai`, que utiliza a função `classInt::classIntervals` para encontrar o melhor ponto de corte
+Para a criação dos GHs podemos utilizar a função `classInt::classIntervals` para encontrar o melhor ponto de corte
 
 ```{r eval=FALSE, include=TRUE}
-inter.ai::gerar_grupos_homogeneos(y_true, y_pred, try_bins = 4:20)
+# função para gerar GHs usando y_pred, y_true e número de bins (pode ser otimizado)
 ```
 
 É preciso testar diferentes combinações de bins para encontrar a melhor partição para os grupos homogêneos, uma vez que a alteração dos bins máximos e mínimos impacta na função.
