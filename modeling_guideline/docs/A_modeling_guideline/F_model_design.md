@@ -7,6 +7,7 @@ The algorithm(s) used, architectures if relevant (e.g., XGBoost, Neural Net).
 Train/test splits, metrics used, hyperparameters tuning, validation strategy (CV, OOT, etc).
 
 ### Hyperparameter Tuning
+Devemos fazer a escolha de hiperparêmetro apenas com nossa base de treino, jamais com teste e OoT para não ter data leakage
 A busca de hiperparêmetro é importante para...Temos diversas técnicas de busca para otimização de hiperparâmetros
 
 #### Grid Search

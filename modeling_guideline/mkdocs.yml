@@ -31,6 +31,7 @@ nav:
       - Generalized Additive Models (GAM): B_algorithms/parametric_models/gam.md
       - Polynomial and Spline Regression: B_algorithms/parametric_models/polynomial_spline_regression.md
       - Survival Analysis: B_algorithms/parametric_models/survival_analysis.md   
+      - Validation & Evaluation Methods: B_algorithms/parametric_models/validation_evaluation.md
     - 🧩 Clustering: 
       - B_algorithms/clustering/index.md
       - Partition-Based: B_algorithms/clustering/partition_based.md
@@ -38,6 +39,7 @@ nav:
       - Density-Based: B_algorithms/clustering/density_based.md
       - Model-Based: B_algorithms/clustering/model_based.md
       - Graph/Prototype-Based: B_algorithms/clustering/graph_prototype_based.md
+      - Validation & Evaluation Methods: B_algorithms/clustering/validation_evaluation.md
     - ⏱️ Time Series:
       - B_algorithms/time_series/index.md
       - Classical Statistical Models: B_algorithms/time_series/classical_statistical_models.md
@@ -45,6 +47,7 @@ nav:
       - State Space & Kalman-Based Models: B_algorithms/time_series/state_space_kalman.md
       - Decomposition & Regression-Based Models: B_algorithms/time_series/decomposition_regression.md
       - Machine Learning & Hybrid Approaches: B_algorithms/time_series/machine_learning_hybrid.md
+      - Validation & Evaluation Methods: B_algorithms/time_series/validation_evaluation.md
     - 🗣️ Natural Language Processing (NLP): B_algorithms/nlp.md
     - 🚨 Anomaly Detection: B_algorithms/anomaly_detection.md
     - 🧠 Deep Learning: B_algorithms/deep_learning.md
@@ -56,6 +59,7 @@ nav:
       - 🪄 Stacking: B_algorithms/ensemble_methods/stacking.md
       - 🌊 Voting: B_algorithms/ensemble_methods/voting.md
       - Specialized Ensembles: B_algorithms/ensemble_methods/specialized_ensembles.md
+      - Validation & Evaluation Methods: B_algorithms/ensemble_methods/validation_evaluation.md
     - 🎮 Reinforcement Learning: B_algorithms/reinforcement_learning.md
     - 🕸️ Graph Algorithms: B_algorithms/graph_algorithms.md
     - ↘️ Dimensionality Reduction: B_algorithms/dimensionality_reduction.md

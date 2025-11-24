@@ -62,3 +62,6 @@ Simplex é o “árvore de decisão” da otimização linear — percorre siste
 
 ### Markov Chain
 
+A Markov Chain is a stochastic model describing a sequence of possible events where the probability of each event depends only on the state attained in the previous event. It is characterized by the Markov property, which states that the future state is independent of the past states given the present state.
+
+https://im.ufal.br/evento/bsbm/download/minicurso/cadeias.pdf

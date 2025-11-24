@@ -45,3 +45,5 @@ DBSCAN/HDBSCAN → handle noise and arbitrary shapes (no need for k).
 GMM → probabilistic, soft membership (points can belong to multiple clusters).
 
 Spectral / SOM → leverage structure or topology for complex data spaces.
+
+## 📈 Validation & Evaluation Methods
