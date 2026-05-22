@@ -78,7 +78,23 @@ Para criarmos as features temos que nos atentar ao horizonte de feature que vamo
 
 Podemos criar features utilizando diferentes horizontes de tempo para os clientes, porém, para isso devemos ter alguma forma de identificar os clientes em que nosso tempo de features varia. Por exemplo: Se quisermos pegar como features o histórico de atraso de um cliente, devemos ter também uma feature com o tempo de contrato desse cliente, pois é muito diferente um cliente que atrasou 2 parcelas em 2 meses com um cliente que atrasou 2 parcelas em 10 anos
 
-## 2.1 Público Elegível
+# 3 - Amostragem
+
+Podemos fazer uma amostragem simples. Porém em casos com eventos muito raros como fraude (0.08%) por exemplo pode ser interessante utilizar técnicas como undersamplig ou oversampling. Em contexto de identificação de imagem por exemplo o Oversampling pode ser utilizado pois gerar dados sintéticos de imagens, a depender do caso, não é problemático, diferente de criar novas observações em um contexto transacional por exemplo. Nesse caso transacional o undersampling se torna uma melhor opção pois restringe o não evento para aumentar a proporção do evento, naõ criando dados fictícios e em um contexto com grandes volumes de dados não precisa se preocupar em estar perdendo informação.
+
+Outra opção ao undersamplig seria uma amostragem com pesos. Você amostra aleatoriamente sua base e utiliza o `sample_weights` para dar mais peso para as linhas de ocorrência do evento. Vale testar pesos diferentes por validação cruzada selecionando o que tiver melhor trade-off entre FN e FP. Dessa forma mantém estrutura temporal, o modelo aprende melhor a classe majoritária, mais fácil de calibrar.
+
+Estruturando o experimento:
+
+- Para a CV não utilize `KFold(shuffle=True)` pois mistura passado e futuro gerando vazamento temporal, escolha: `TimeSeriesSplit(n_splits=5)` a partir de `from sklearn.model_selection import TimeSeriesSplit` fazendo uma CV por bloco de tempo.
+
+- Defina grid de pesos (log-scale): pesos = N0/N1 * [0.25, 0.5, 1, 2, 4]
+
+- Para cada peso treina com sample_weight e escolha uma métrica para escolher o peso (exemplo: Recall quando FPR = 3%, KS)
+
+- Note que o cutoff deve ser selecionado depois, no OoT. E é importante que não utilize Peso e Undersmapling pois invalida a validação cruzada
+
+## 3.1 Público Elegível
 
 Avaliando, dentre toda nossa base, os clientes que possuem o horizonte definido de features, e as demais premissas necessárias (hard filters, tempo de observabilidade para o target, etc), estes tornam-se nosso público elegível
 
@@ -118,7 +134,7 @@ Se em nossa situação tivermos a safra do cliente (application, onboarding, ace
 ```
 
 
-# 3 - Análise exploratória univariada das variáveis de interesse (features inclusas)
+# 4 - Análise exploratória univariada das variáveis de interesse (features inclusas)
 
 Nesse momento a análise tem como objetivo encontrar outliers, semelhanças na distribuição das features, etc
 
@@ -130,7 +146,7 @@ Nesse momento a análise tem como objetivo encontrar outliers, semelhanças na d
 
 Para sermos mais conservadores em relação ao outliers podemos considerar `Outlier extremo`: Considerar valores menores que (Q1 - 3\*dist AIQ) e maiores que (Q3 + 3\*dist AIQ)
 
-# 4 - Análises bivariadas para validação das features (pode-se utilizar decision tree)
+# 5 - Análises bivariadas para validação das features (pode-se utilizar decision tree)
 
 Nesse momento a análise tem como objetivo observar se alguma feature vai de desencontro com nosso target, deixando um ponto de atenção.
 
@@ -265,7 +281,7 @@ ggplot(x,aes(x=m0,y=var,fill=ks_stat))+
 ```
 
 
-# 5 - Regression
+# 6 - Regression
 
 A regressão, por sua simplicidade, deve ser sempre a primeira escolha na hora de criar seu modelo baseline. Após um primeiro teste podemos partir para outros modelos mais robustos.
 
@@ -277,7 +293,7 @@ Em alguns casos ter o trabalho de escalar as variáveis pode ser em vão, como p
 
 Uma alternativa para a regressão linear, por exemplo, em que as variáveis não são significativas, é utilizar `GAMs` para testar se as variáveis tem uma relação não linear, de maneira simples.
 
-## 5.1 - Machine Learning
+## 6.1 - Machine Learning
 
 Outra possibilidade é utilizar modelos mais robustos como por exemplo XGBoost, que nada mais é que um conjunto de árvores, com seus parâmetros bem tunados ou LightGBM que é uma versão mais rápida do XGBoost.
 
@@ -313,7 +329,7 @@ Após a análise do SHAP, caso tenha muitas features, na hora de apresentar a re
 
 Além do SHAP temos outras opções como o LIME, PDP, ICE, dentre outros
 
-# 6 - Modelagem
+# 7 - Modelagem
 
 ## Splitting
 
@@ -434,6 +450,8 @@ Depois de avaliar se temos variáveis sem variância podemos buscar por correla�
 *Note que utilizamos apenas variáveis numéricas pois para outras variáveis não faz sentido olhar correlação dessa forma*
 
 Adicione as novas variáveis no seu vetor de variáveis a serem ignoradas `cols_ignore <- append(cols_ignore, var_corr)` e rode um novo modelo para continuar acompanhando o desempenho do modelo com o `MLmetrics::KS_Stat(y_pred = probabilities, y_true = teste$target)`
+
+A função findCorrelation seleciona a variável pela que tiver menos correlação com as demais variáveis, uma alternativa relevante é utilizar alguma métrica que olhar o valor da informação(Information Value) como critério de seleção das variáveis correlacionadas.
 
 #### with little VIF
 
@@ -682,7 +700,7 @@ Podemos analisar feature a feature com esse conjunto de 4 gráficos:
 
 ressaltando que para variáveis contínuas o scatterplot é utilizado enquanto para variáveis discretas utilizamos o boxplot
 
-## 6.1 Comparação de modelos
+## 7.1 Comparação de modelos
 
 Para comparar modelos, com objetivo inferencial, podemos utilizamos o BIC, que é um critério de seleção de modelos, que penaliza a verossimilhança pelo número de parâmetros do modelo proposto. Porém em grande parte dos nosso problemas, queremos fazer previsões, por esse motivo não o utilizamos.
 
@@ -708,7 +726,7 @@ AA distância de Wasserstein é independente de sobreposição e pode lidar muit
 
 ### KS
 
-# 7 - Grupos Homogêneos
+# 8 - Grupos Homogêneos
 
 Com a modelagem finalizada, ou pelo menos uma V0, é preciso agrupar seus resultados por grupos homogêneos (GHs). A ideia de criar grupos homogêneos é observar o desempenho do modelo para cada grupo, ao invés de olhar o seu desempenho geral. Pode acontecer de no geral o modelo estar bem preditivo, porém ao quebrar em grupos observamos que determinados grupos estão subindo a média de nossa preditividade, enquanto outros estão pouquíssimo preditivos.
 
@@ -720,7 +738,7 @@ Para a criação dos GHs podemos utilizar a função `classInt::classIntervals` 
 
 É preciso testar diferentes combinações de bins para encontrar a melhor partição para os grupos homogêneos, uma vez que a alteração dos bins máximos e mínimos impacta na função.
 
-## 7.1 - Matriz de confusão
+## 8.1 - Matriz de confusão
 
 Podemos ao invés de comparar os modelos, pode ser o caso de termos modelos complementares, dessa forma a comparação se torna um pouco mais difícil, como é o exemplo da criação de um modelo específico de fim de mês e outro para meio de mês. Nesse caso, se torna interessante avaliar o quão acertívo ambos os modelos são, para isso pegamos uma mesma base de dados (por exemplo a base do meio de mês) e fazemos uma matriz de confusão para ambos, utilizando o melhor ponto de corte para ser utilizado para
 
@@ -740,11 +758,11 @@ O teste de proporção com ajuste de Bonferroni, feito pela função acima, mult
 
 Vale ressaltar que o teste acima faz a comparação múltipla de todos os grupos, podendo estar superestimando os p-valores, para o caso de GHs é interessante colocar o `p.adjust.method` como `none` e fazer a correção manualmente multiplicando o p-valor pela quantidade de comparações (quantidade de grupos - 1) pois dessa forma teremos para a comparação de A, B, C e D apenas A -> B, B -> C, C -> D.
 
-# 8 - Atualização do Modelo
+# 9 - Atualização do Modelo
 
 A ideia é entregar um modelo rápido, para podermos aprender com ele e gerar valor o mais rápido possível. Após a primeira entrega ser feita, não devemos nos contentar com os resultados, pelo contrário, como já temos uma entrega devemos buscar por melhorias no modelo que antes não eram possíveis devido a necessidade de tempo junto a necessidade da entrega.
 
-# 9 - Pontos de atenção aos resultados
+# 10 - Pontos de atenção aos resultados
 
 Entender o quão preditivo está meu modelo. Acertar muito em públicos óbvios e pouco em públicos mais complexos com um ks de 90 é pior do que acertar razoável em públicos mais complexos e ks de 40
 
@@ -754,13 +772,13 @@ Como medir objetivamente se a resposta do meu modelo está de fato agregando, al
 
 Mudar a visão de sua modelagem pode ser uma saída viável, caso esteja estagnado em sua modelagem. Uma nova abordagem, como por exemplo modelar por contrato ao invés de cpf, buscar features de outros lugares, tentar uma régra de negócios ao invés de uma modelagem mais robusta, etc, podem ser boas alternativas.
 
-# 10 - Pós modelagem
+# 11 - Pós modelagem
 
 Com o modelo pronto o próximo passo é o deploy, que pode ocorrer de forma automática ou manual, o "manuático" consiste em um código com apenas o necesário para conseguir rodar o modelo manualmente de acordo com a demanda. Feito isso, existem algum caminhos a se seguir, seu modelo pode subir para produção ou passar por uma experimentação por exemplo. No caso do experimento pode ser necessário um direcionamento ao cliente para que seja feito de forma correta, evitando inconsistências futuras.
 
 A `calibração de modelo` consiste em um conjunto de análises, compostos por `Diagnóstico` e `Remediação` para avaliar as probabilidades retornadas pelo modelo. O objetivo da calibração do modelo é garantir que as probabilidades de classe estimadas sejam consistentes com o que ocorreria naturalmente. (No caso de estimativas pontuais PODE fazer sentido essa abordagem, porém ao criar os GHs temos uma mitigação do erro a partir da predição intervalar de cada grupo com bootstrap para avaliar o intervalo de 95%)
 
-# 11 - Modelo não supervisionado
+# 12 - Modelo não supervisionado
 
 Para modelos não supervisionados não temos um target pré-definido para podermos utilizar de insumo para nossa modelagem, dessa forma temos que utilizar de outras técnicas para chegarmos em resultados satisfatórios.
 
@@ -773,7 +791,7 @@ Esse é um tópico sensível pois exige bastante conhecimento acerca de nosso pr
 
 Devemos seguir com o monitoramento afim de garantirmos a funcionalidade/eficácia do mesmo. 
 
-# 12 - Algorithms
+# 13 - Algorithms
 
 ## Supervised
 
@@ -834,7 +852,8 @@ Tem como objetivo modelar contagens de eventos infinitos (Sem restrição para o
 
 ### Support Vector Machine
 
-Geralmente utilizado em contextos de classificação, encontra um hiperplano (podendo ser uma linha) para segregar categorias
+Geralmente utilizado em contextos de classificação, encontra um hiperplano (podendo ser uma linha) para segregar categorias.
+
 
 ### Naive Bayes
 

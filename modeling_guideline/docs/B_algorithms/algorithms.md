@@ -57,8 +57,6 @@ Tem como objetivo modelar contagens de eventos infinitos (Sem restrição para o
 
 ### Support Vector Machine
 
-Geralmente utilizado em contextos de classificação, encontra um hiperplano (podendo ser uma linha) para segregar categorias
-
 ### Naive Bayes
 
 ### XGBoost

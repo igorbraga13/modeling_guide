@@ -1,1 +1,5 @@
 # Kolmogorov Smirnov
+
+The Kolmogorov Smirnov (KS) statistic is a measure used to evaluate the performance of classification models, particularly in binary classification tasks. It quantifies the maximum difference between the cumulative distribution functions (CDFs) of the predicted probabilities for the positive and negative classes.
+
+O KS é invariante à escala de proporção de classe porque é baseado nas CDFs, que são invariáveis a escala, então se você tiver um conjunto de dados altamente desbalanceado e sobreamostrar a classe minoritária, as CDFs das probabilidades previstas não mudarão de forma - elas apenas se esticarão ou encolherão ao longo do eixo X, a distância entre elas (KS) permanece a mesma. Então a menos que o intuito seja usar o KS para ponto de corte ele pode ser utlizado para bases desbalanceadas e até para comparar um Treino com undersampling e um Teste com proporção real para ver se possui overfitting

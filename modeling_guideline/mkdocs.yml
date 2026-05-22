@@ -266,9 +266,11 @@ nav:
 
   - Articles: L_articles/articles.md
 
-  - Links: M_links/links.md
+  - Paradoxes: M_paradoxes/paradoxes.md
 
-  - References: N_references/references.md
+  - Links: N_links/links.md
+
+  - References: O_references/references.md
 
 theme:
   name: material

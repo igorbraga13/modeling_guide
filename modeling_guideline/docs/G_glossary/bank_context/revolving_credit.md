@@ -1,0 +1,1 @@
+Pagar o mínimo da fatura
