@@ -11,7 +11,7 @@ Each page in this section provides detailed theory, use cases, and best practice
 | Category | Description | Examples |
 |-----------|--------------|-----------|
 | [📊 **Parametric Models**](parametric_models.md) | Models with a fixed mathematical form defined by a finite number of parameters. | Linear Regression, GLM, LDA, GAM |
-| [🧮 **Non-Parametric Models**](non_parametric_models.md) | Flexible models that adapt to data shape with no predefined function. | kNN, SVM, Kernel Regression, MARS |
+| [🧮 **Others Non-Parametric & Kernel Methods**](non_parametric_models.md) | Flexible models that adapt to data shape with no predefined function. | kNN, SVM, Kernel Regression, MARS |
 | [🌳 **Tree-Based Models**](tree_based_models.md) | Recursive partitioning of the feature space into homogeneous regions. | CART, C4.5, CHAID, Model Trees |
 | [🌲 **Ensemble Methods**](ensemble_methods.md) | Combine multiple models for stronger and more stable predictions. | Random Forest, XGBoost, AdaBoost |
 | [🧩 **Clustering**](clustering.md) | Unsupervised grouping of similar observations. | K-Means, DBSCAN, GMM, SOM |
@@ -31,42 +31,53 @@ Each page in this section provides detailed theory, use cases, and best practice
 
 ```mermaid
 
-graph TD
+flowchart TD
 
-A[📊 Parametric Models] --> B[🧮 Non-Parametric Models]
-A --> C[∑ Bayesian Methods]
-B --> D[🧩 Clustering]
-B --> E[↘️ Dimensionality Reduction]
-B --> F[🌳 Tree-Based Models]
-F --> G[🌲 Ensemble Methods]
-G --> H[🧠 Deep Learning]
-H <--> I[🎮 Reinforcement Learning]
-H <--> J[🗣️ Natural Language Processing]
-H <--> K[⚙️ Hybrid Models]
+    A["🎯 Problem Definition"]
+    A --> B["📊 Baseline Models"]
 
-classDef param fill:#fdd835,stroke:#000,color:#000,font-weight:bold;
-classDef nonparam fill:#81c784,stroke:#000,color:#000,font-weight:bold;
-classDef bayes fill:#ffca28,stroke:#000,color:#000,font-weight:bold;
-classDef cluster fill:#4fc3f7,stroke:#000,color:#000,font-weight:bold;
-classDef dimred fill:#29b6f6,stroke:#000,color:#000,font-weight:bold;
-classDef tree fill:#aed581,stroke:#000,color:#000,font-weight:bold;
-classDef ensemble fill:#66bb6a,stroke:#000,color:#000,font-weight:bold;
-classDef deep fill:#ba68c8,stroke:#000,color:#000,font-weight:bold;
-classDef rl fill:#ab47bc,stroke:#000,color:#000,font-weight:bold;
-classDef nlp fill:#8e24aa,stroke:#000,color:#fff,font-weight:bold;
-classDef hybrid fill:#26a69a,stroke:#000,color:#fff,font-weight:bold;
+    B --> C{"Supervised target?"}
 
-class A param;
-class B nonparam;
-class C bayes;
-class D cluster;
-class E dimred;
-class F tree;
-class G ensemble;
-class H deep;
-class I rl;
-class J nlp;
-class K hybrid;
+    C -->|Yes| D["📈 Parametric Models"]
+    C -->|No| U["🧩 Unsupervised Learning"]
+    C -->|Sequential| RL["🎮 Reinforcement Learning"]
+
+    D --> E{"Simple enough?"}
+
+    E -->|Yes| M1["✅ Candidate Model"]
+    E -->|No| F["🧮 Non-Parametric & Kernel Methods"]
+
+    F --> G{"Need more performance?"}
+
+    G -->|No| M2["✅ Candidate Model"]
+    G -->|Yes| H["🌳 Tree-Based Models"]
+
+    H --> I["🌲 Ensemble Methods"]
+
+    I --> J{"Enough for tabular data?"}
+
+    J -->|Yes| M3["✅ Candidate Model"]
+    J -->|No| K["🧠 Deep Learning"]
+
+    K --> L{"Need pretrained scale?"}
+
+    L -->|Yes| FM["🚀 Foundation Models"]
+    L -->|No| M4["✅ Candidate Model"]
+
+    A --> TS{"Time dependency?"}
+    TS -->|Yes| T["⏱️ Time Series"]
+
+    A --> CA{"Policy impact?"}
+    CA -->|Yes| CI["🧪 Causal Inference"]
+
+    A --> GR{"Network data?"}
+    GR -->|Yes| GA["🕸️ Graph Algorithms"]
+
+    A --> REC{"Ranking / personalization?"}
+    REC -->|Yes| RS["🎯 Recommendation Systems"]
+
+    A --> OPT{"Constrained decision?"}
+    OPT -->|Yes| OP["🎯 Optimization"]
 ```
 
 ---
@@ -74,14 +85,23 @@ class K hybrid;
 ## 🔍 Relationships Between Families
 
 - **Parametric → Non-Parametric → Tree-Based → Ensemble**  
-  Each step adds flexibility and complexity.  
-- **Deep Learning** extends non-parametric modeling through representation learning.  
-- **Reinforcement Learning** introduces sequential decision-making.  
-- **Bayesian Methods** add uncertainty and probabilistic inference.  
-- **Graph, NLP, and Recommenders** specialize Deep Learning and Non-Parametric foundations for structured data, text, and user interactions.  
-- **Evolutionary Algorithms** optimize models through heuristic search.  
-- **Hybrid Models** integrate multiple paradigms for robustness and interpretability.
+  Each step usually adds flexibility, complexity, and predictive capacity.
 
+- **Deep Learning** introduces representation learning, allowing models to learn complex feature representations directly from data.
+
+- **Foundation Models** extend Deep Learning through large-scale pretraining, transfer learning, and reusable representations.
+
+- **Reinforcement Learning** introduces sequential decision-making based on actions, rewards, and future states.
+
+- **Bayesian Methods** add uncertainty quantification and probabilistic inference.
+
+- **Graph Algorithms and Recommender Systems** are specialized domains that can combine classical ML, non-parametric methods, Deep Learning, and Foundation Models depending on the problem.
+
+- **Evolutionary Algorithms** use heuristic search to optimize solutions when gradients or exact optimization are difficult.
+
+- **Causal Inference** focuses on estimating treatment effects, policy impact, and intervention outcomes rather than only prediction.
+
+- **Hybrid Models** integrate multiple paradigms for robustness, interpretability, or operational constraints.
 ---
 
 ## 📚 References
