@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://igorbraga13.github.io/modeling_guide/E_statistical_concepts/correlation/">
+        <link rel="canonical" href="https://igorbraga13.github.io/modeling_guide/E_statistical_concepts/bootstrap/">
       
       
-        <link rel="prev" href="../central_limit_theorem/">
+        <link rel="prev" href="../boosting/">
       
       
-        <link rel="next" href="../covariance/">
+        <link rel="next" href="../calibration/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Correlation - TechDocs</title>
+        <title>Bootstrap - TechDocs</title>
       
     
     
@@ -73,11 +73,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#correlation-matriz" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -110,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Correlation
+              Bootstrap
             
           </span>
         </div>
@@ -2560,10 +2555,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../bootstrap/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2574,6 +2576,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -2629,30 +2632,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Correlation
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../correlation/" class="md-nav__link">
         
   
   
@@ -2663,69 +2646,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#correlation-matriz" class="md-nav__link">
-    <span class="md-ellipsis">
-      Correlation matriz?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kendall" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kendall
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pearson" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pearson
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#spearman" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spearman
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#point-biserial-correlation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Point-Biserial Correlation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -7247,59 +7167,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#correlation-matriz" class="md-nav__link">
-    <span class="md-ellipsis">
-      Correlation matriz?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kendall" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kendall
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pearson" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pearson
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#spearman" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spearman
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#point-biserial-correlation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Point-Biserial Correlation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -7317,23 +7184,13 @@
   
 
 
-  <h1>Correlation</h1>
+  <h1>Bootstrap</h1>
 
-<p>Measures how strongly two variable move together</p>
-<ul>
-<li>Positive Correlation: Both variables move in the same disrection</li>
-<li>Negative Correlation: Variable move in opposite</li>
-<li>No Correlation: No clear relationship between variables</li>
-</ul>
-<h2 id="correlation-matriz">Correlation matriz?</h2>
-<h2 id="kendall">Kendall</h2>
-<p>Is a non-parametric test that measures the strength of dependence between two variables</p>
-<div class="arithmatex">\[ \tau = a \]</div>
-<h2 id="pearson">Pearson</h2>
-<p>Both variable should be normally distributed and need assumptions like linearity (assumes a straight line relationship between each of the two variables) and <a href="../homoscedasticity/">homoscedasticity</a> (data is equally distributed about the regression line)</p>
-<h2 id="spearman">Spearman</h2>
-<p>Spearman rank correlation is a non-parametric test that measures the degree of association between two variables. </p>
-<h2 id="point-biserial-correlation">Point-Biserial Correlation</h2>
+<p>Técnica de reamostragem com reposição, para criar diversidade à sua amostra, reduzindo variância e o risco de overfitting.</p>
+<p>Na estatística é permite estimar a incerteza de uma estatística sem precisar conhecer a distribuição teórica. Gera várias amostras a partir do bootstrap, calcula por exemplo a média de cada amostra e avalia a distribuição das médias para estimar
+ - erro padrão
+ - Intervalo de Confiança
+ - Viés de um estimador</p>
 
 
 
