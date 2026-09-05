@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#memoria-de-curto-prazo" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -2382,6 +2387,8 @@
       
         
       
+        
+      
     
     
     
@@ -2840,6 +2847,29 @@
   
   <span class="md-ellipsis">
     Elastic Net
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../embedding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Embedding
     
   </span>
   
@@ -3968,6 +3998,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Recurrent Neural Networks (RNN)
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -3979,6 +4022,41 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#memoria-de-curto-prazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memória de Curto Prazo:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rnn-e-sequencial" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNN é sequencial
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -7167,6 +7245,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#memoria-de-curto-prazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memória de Curto Prazo:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rnn-e-sequencial" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNN é sequencial
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -7186,7 +7290,62 @@
 
   <h1>Recurrent Neural Networks (RNN)</h1>
 
-
+<p>Imagine a frase:
+"O cartão que eu solicitei ao banco na semana passada chegou."</p>
+<p>A RNN lê sequencialmente :</p>
+<pre><code>O → cartão → que → eu → solicitei → ao → banco → ... → chegou
+</code></pre>
+<p>Em cada passo ela produz uma memória, o hidden state:
+[h_t = f(x_t,h_{t-1})]</p>
+<pre><code>cartão
+   ↓
+  h1
+   ↓
+que + h1
+   ↓
+  h2
+   ↓
+eu + h2
+   ↓
+  h3
+   ↓
+ ...
+   ↓
+chegou
+</code></pre>
+<p>Para entender que "chegou" está relacionado a "cartão", a informação sobre cartão precisa sobreviver vários passos.</p>
+<p>Aqui já podemos observar 2 dores:</p>
+<h2 id="memoria-de-curto-prazo">Memória de Curto Prazo:</h2>
+<p>Considerando uma sequência grande:</p>
+<pre><code>cartão → ... → ... → ... → ... → ... → ... → ... → chegou
+</code></pre>
+<p>A informação precisa correr:</p>
+<pre><code>h1 → h2 → h3 → h4 → h5 → h6 → h7 → ...
+</code></pre>
+<p>Quanto maior a sequência, mais difícil pode ser manter certas informações.
+Isso está relacionado também aos problemas de vanishing/exploding gradients durante o treinamento.
+<a href="../lstm/">LSTM</a> e GRU surgiram justamente para melhorar isso:</p>
+<pre><code>RNN
+ ↓
+LSTM / GRU
+ ↓
+melhor capacidade de preservar informação
+</code></pre>
+<h2 id="rnn-e-sequencial">RNN é sequencial</h2>
+<p>Esse é um problema computacionalmente caro. Pois para calcular <code>h5</code> é preciso <code>h4</code>, que precisa de <code>h3</code> e assim por diante. Portanto:</p>
+<pre><code>x1 → x2 → x3 → x4 → x5 → x6
+</code></pre>
+<p>não pode ser processado em paralelo. Isso é ruim quando você quer treinar modelos com bilhões/trilhões de tokens usando milhares de GPUs.</p>
+<p>O <a href="../transformers/">Transformer</a> muda essa arquitetura dizendo basicamente: </p>
+<pre><code>     Em vez de passar uma memória de elemento para elemento, vamos permitir que os elementos olhem diretamente uns para os outros.
+</code></pre>
+<pre><code>O cartão que eu solicitei ao banco na semana passada chegou
+    ↑                                                  ↑
+    └──────────────── attention ───────────────────────┘
+</code></pre>
+<p>"chegou" pode estabelecer uma relação diretamente com "cartão". Ao invés de:</p>
+<p><code>`
+cartão → x2 → x3 → x4 → x5 → chegou</code></p>
 
 
 

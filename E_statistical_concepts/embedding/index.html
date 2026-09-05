@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://igorbraga13.github.io/modeling_guide/E_statistical_concepts/ks/">
+        <link rel="canonical" href="https://igorbraga13.github.io/modeling_guide/E_statistical_concepts/embedding/">
       
       
-        <link rel="prev" href="../js_divergence/">
+        <link rel="prev" href="../elastic_net/">
       
       
-        <link rel="next" href="../kl_divergence/">
+        <link rel="next" href="../entropy/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Kolmogorov-Smirnov (KS) - TechDocs</title>
+        <title>Embedding - TechDocs</title>
       
     
     
@@ -73,11 +73,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#kolmogorov-smirnov" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -110,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Kolmogorov-Smirnov (KS)
+              Embedding
             
           </span>
         </div>
@@ -2861,10 +2856,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../embedding/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2875,6 +2877,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -3206,19 +3209,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ks/" class="md-nav__link">
         
   
   
@@ -3229,7 +3223,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -7198,8 +7191,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -7218,9 +7209,9 @@
   
 
 
-<h1 id="kolmogorov-smirnov">Kolmogorov Smirnov</h1>
-<p>The Kolmogorov Smirnov (KS) statistic is a measure used to evaluate the performance of classification models, particularly in binary classification tasks. It quantifies the maximum difference between the cumulative distribution functions (CDFs) of the predicted probabilities for the positive and negative classes.</p>
-<p>O KS é invariante à escala de proporção de classe porque é baseado nas CDFs, que são invariáveis a escala, então se você tiver um conjunto de dados altamente desbalanceado e sobreamostrar a classe minoritária, as CDFs das probabilidades previstas não mudarão de forma - elas apenas se esticarão ou encolherão ao longo do eixo X, a distância entre elas (KS) permanece a mesma. Então a menos que o intuito seja usar o KS para ponto de corte ele pode ser utlizado para bases desbalanceadas e até para comparar um Treino com undersampling e um Teste com proporção real para ver se possui overfitting</p>
+  <h1>Embedding</h1>
+
+<p>Embedding é uma forma de transformar algo — texto, imagem, produto, usuário etc. — em uma sequência de números que representa suas características ou seu significado.</p>
 
 
 
