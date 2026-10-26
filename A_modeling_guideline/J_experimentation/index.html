@@ -591,6 +591,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#offline-police-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offline Police Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ab-testing-uplift-modeling" class="md-nav__link">
     <span class="md-ellipsis">
       A/B testing &amp; uplift modeling
@@ -619,6 +628,21 @@
       Business Impact &amp; Value Realization
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Business Impact &amp; Value Realization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uplift-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uplift modeling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -7286,6 +7310,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#offline-police-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offline Police Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ab-testing-uplift-modeling" class="md-nav__link">
     <span class="md-ellipsis">
       A/B testing &amp; uplift modeling
@@ -7314,6 +7347,21 @@
       Business Impact &amp; Value Realization
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Business Impact &amp; Value Realization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uplift-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uplift modeling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -7345,6 +7393,8 @@
 <p>Interpretação de resultados: separar efeito direto do modelo do efeito de outras mudanças (ex: política de crédito, campanhas).</p>
 <p>Ciclo de feedback: resultados da experimentação alimentam nova rodada de modelagem e priorização de features.</p>
 <h2 id="inferencia-causal">Inferência Causal</h2>
+<h3 id="offline-police-evaluation">Offline Police Evaluation</h3>
+<p>É basicamente seu backtest. Faz os testes a partir da sua amostra personalizada (amostra estratificada com todos os cenários de interesse, mantendo todas as características que considera relevantes controladas), do seu grupo controle e seus dados randômicos avalia o % do delta de uplift das políticas. Encontrando a política de melhor resultado parte-se para o teste A/B</p>
 <h3 id="ab-testing-uplift-modeling">A/B testing &amp; uplift modeling</h3>
 <h3 id="controle-sintetico">Controle Sintético</h3>
 <p><a href="https://matheusfacure.github.io/python-causality-handbook/landing-page.html">Causal Inference for the Brave and True</a>
@@ -7352,8 +7402,10 @@
 <p>As features são as volumetrias dos outros estados
 Ajusta-se uma regressão com os dados dos outros estados para estimar como seria seu estado de interesse.</p>
 <p>Resíduos aleatórios (igual regressão)</p>
-<p>Nosso médio aumentdo  é o percentual de impacto da ação</p>
+<p>Nosso médio aumento é o percentual de impacto da ação</p>
 <h2 id="business-impact-value-realization">Business Impact &amp; Value Realization</h2>
+<h3 id="uplift-modeling">Uplift modeling</h3>
+<p>Deve ser calculado o uplift do modelo tanto no Off-Police Evaluation quanto no teste A/B posterior ao OPE.</p>
 
 
 
